@@ -93,6 +93,8 @@
 		if(client.prefs.toggles & CHAT_GHOSTEARS && speaker in view(src))
 			message = "<b>[message]</b>"
 
+	speaker_name = colorize_name(speaker, speaker_name)
+
 	if(!can_hear())
 		// INNATE is the flag for audible-emote-language, so we don't want to show an "x talks but you cannot hear them" message if it's set
 		// if(!language || !(language.flags & INNATE))
@@ -106,6 +108,22 @@
 			var/turf/source = speaker? get_turf(speaker) : get_turf(src)
 			src.playsound_local(source, speech_sound, sound_vol, 1)
 
+/mob/proc/colorize_name(mob/speaker = null, speaker_name)
+	if(!speaker.ckey)
+		return speaker_name
+
+	var/step = round(length(speaker_name)/3)
+	var/rgb[3]
+	for(var/i = 1 to 3)
+		rgb[i] = text2ascii(speaker_name, step*i)
+		if(rgb[i] > 223) rgb[i] -= 224
+		if(rgb[i] > 191) rgb[i] -= 192
+		if(rgb[i] > 96) rgb[i] -= 97
+		if(rgb[i] > 64) rgb[i] -= 65
+		if(rgb[i] > 31) rgb[i] -= 32
+		rgb[i] = rgb[i]*4 + 63 // base brightness
+	speaker_name = "<font color=[rgb(rgb[1],rgb[2],rgb[3])]>[speaker_name]</font>"
+	return speaker_name
 
 /mob/proc/hear_radio(list/message_pieces, verb = "says", part_a, part_b, mob/speaker = null, hard_to_hear = 0, vname = "", atom/follow_target)
 	if(!client)
