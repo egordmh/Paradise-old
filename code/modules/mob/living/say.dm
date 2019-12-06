@@ -33,7 +33,42 @@ var/list/department_radio_keys = list(
 	  ":$" = "Response Team", "#$" = "Response Team", ".$" = "Response Team",
 	  ":-" = "Special Ops",	"#-" = "Special Ops",	".-" = "Special Ops",
 	  ":_" = "SyndTeam",	"#_" = "SyndTeam",		"._" = "SyndTeam",
-	  ":X" = "cords",		"#X" = "cords",			".X" = "cords"
+	  ":X" = "cords",		"#X" = "cords",			".X" = "cords",
+
+	  ":ê" = "right ear",	"¹ê" = "right ear",		".ê" = "right ear",		"Æê" = "right ear",
+	  ":ä" = "left ear",	"¹ä" = "left ear",		".ä" = "left ear",		"Æä" = "left ear",
+	  ":ø" = "intercom",	"¹ø" = "intercom",		".ø" = "intercom",		"Æø" = "intercom",
+	  ":ð" = "department",	"¹ð" = "department",	".ð" = "department",	"Æð" = "department",
+	  ":ñ" = "Command",		"¹ñ" = "Command",		".ñ" = "Command",		"Æñ" = "Command",
+	  ":ò" = "Science",		"¹ò" = "Science",		".ò" = "Science",		"Æò" = "Science",
+	  ":ü" = "Medical",		"¹ü" = "Medical",		".ü" = "Medical",		"Æü" = "Medical",
+	  ":ó" = "Engineering", "¹ó" = "Engineering",	".ó" = "Engineering",	"Æó" = "Engineering",
+	  ":û" = "Security",	"¹û" = "Security",		".û" = "Security",		"Æû" = "Security",
+	  ":ö" = "whisper",		"¹ö" = "whisper",		".ö" = "whisper",		"Æö" = "whisper",
+	  ":å" = "Syndicate",	"¹å" = "Syndicate",		".å" = "Syndicate",		"Æå" = "Syndicate",
+	  ":ã" = "Supply",		"¹ã" = "Supply",		".ã" = "Supply",		"Æã" = "Supply",
+	  ":ç" = "AI Private",	"¹ç" = "AI Private",	".ç" = "AI Private",	"Æç" = "AI Private",
+	  ":÷" = "cords",		"¹÷" = "cords",			".÷" = "cords",			"Æ÷" = "cords",
+
+	  ":Ê" = "right ear",	"¹Ê" = "right ear",		".Ê" = "right ear",		"ÆÊ" = "right ear",
+	  ":Ä" = "left ear",	"¹Ä" = "left ear",		".Ä" = "left ear",		"ÆÄ" = "left ear",
+	  ":Ø" = "intercom",	"¹Ø" = "intercom",		".Ø" = "intercom",		"ÆØ" = "intercom",
+	  ":Ð" = "department",	"¹Ð" = "department",	".Ð" = "department",	"ÆÐ" = "department",
+	  ":Ñ" = "Command",		"¹Ñ" = "Command",		".Ñ" = "Command",		"ÆÑ" = "Command",
+	  ":Ò" = "Science",		"¹Ò" = "Science",		".Ò" = "Science",		"ÆÒ" = "Science",
+	  ":Ü" = "Medical",		"¹Ü" = "Medical",		".Ü" = "Medical",		"ÆÜ" = "Medical",
+	  ":Ó" = "Engineering",	"¹Ó" = "Engineering",	".Ó" = "Engineering",	"ÆÓ" = "Engineering",
+	  ":Û" = "Security",	"¹Û" = "Security",		".Û" = "Security",		"ÆÛ" = "Security",
+	  ":Ö" = "whisper",		"¹Ö" = "whisper",		".Ö" = "whisper",		"ÆÖ" = "whisper",
+	  ":Å" = "Syndicate",	"¹Å" = "Syndicate",		".Å" = "Syndicate",		"ÆÅ" = "Syndicate",
+	  ":Ã" = "Supply",		"¹Ã" = "Supply",		".Ã" = "Supply",		"ÆÃ" = "Supply",
+	  ":ß" = "Service",		"¹ß" = "Service",		".ß" = "Service",		"Æß" = "Service",
+	  ":Ç" = "AI Private",	"¹Ç" = "AI Private",	".Ç" = "AI Private",	"ÆÇ" = "AI Private",
+	  ":×" = "cords",		"¹×" = "cords",			".×" = "cords",			"Æ×" = "cords",
+	  						"¹$" = "Response Team",							"Æ$" = "Response Team",
+	  						"¹-" = "Special Ops",							"Æ-" = "Special Ops",
+	  						"¹_" = "SyndTeam",								"Æ_" = "SyndTeam",
+							"¹+" = "special",								"Æ+" = "special"
 )
 
 
