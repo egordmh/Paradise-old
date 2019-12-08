@@ -79,7 +79,7 @@
 		return 1
 
 	if(href_list["login"])
-		if(!ishuman(usr))
+		if(!ishuman(usr) && (!isAI(usr) && !isrobot(usr)))  // 220 was if(!ishuman(usr))
 			to_chat(usr, "<span class='warning'>Access denied.</span>")
 			return
 
