@@ -7,6 +7,10 @@
 	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
 	heat_capacity = HEAT_CAPACITY_VACUUM
 
+	var/static/datum/gas_mixture/immutable/space/space_gas = new
+//	var/datum/excited_group/excited_group
+//	var/recently_active = 0
+//	var/excited = 0
 	plane = PLANE_SPACE
 	layer = SPACE_LAYER
 	light_power = 0.25
@@ -21,7 +25,7 @@
 /turf/space/Initialize(mapload)
 	if(!istype(src, /turf/space/transit))
 		icon_state = SPACE_ICON_STATE
-
+	air = space_gas
 	var/area/A = loc
 	if(!IS_DYNAMIC_LIGHTING(src) && IS_DYNAMIC_LIGHTING(A))
 		add_overlay(/obj/effect/fullbright)

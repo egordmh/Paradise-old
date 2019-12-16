@@ -34,6 +34,11 @@
 	var/shoe_running_volume = 50
 	var/shoe_walking_volume = 20
 
+	var/datum/excited_group/excited_group
+	var/recently_active = 0
+	var/excited = 0
+	var/datum/gas_mixture/air
+
 /turf/New()
 	..()
 	for(var/atom/movable/AM in src)

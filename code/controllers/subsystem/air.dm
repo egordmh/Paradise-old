@@ -259,7 +259,7 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/proc/remove_from_active(turf/simulated/T)
 	active_turfs -= T
-//	T.remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#00ff00")
+	T.remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#00ff00")
 	active_super_conductivity -= T // bug: if a turf is hit by ex_act 1 while processing, it can end up in super conductivity as /turf/space and cause runtimes
 	if(currentpart == SSAIR_ACTIVETURFS || currentpart == SSAIR_SUPERCONDUCTIVITY)
 		currentrun -= T
@@ -270,20 +270,16 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/proc/add_to_active(turf/simulated/T, blockchanges = 1)
 	if(istype(T) && T.air)
-//		T.add_atom_colour("#00ff00", TEMPORARY_COLOUR_PRIORITY)
+		T.add_atom_colour("#00ff00", TEMPORARY_COLOUR_PRIORITY)
 		T.excited = 1
 		active_turfs |= T
 		if(currentpart == SSAIR_ACTIVETURFS)
 			currentrun |= T
 		if(blockchanges && T.excited_group)
 			T.excited_group.garbage_collect()
-	else
-		for(var/direction in cardinal)
-			if(!(T.atmos_adjacent_turfs & direction))
-				continue
-			var/turf/simulated/S = get_step(T, direction)
-			if(istype(S))
-				add_to_active(S)
+	else if(initialized)
+		for(var/turf/S in T.atmos_adjacent_turfs)
+			add_to_active(S)
 
 /datum/controller/subsystem/air/proc/setup_allturfs(var/list/turfs_to_init = block(locate(1, 1, 1), locate(world.maxx, world.maxy, world.maxz)))
 	var/list/active_turfs = src.active_turfs

@@ -210,13 +210,13 @@ What are the archived variables for?
 /datum/gas_mixture/proc/share(datum/gas_mixture/sharer)
 	//Performs air sharing calculations between two gas_mixtures assuming only 1 boundary length
 	//Return: amount of gas exchanged (+ if sharer received)
-/datum/gas_mixture/proc/mimic(turf/model) //I want this proc to die a painful death
+// /datum/gas_mixture/proc/mimic(turf/model) //I want this proc to die a painful death
 	//Similar to share(...), except the model is not modified
 	//Return: amount of gas exchanged
-
+/*
 /datum/gas_mixture/proc/check_turf(turf/model) //I want this proc to die a painful death
 	//Returns: 0 if self-check failed or 1 if check passes
-
+*/
 /datum/gas_mixture/proc/temperature_mimic(turf/model, conduction_coefficient) //I want this proc to die a painful death
 
 /datum/gas_mixture/proc/temperature_share(datum/gas_mixture/sharer, conduction_coefficient)
@@ -329,6 +329,21 @@ What are the archived variables for?
 
 	return removed
 
+/datum/gas_mixture/proc/garbage_collect()
+	oxygen = 0
+	carbon_dioxide = 0
+	nitrogen = 0
+	toxins = 0
+
+/datum/gas_mixture/proc/copy()
+	var/datum/gas_mixture/copy = new type
+	copy.temperature = temperature
+	copy.oxygen = oxygen
+	copy.carbon_dioxide = carbon_dioxide
+	copy.nitrogen = nitrogen
+	copy.toxins = toxins
+	return copy
+
 /datum/gas_mixture/copy_from(datum/gas_mixture/sample)
 	oxygen = sample.oxygen
 	carbon_dioxide = sample.carbon_dioxide
@@ -359,7 +374,7 @@ What are the archived variables for?
 		temperature = model.temperature
 
 	return 1
-
+/*
 /datum/gas_mixture/check_turf(turf/model, atmos_adjacent_turfs = 4)
 	var/delta_oxygen = (oxygen_archived - model.oxygen)/(atmos_adjacent_turfs+1)
 	var/delta_carbon_dioxide = (carbon_dioxide_archived - model.carbon_dioxide)/(atmos_adjacent_turfs+1)
@@ -382,7 +397,7 @@ What are the archived variables for?
 			return 0
 
 	return 1
-
+*/
 /datum/gas_mixture/proc/check_turf_total(turf/model) //I want this proc to die a painful death
 	var/delta_oxygen = (oxygen - model.oxygen)
 	var/delta_carbon_dioxide = (carbon_dioxide - model.carbon_dioxide)
@@ -531,7 +546,7 @@ What are the archived variables for?
 	if((delta_temperature > MINIMUM_TEMPERATURE_TO_MOVE) || abs(moved_moles) > MINIMUM_MOLES_DELTA_TO_MOVE)
 		var/delta_pressure = temperature_archived*(total_moles() + moved_moles) - sharer.temperature_archived*(sharer.total_moles() - moved_moles)
 		return delta_pressure*R_IDEAL_GAS_EQUATION/volume
-
+/*
 /datum/gas_mixture/mimic(turf/model, atmos_adjacent_turfs = 4)
 	var/delta_oxygen = QUANTIZE(oxygen_archived - model.oxygen)/(atmos_adjacent_turfs+1)
 	var/delta_carbon_dioxide = QUANTIZE(carbon_dioxide_archived - model.carbon_dioxide)/(atmos_adjacent_turfs+1)
@@ -599,7 +614,7 @@ What are the archived variables for?
 		return delta_pressure*R_IDEAL_GAS_EQUATION/volume
 	else
 		return 0
-
+*/
 /datum/gas_mixture/temperature_share(datum/gas_mixture/sharer, conduction_coefficient)
 
 	var/delta_temperature = (temperature_archived - sharer.temperature_archived)

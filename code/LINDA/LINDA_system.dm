@@ -59,7 +59,7 @@ turf/CanPass(atom/movable/mover, turf/target, height=1.5)
 
 /atom/movable/proc/BlockSuperconductivity() // objects that block air and don't let superconductivity act. Only firelocks atm.
 	return 0
-
+/*
 /turf/proc/CalculateAdjacentTurfs()
 	atmos_adjacent_turfs_amount = 0
 	for(var/direction in cardinal)
@@ -78,6 +78,25 @@ turf/CanPass(atom/movable/mover, turf/target, height=1.5)
 			if(T.atmos_adjacent_turfs & counterdir)
 				T.atmos_adjacent_turfs_amount -= 1
 			T.atmos_adjacent_turfs &= ~counterdir
+*/
+/turf/proc/CalculateAdjacentTurfs()
+	for(var/direction in cardinal)
+		var/turf/T = get_step(src, direction)
+		if(!istype(T, /turf/simulated))
+			continue
+		if(CanAtmosPass(T))
+			LAZYINITLIST(atmos_adjacent_turfs)
+			LAZYINITLIST(T.atmos_adjacent_turfs)
+			atmos_adjacent_turfs[T] = TRUE
+			T.atmos_adjacent_turfs[src] = TRUE
+		else
+			if (atmos_adjacent_turfs)
+				atmos_adjacent_turfs -= T
+			if (T.atmos_adjacent_turfs)
+				T.atmos_adjacent_turfs -= src
+			UNSETEMPTY(T.atmos_adjacent_turfs)
+	UNSETEMPTY(atmos_adjacent_turfs)
+	src.atmos_adjacent_turfs = atmos_adjacent_turfs
 
 //returns a list of adjacent turfs that can share air with this one.
 //alldir includes adjacent diagonal tiles that can share
