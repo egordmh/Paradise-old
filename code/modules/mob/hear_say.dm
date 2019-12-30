@@ -3,6 +3,7 @@
 /mob/proc/combine_message(var/list/message_pieces, var/verb, var/mob/speaker, always_stars = FALSE)
 	var/iteration_count = 0
 	var/msg = "" // This is to make sure that the pieces have actually added something
+	. = "[verb], \""
 	for(var/datum/multilingual_say_piece/SP in message_pieces)
 		iteration_count++
 		var/piece = SP.message
@@ -43,16 +44,14 @@
 		// There is literally no content left in this message, we need to shut this shit down
 		. = "" // hear_say will suppress it
 	else
-		if(verb)
-			. = "[verb], \"[trim(msg)]\""
-		else
-			. = trim(msg)
+		. = trim(. + trim(msg))
+		. += "\""
 
 /mob/proc/hear_say(list/message_pieces, verb = "says", italics = 0, mob/speaker = null, sound/speech_sound, sound_vol, sound_frequency, use_voice = TRUE)
 	if(!client)
 		return 0
 
-	if(isobserver(src) && client.prefs.toggles & PREFTOGGLE_CHAT_GHOSTEARS)
+	if(isobserver(src) && client.prefs.toggles & CHAT_GHOSTEARS)
 		if(speaker && !speaker.client && !(speaker in view(src)))
 			//Does the speaker have a client?  It's either random stuff that observers won't care about (Experiment 97B says, 'EHEHEHEHEHEHEHE')
 			//Or someone snoring.  So we make it where they won't hear it.
@@ -79,10 +78,10 @@
 		var/mob/living/carbon/human/H = speaker
 		speaker_name = H.GetVoice()
 
-	var/message = combine_message(message_pieces, "", speaker)
+	var/message = combine_message(message_pieces, verb, speaker)
 	if(message == "")
 		return
-	var/message_clean = message
+
 	if(italics)
 		message = "<i>[message]</i>"
 
@@ -91,10 +90,8 @@
 		if(speaker_name != speaker.real_name && speaker.real_name)
 			speaker_name = "[speaker.real_name] ([speaker_name])"
 		track = "([ghost_follow_link(speaker, ghost=src)]) "
-		if(client.prefs.toggles & PREFTOGGLE_CHAT_GHOSTEARS && (speaker in view(src)))
+		if(client.prefs.toggles & CHAT_GHOSTEARS && (speaker in view(src)))
 			message = "<b>[message]</b>"
-
-	speaker_name = colorize_name(speaker, speaker_name)
 
 	if(src.mind && src.mind.special_role == SPECIAL_ROLE_TRAITOR)
 		for(var/code_phrase in GLOB.syndicate_code_phrase)
@@ -110,40 +107,11 @@
 		else
 			to_chat(src, "<span class='name'>[speaker.name]</span> talks but you cannot hear [speaker.p_them()].")
 	else
-		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[use_voice ? speaker.GetAltName() : ""] [track][verb], \"[message]\"</span>")
-
-		// Create map text message
-		if(client?.prefs.chat_on_map && stat != UNCONSCIOUS)
-			create_chat_message(speaker, message_clean, FALSE, italics)
-
+		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[use_voice ? speaker.GetAltName() : ""] [track][message]</span>")
 		if(speech_sound && (get_dist(speaker, src) <= world.view && src.z == speaker.z))
 			var/turf/source = speaker? get_turf(speaker) : get_turf(src)
 			playsound_local(source, speech_sound, sound_vol, 1, sound_frequency)
 
-/mob/proc/colorize_name(mob/speaker = null, speaker_name)
-	if(!speaker.ckey)
-		return speaker_name
-
-	if (!speaker.chat_color || speaker.chat_color_name != speaker.name)
-
-		var/step = round(length_char(speaker_name)/3)
-		var/rgb[3]
-		for(var/i = 1 to 3)
-			rgb[i] = text2ascii_char(speaker_name, step*i)
-			if(rgb[i] > 1071) rgb[i] -= 1072
-			if(rgb[i] > 1039) rgb[i] -= 1040
-			if(rgb[i] > 96) rgb[i] -= 97
-			if(rgb[i] > 64) rgb[i] -= 65
-			if(rgb[i] > 31) rgb[i] -= 32
-			rgb[i] = rgb[i]*4 + 63 // base brightness
-
-		speaker.chat_color = rgb(rgb[1],rgb[2],rgb[3])
-		speaker.chat_color_darkened = rgb(rgb[1]-23,rgb[2]-23,rgb[3]-23)
-		speaker.chat_color_name = speaker_name
-
-		return "<font color=[rgb(rgb[1],rgb[2],rgb[3])]>[speaker_name]</font>"
-	else
-		return "<font color=[speaker.chat_color]>[speaker_name]</font>"
 
 /mob/proc/hear_radio(list/message_pieces, verb = "says", part_a, part_b, mob/speaker = null, hard_to_hear = 0, vname = "", atom/follow_target)
 	if(!client)
@@ -153,7 +121,7 @@
 		hear_sleep(multilingual_to_message(message_pieces))
 		return
 
-	var/message = combine_message(message_pieces, "", speaker, always_stars = hard_to_hear)
+	var/message = combine_message(message_pieces, verb, speaker, always_stars = hard_to_hear)
 	if(message == "")
 		return
 
@@ -162,11 +130,7 @@
 		follow_target = speaker
 
 	var/speaker_name = handle_speaker_name(speaker, vname, hard_to_hear)
-	speaker_name = colorize_name(speaker, speaker_name)
 	track = handle_track(message, verb, speaker, speaker_name, follow_target, hard_to_hear)
-
-	if(client?.prefs.chat_on_map && stat != UNCONSCIOUS && can_hear())
-		create_chat_message(speaker, message, TRUE, FALSE)
 
 	if(src.mind && src.mind.special_role == SPECIAL_ROLE_TRAITOR)
 		for(var/code_phrase in GLOB.syndicate_code_phrase)
@@ -178,9 +142,9 @@
 		if(prob(20))
 			to_chat(src, "<span class='warning'>You feel your headset vibrate but can hear nothing from it!</span>")
 	else if(track)
-		to_chat(src, "[part_a][track][part_b][verb], \"[message]\"</span></span>")
+		to_chat(src, "[part_a][track][part_b][message]</span></span>")
 	else
-		to_chat(src, "[part_a][speaker_name][part_b][verb], \"[message]\"</span></span>")
+		to_chat(src, "[part_a][speaker_name][part_b][message]</span></span>")
 
 /mob/proc/handle_speaker_name(mob/speaker = null, vname, hard_to_hear)
 	var/speaker_name = "unknown"
@@ -219,23 +183,12 @@
 
 	to_chat(src, heard)
 
-/mob/proc/hear_holopad_talk(list/message_pieces, verb = "says", mob/speaker = null)
-	if(sleeping || stat == UNCONSCIOUS)
-		hear_sleep(multilingual_to_message(message_pieces))
-		return
-
-	if(!can_hear())
-		return
-
-	var/message = combine_message(message_pieces, "", speaker)
+/mob/proc/hear_holopad_talk(list/message_pieces, var/verb = "says", var/mob/speaker = null)
+	var/message = combine_message(message_pieces, verb, speaker)
 
 	var/name = speaker.name
 	if(!say_understands(speaker))
 		name = speaker.voice_name
 
-	// Create map text message
-	if(client?.prefs.chat_on_map && stat != UNCONSCIOUS)
-		create_chat_message(speaker, message, TRUE, FALSE)
-
-	var/rendered = "<span class='game say'><span class='name'>[name]</span> [verb], \"[message]\"</span>"
+	var/rendered = "<span class='game say'><span class='name'>[name]</span> [message]</span>"
 	to_chat(src, rendered)
