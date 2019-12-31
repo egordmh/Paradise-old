@@ -534,7 +534,7 @@
 	id = "chameleon_kit"
 	req_tech = list("combat" = 2, "engineering" = 6, "syndicate" = 3, "magnets" = 5)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 4500, MAT_GLASS = 3000,)
+	materials = list(MAT_METAL = 4500, MAT_GLASS = 3000, MAT_SILVER = 2000, MAT_DIAMOND = 1000)
 	build_path = /obj/item/storage/box/syndie_kit/chameleon
 	category = list("ILLEGAL")
 
