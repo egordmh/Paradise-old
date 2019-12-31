@@ -506,7 +506,7 @@
 	req_tech = list("materials" = 3, "biotech" = 5, "magnets" = 4, "programming" = 4)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
-	build_path = /obj/item/implanter/mindshield
+	build_path = /obj/item/implantcase/mindshield
 	category = list("Medical")
 
 //Cybernetic organs
