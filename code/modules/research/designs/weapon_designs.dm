@@ -363,7 +363,7 @@
 	name = "hardsuit thermal scanner"
 	desc = "hardsuit thermal scanner"
 	id = "hardsuitthermal"
-	req_tech = list("combat" = 4, "engineering" = 3, "programming" = 3, "biotech"= 5, "materials" = 6)
+	req_tech = list("combat" = 5, "engineering" = 4, "programming" = 4, "biotech"= 5, "materials" = 6, "syndicate" = 2)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000, MAT_SILVER  = 1000, MAT_DIAMOND = 1000)
 	build_path = /obj/item/rig_module/vision/thermal
@@ -373,7 +373,7 @@
 	name = "hardsuit security hud"
 	desc = "hardsuit security hud"
 	id = "hardsuitsecurity"
-	req_tech = list("combat" = 2, "engineering" = 3, "programming" = 3, "biotech"= 2, "materials" = 4)
+	req_tech = list("combat" = 3, "engineering" = 3, "programming" = 3, "biotech"= 2, "materials" = 4)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000)
 	build_path = /obj/item/rig_module/vision/sechud
@@ -383,7 +383,7 @@
 	name = "mounted grenade launcher"
 	desc = "mounted grenade launcher"
 	id = "hardsuitgrenade"
-	req_tech = list("combat" = 5, "engineering" = 4, "syndicate" = 3, "programming" = 5, "bluespace" = 3, "powerstorage" = 4, "materials" = 6)
+	req_tech = list("combat" = 6, "engineering" = 4, "syndicate" = 3, "programming" = 5, "bluespace" = 3, "powerstorage" = 4, "materials" = 6)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000, MAT_DIAMOND = 5000)
 	build_path = /obj/item/rig_module/grenade_launcher
@@ -393,7 +393,7 @@
 	name = "mounted energy gun"
 	desc = "mounted energy gun"
 	id = "hardsuitegun"
-	req_tech = list("combat" = 5, "engineering" = 4, "programming" = 3, "powerstorage" = 4, "materials" = 5)
+	req_tech = list("combat" = 6, "engineering" = 4, "programming" = 3, "powerstorage" = 4, "materials" = 5, "syndicate" = 1)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000, MAT_SILVER = 3000)
 	build_path = /obj/item/rig_module/mounted/egun
@@ -403,7 +403,7 @@
 	name = "mounted flash"
 	desc = "mounted flash"
 	id = "hardsuitflash"
-	req_tech = list("combat" = 3, "programming" = 3, "powerstorage" = 4, "materials" = 3)
+	req_tech = list("combat" = 4, "programming" = 3, "powerstorage" = 4, "materials" = 3)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000)
 	build_path = /obj/item/rig_module/device/flash
@@ -413,7 +413,7 @@
 	name = "mounted taser"
 	desc = "mounted taser"
 	id = "hardsuittaser"
-	req_tech = list("combat" = 4, "programming" = 3, "powerstorage" = 4, "materials" = 5)
+	req_tech = list("combat" = 5, "programming" = 3, "powerstorage" = 4, "materials" = 5)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 3000)
 	build_path = /obj/item/rig_module/mounted/taser
@@ -522,7 +522,7 @@
 	name = "Stechkin pistol"
 	desc = "A reverse-engineered small, easily concealable 10mm handgun. Has a threaded barrel for suppressors."
 	id = "stechkin"
-	req_tech = list("combat" = 6, "engineering" = 5, "syndicate" = 4)
+	req_tech = list("combat" = 6, "engineering" = 6, "syndicate" = 5)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 4500, MAT_SILVER = 1500, MAT_TITANIUM = 5000)
 	build_path = /obj/item/gun/projectile/automatic/pistol
@@ -530,9 +530,9 @@
 
 /datum/design/chameleon_kit
 	name = "Chameleon kit"
-	desc = "РќР°Р±РѕСЂ С…Р°РјРµР»РµРѕРЅР° РёР·СѓС‡РµРЅРЅС‹Р№ СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРІРµСЂСЃ РёРЅР¶РµРЅРµСЂРёРЅРіР°."
+	desc = "Набор хамелеона изученный с помощью реверс инженеринга."
 	id = "chameleon_kit"
-	req_tech = list("combat" = 2, "engineering" = 6, "syndicate" = 3, "magnets" = 5)
+	req_tech = list("combat" = 4, "engineering" = 6, "syndicate" = 4, "magnets" = 5)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 4500, MAT_GLASS = 3000, MAT_SILVER = 2000, MAT_DIAMOND = 1000)
 	build_path = /obj/item/storage/box/syndie_kit/chameleon
@@ -540,7 +540,7 @@
 
 /datum/design/adrenaline
 	name = "Adrenaline implant"
-	desc = "РљРµР№СЃ СЃ Р°РґСЂРµРЅР°Р»РёРЅ РёРјРїР»Р°РЅС‚РѕРІ, РєРѕС‚РѕСЂС‹Р№ РїРѕР·РІРѕР»СЏРµС‚ РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С€РѕРєРµСЂС‹, РІ С‚РµС‡РµРЅРёРµ РєРѕС‚РѕСЂРѕС‚РєРѕРіРѕ РІСЂРµРјРµРЅРё."
+	desc = "Кейс с адреналин имплантов, который позволяет игнорировать шокеры, в течение котороткого времени."
 	id = "implant_adrenaline"
 	req_tech = list("syndicate" = 2, "programming" = 3, "biotech"= 4, "materials" = 3)
 	build_type = PROTOLATHE
@@ -550,7 +550,7 @@
 
 /datum/design/Freedom
 	name = "Freedom implant"
-	desc = "РљРµР№СЃ СЃ РёРјРїР»Р°РЅС‚РѕРј, РєРѕС‚РѕСЂС‹Р№ РїРѕР·РІРѕР»СЏРµС‚ РѕСЃРІРѕР±РѕР¶РґР°С‚СЊСЃСЏ РѕС‚ РЅР°СЂСѓС‡РЅРёРєРѕРІ РѕРіСЂР°РЅРёС‡РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂР°Р·."
+	desc = "Кейс с имплантом, который позволяет освобождаться от наручников ограниченное количество раз."
 	id = "implant_freedom"
 	req_tech = list("syndicate" = 2, "programming" = 3, "biotech"= 4,"materials" = 3)
 	build_type = PROTOLATHE
@@ -560,7 +560,7 @@
 
 /datum/design/encryptionkey_binary
 	name = "Binary encryptionkey"
-	desc = "РљР»СЋС‡ С€РёС„СЂРѕРІР°РЅРёСЏ, РЅР° РєРѕС‚РѕСЂРѕР№ РїРµСЂРµРіРѕРІР°СЂРёРІР°РµСЋС‚СЃСЏ Р±РѕСЂРіРё Рё РР."
+	desc = "Ключ шифрования, на которой переговариваеются борги и ИИ."
 	id = "binarykey"
 	req_tech = list("engineering" = 4, "syndicate" = 3, "programming" = 4,"materials" = 3)
 	build_type = PROTOLATHE
@@ -570,7 +570,7 @@
 
 /datum/design/encryptionkey_syndicate
 	name = "Syndicate encryptionkey"
-	desc = "РљР»СЋС‡ С€РёС„СЂРѕРІР°РЅРёСЏ СЃРёРЅРґРёРєР°С‚Р°, РїРѕР·РІРѕР»СЏСЋС‰РёР№ РїРµСЂРµС…РІР°С‚С‹РІР°С‚СЊ РґСЂСѓРіРёРµ Р·Р°С€РёС„СЂРѕРІР°РЅРЅС‹Рµ СЂР°РґРёРѕРІРѕР»РЅС‹."
+	desc = "Ключ шифрования синдиката, позволяющий перехватывать другие зашифрованные радиоволны."
 	id = "syndicatekey"
 	req_tech = list("engineering" = 4, "syndicate" = 4, "programming" = 4,"materials" = 3)
 	build_type = PROTOLATHE
