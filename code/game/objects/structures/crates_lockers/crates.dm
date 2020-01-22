@@ -187,7 +187,6 @@
 	if(user)
 		to_chat(user, "<span class='danger'>The crate's anti-tamper system activates!</span>")
 		investigate_log("[key_name(user)] has detonated a [src]", INVESTIGATE_BOMB)
-		add_attack_logs(user, src, "has detonated", ATKLOG_MOST)
 	for(var/atom/movable/AM in src)
 		qdel(AM)
 	explosion(get_turf(src), 0, 1, 5, 5)
@@ -339,23 +338,24 @@
 	var/target_temp = T0C - 40
 	var/cooling_power = 40
 
-/obj/structure/closet/crate/freezer/return_air()
-	var/datum/gas_mixture/gas = (..())
-	if(!gas)	return null
-	var/datum/gas_mixture/newgas = new/datum/gas_mixture()
-	newgas.oxygen = gas.oxygen
-	newgas.carbon_dioxide = gas.carbon_dioxide
-	newgas.nitrogen = gas.nitrogen
-	newgas.toxins = gas.toxins
-	newgas.volume = gas.volume
-	newgas.temperature = gas.temperature
-	if(newgas.temperature <= target_temp)	return
+	return_air()
+		var/datum/gas_mixture/gas = (..())
+		if(!gas)	return null
+		var/datum/gas_mixture/newgas = new/datum/gas_mixture()
+		newgas.oxygen = gas.oxygen
+		newgas.carbon_dioxide = gas.carbon_dioxide
+		newgas.nitrogen = gas.nitrogen
+		newgas.toxins = gas.toxins
+		newgas.volume = gas.volume
+		newgas.temperature = gas.temperature
+		if(newgas.temperature <= target_temp)	return
 
-	if((newgas.temperature - cooling_power) > target_temp)
-		newgas.temperature -= cooling_power
-	else
-		newgas.temperature = target_temp
-	return newgas
+		if((newgas.temperature - cooling_power) > target_temp)
+			newgas.temperature -= cooling_power
+		else
+			newgas.temperature = target_temp
+		return newgas
+
 
 /obj/structure/closet/crate/can
 	desc = "A large can, looks like a bin to me."
@@ -496,23 +496,22 @@
 /obj/structure/closet/crate/hydroponics/prespawned
 	//This exists so the prespawned hydro crates spawn with their contents.
 
-// Do I need the definition above? Who knows!
-/obj/structure/closet/crate/hydroponics/prespawned/New()
-	..()
-	new /obj/item/reagent_containers/glass/bucket(src)
-	new /obj/item/reagent_containers/glass/bucket(src)
-	new /obj/item/screwdriver(src)
-	new /obj/item/screwdriver(src)
-	new /obj/item/wrench(src)
-	new /obj/item/wrench(src)
-	new /obj/item/wirecutters(src)
-	new /obj/item/wirecutters(src)
-	new /obj/item/shovel/spade(src)
-	new /obj/item/shovel/spade(src)
-	new /obj/item/storage/box/beakers(src)
-	new /obj/item/storage/box/beakers(src)
-	new /obj/item/hand_labeler(src)
-	new /obj/item/hand_labeler(src)
+	New()
+		..()
+		new /obj/item/reagent_containers/glass/bucket(src)
+		new /obj/item/reagent_containers/glass/bucket(src)
+		new /obj/item/screwdriver(src)
+		new /obj/item/screwdriver(src)
+		new /obj/item/wrench(src)
+		new /obj/item/wrench(src)
+		new /obj/item/wirecutters(src)
+		new /obj/item/wirecutters(src)
+		new /obj/item/shovel/spade(src)
+		new /obj/item/shovel/spade(src)
+		new /obj/item/storage/box/beakers(src)
+		new /obj/item/storage/box/beakers(src)
+		new /obj/item/hand_labeler(src)
+		new /obj/item/hand_labeler(src)
 
 /obj/structure/closet/crate/sci
 	name = "science crate"
@@ -566,50 +565,9 @@
 	new /obj/item/card/id/golem(src)
 	new /obj/item/flashlight/lantern(src)
 
-/obj/structure/closet/crate/secure/screwdriver_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(locked && broken == 0 && user.a_intent != INTENT_HARM) // Stage one
-		to_chat(user, "<span class='notice'>Вы начинаете откручивать панель замка [src]...</span>")
-		if(I.use_tool(src, user, 160, volume = I.tool_volume))
-			if(prob(95)) // EZ
-				to_chat(user, "<span class='notice'>Вы успешно открутили и сняли панель с замка [src]!</span>")
-				desc += " Панель управления снята."
-				broken = 3
-				//icon_state = icon_off // Crates has no icon_off :(
-			else // Bad day)
-				var/mob/living/carbon/human/H = user
-				var/obj/item/organ/external/affecting = H.get_organ(user.r_hand == I ? "l_hand" : "r_hand")
-				user.apply_damage(5, BRUTE , affecting)
-				user.emote("scream")
-				to_chat(user, "<span class='warning'>Проклятье! [I] сорвалась и повредила [affecting.name]!</span>")
-		return TRUE
-
-/obj/structure/closet/crate/secure/wirecutter_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(locked && broken == 3 && user.a_intent != INTENT_HARM) // Stage two
-		to_chat(user, "<span class='notice'>Вы начинаете подготавливать провода панели [src]...</span>")
-		if(I.use_tool(src, user, 160, volume = I.tool_volume))
-			if(prob(80)) // Good hacker!
-				to_chat(user, "<span class='notice'>Вы успешно подготовили провода панели замка [src]!</span>")
-				desc += " Провода отключены и торчат наружу."
-				broken = 2
-			else // woopsy
-				to_chat(user, "<span class='warning'>Черт! Не тот провод!</span>")
-				do_sparks(5, 1, src)
-				electrocute_mob(user, get_area(src), src, 0.5, TRUE)
-		return TRUE
-
-/obj/structure/closet/crate/secure/multitool_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(locked && broken == 2 && user.a_intent != INTENT_HARM) // Stage three
-		to_chat(user, "<span class='notice'>Вы начинаете подключать провода панели замка [src] к [I]...</span>")
-		if(I.use_tool(src, user, 160, volume = I.tool_volume))
-			if(prob(80)) // Good hacker!
-				desc += " Замок отключен."
-				broken = 0 // Can be emagged
-				emag_act(user)
-			else // woopsy
-				to_chat(user, "<span class='warning'>Черт! Не тот провод!</span>")
-				do_sparks(5, 1, src)
-				electrocute_mob(user, get_area(src), src, 0.5, TRUE)
-		return TRUE
+/obj/structure/closet/crate/secure/AltClick(var/mob/user)
+	if(src in oview(1))
+		if(!src.opened)
+			src.verb_togglelock()
+		else
+			return ..()
