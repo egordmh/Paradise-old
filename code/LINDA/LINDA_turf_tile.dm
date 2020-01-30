@@ -175,7 +175,7 @@
 					if(enemy_simulated.excited_group)
 						if(excited_group != enemy_simulated.excited_group)
 							excited_group.merge_groups(enemy_simulated.excited_group) //combine groups
-							share_air(enemy_simulated) //share
+						share_air(enemy_simulated) //share
 					else
 						if((recently_active == 1 && enemy_simulated.recently_active == 1) || !air.compare(enemy_simulated.air))
 							excited_group.add_turf(enemy_simulated) //add enemy to our group
