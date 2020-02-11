@@ -37,7 +37,7 @@
 	var/dat = "<B>Noticeboard</B><BR>"
 	for(var/obj/item/paper/P in src)
 		dat += "<A href='?src=[UID()];read=\ref[P]'>[P.name]</A> <A href='?src=[UID()];write=\ref[P]'>Write</A> <A href='?src=[UID()];remove=\ref[P]'>Remove</A><BR>"
-	user << browse("<HEAD><TITLE>Notices</TITLE></HEAD>[dat]","window=noticeboard")
+	user << browse({"<meta charset="UTF-8"><HEAD><TITLE>Notices</TITLE></HEAD>[dat]"},"window=noticeboard")
 	onclose(user, "noticeboard")
 
 /obj/structure/noticeboard/deconstruct(disassembled = TRUE)
@@ -79,9 +79,9 @@
 		var/obj/item/paper/P = locate(href_list["read"])
 		if((P && P.loc == src))
 			if(!( istype(usr, /mob/living/carbon/human) ))
-				usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY><TT>[stars(P.info)]</TT></BODY></HTML>", "window=[P.name]")
+				usr << browse({"<HTML><meta charset="UTF-8"><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY><TT>[stars(P.info)]</TT></BODY></HTML>"}, "window=[P.name]")
 				onclose(usr, "[P.name]")
 			else
-				usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY><TT>[P.info]</TT></BODY></HTML>", "window=[P.name]")
+				usr << browse({"<HTML><meta charset="UTF-8"><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY><TT>[P.info]</TT></BODY></HTML>"}, "window=[P.name]")
 				onclose(usr, "[P.name]")
 	return

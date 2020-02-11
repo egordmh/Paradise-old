@@ -15,6 +15,7 @@ var/global/current_pos_id = 1
 var/global/pos_sales = 0
 
 var/const/RECEIPT_HEADER = {"<html>
+	<meta charset="UTF-8">
 	<head>
 		<style type="text/css">
 			html {
@@ -62,6 +63,7 @@ var/const/RECEIPT_HEADER = {"<html>
 	<body>
 "}
 var/const/POS_HEADER = {"<html>
+	<meta charset="UTF-8">
 	<head>
 		<style type="text/css">
 			* {

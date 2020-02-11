@@ -282,7 +282,7 @@ UI STUFF
 	var/tdStyleleft = "border-top:2px solid; border-bottom:2px solid; width:150px; text-align:center;"
 	var/tdStyle = "border-top:2px solid; border-bottom:2px solid;"
 	var/datum/ticket/ticket
-	var/dat
+	var/dat = {"<meta charset="UTF-8">"}
 	dat += "<head><style>.adminticket{border:2px solid}</style></head>"
 	dat += "<body><h1>[ticket_system_name]</h1>"
 

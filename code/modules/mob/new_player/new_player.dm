@@ -444,7 +444,7 @@
 	var/mins = (mills % 36000) / 600
 	var/hours = mills / 36000
 
-	var/dat = "<html><body><center>"
+	var/dat = {"<html><meta charset="UTF-8"><body><center>"}
 	dat += "Round Duration: [round(hours)]h [round(mins)]m<br>"
 
 	if(SSshuttle.emergency.mode >= SHUTTLE_ESCAPE)
@@ -582,7 +582,7 @@
 		client.prefs.language = "None"
 
 /mob/new_player/proc/ViewManifest()
-	var/dat = "<html><body>"
+	var/dat = {"<html><meta charset="UTF-8"><body>"}
 	dat += "<h4>Crew Manifest</h4>"
 	dat += data_core.get_manifest(OOC = 1)
 
