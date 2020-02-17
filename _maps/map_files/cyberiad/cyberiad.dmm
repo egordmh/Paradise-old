@@ -60788,6 +60788,7 @@
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/item/screwdriver,
+/obj/item/reagent_containers/food/drinks/britcup,
 /turf/simulated/floor/plasteel{
 	icon_state = "cafeteria";
 	tag = "icon-cafeteria (NORTHEAST)"
@@ -61886,8 +61887,7 @@
 /turf/simulated/floor/plasteel/airless,
 /area/toxins/test_area)
 "cmD" = (
-/obj/structure/table,
-/obj/item/reagent_containers/food/drinks/britcup,
+/obj/machinery/recharge_station,
 /turf/simulated/floor/plasteel{
 	icon_state = "cafeteria";
 	tag = "icon-cafeteria (NORTHEAST)"
@@ -92309,6 +92309,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/toxins/mixing)
+"hJq" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/plasteel,
+/area/security/main)
 "izn" = (
 /obj/machinery/atmospherics/unary/passive_vent{
 	dir = 1
@@ -92675,6 +92679,10 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
+"pcR" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/locker)
 "pnf" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -112780,7 +112788,7 @@ btT
 bvx
 bwY
 bsk
-bnD
+pcR
 bBf
 bOn
 bJy
@@ -126089,7 +126097,7 @@ anA
 akv
 alp
 alG
-aoJ
+hJq
 anQ
 aoI
 aoR
