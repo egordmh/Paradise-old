@@ -91,7 +91,7 @@
 			colormatrix[7], colormatrix[8], colormatrix[9],
 		)
 	usr << browse_rsc(img_shown, "tmp_photo.png")
-	usr << browse({"<html><meta charset="UTF-8"><head><title>[name]</title></head>"} \
+	usr << browse("<html><head><title>[name]</title></head>" \
 		+ "<body style='overflow:hidden;margin:0;text-align:center'>" \
 		+ "<img src='tmp_photo.png' width='[64*photo_size]' style='-ms-interpolation-mode:nearest-neighbor' />" \
 		+ "[scribble ? "<br>Written on the back:<br><i>[scribble]</i>" : ""]"\
@@ -104,7 +104,7 @@
 	set category = "Object"
 	set src in usr
 
-	var/n_name = sanitize(copytext_char(input(usr, "What would you like to label the photo?", "Photo Labelling", name) as text, 1, MAX_NAME_LEN))
+	var/n_name = sanitize(copytext(input(usr, "What would you like to label the photo?", "Photo Labelling", name) as text, 1, MAX_NAME_LEN))
 	//loc.loc check is for making possible renaming photos in clipboards
 	if(( (loc == usr || (loc.loc && loc.loc == usr)) && usr.stat == 0))
 		name = "[(n_name ? text("[n_name]") : "photo")]"

@@ -16,12 +16,10 @@
 	var/screen = 0
 
 /obj/item/paper_bundle/New(default_papers = TRUE)
-	. = ..()
 	if(default_papers) // This is to avoid runtime occuring from a paper bundle being created without a paper in it.
 		new /obj/item/paper(src)
 		new /obj/item/paper(src)
 		amount += 1
-		
 /obj/item/paper_bundle/attackby(obj/item/W as obj, mob/user as mob, params)
 	..()
 	var/obj/item/paper/P
@@ -109,7 +107,7 @@
 		. += "<span class='notice'>It is too far away.</span>"
 
 /obj/item/paper_bundle/proc/show_content(mob/user as mob)
-	var/dat = {"<html><meta charset="UTF-8">"}
+	var/dat
 	var/obj/item/W = src[page]
 	switch(screen)
 		if(0)
@@ -127,11 +125,11 @@
 	if(istype(src[page], /obj/item/paper))
 		var/obj/item/paper/P = W
 		dat += P.show_content(usr, view = 0)
-		usr << browse(dat, "window=PaperBundle[UID()];size=[P.paper_width]x[P.paper_height]")
+		usr << browse(dat, "window=PaperBundle[UID()]")
 	else if(istype(src[page], /obj/item/photo))
 		var/obj/item/photo/P = W
 		usr << browse_rsc(P.img, "tmp_photo.png")
-		usr << browse(dat + {"<html><meta charset="UTF-8"><head><title>[P.name]</title></head>"} \
+		usr << browse(dat + "<html><head><title>[P.name]</title></head>" \
 		+ "<body style='overflow:hidden'>" \
 		+ "<div> <img src='tmp_photo.png' width = '180'" \
 		+ "[P.scribble ? "<div><br> Written on the back:<br><i>[P.scribble]</i>" : ""]"\
@@ -194,7 +192,7 @@
 	set category = "Object"
 	set src in usr
 
-	var/n_name = sanitize(copytext_char(input(usr, "What would you like to label the bundle?", "Bundle Labelling", name) as text, 1, MAX_NAME_LEN))
+	var/n_name = sanitize(copytext(input(usr, "What would you like to label the bundle?", "Bundle Labelling", name) as text, 1, MAX_NAME_LEN))
 	if((loc == usr && usr.stat == 0))
 		name = "[(n_name ? text("[n_name]") : "paper bundle")]"
 	add_fingerprint(usr)
