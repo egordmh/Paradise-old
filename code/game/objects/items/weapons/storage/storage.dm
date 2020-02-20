@@ -82,6 +82,8 @@
 			return
 	return
 
+/obj/item/storage/AltClick(mob/user)
+	MouseDrop(user)
 
 /obj/item/storage/proc/return_inv()
 
