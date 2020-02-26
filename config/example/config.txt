@@ -482,3 +482,16 @@ DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
 ## BYOND accounts younger than the value below will alert admins when they connect for the first time,
 ## as well as making the BYOND account age in player panel bold
 BYOND_ACCOUNT_AGE_THRESHOLD 7
+
+
+## Uncomment to disable respawning by default.
+#DISABLE_RESPAWN
+
+## Uncomment to allow players joined as observer respawning.
+#RESPAWN_OBSERVER
+
+## Respawn delay in minutes before one may respawn as a crew member.
+RESPAWN_DELAY 20
+
+## Respawn delay in minutes before one may respawn as a drone.
+RESPAWN_DELAY_DRONE 10

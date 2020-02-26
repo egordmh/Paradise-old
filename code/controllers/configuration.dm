@@ -254,6 +254,11 @@
 	/// BYOND account age limit for notifcations of new accounts (Any accounts older than this value will not send notifications on first join)
 	var/byond_account_age_threshold = 7
 
+	// Delay before respawning for players and drones (minutes)
+	var/respawn_delay = 20
+	var/respawn_delay_drone = 10
+	var/respawn_observer = FALSE
+
 /datum/configuration/New()
 	for(var/T in subtypesof(/datum/game_mode))
 		var/datum/game_mode/M = T
@@ -763,6 +768,18 @@
 					config.enable_gamemode_player_limit = 1
 				if("byond_account_age_threshold")
 					config.byond_account_age_threshold = text2num(value)
+
+				if ("disable_respawn")
+					GLOB.abandon_allowed = 0
+				if ("respawn_observer")
+					config.respawn_observer = TRUE
+				if ("respawn_delay")
+					config.respawn_delay = text2num(value)
+					config.respawn_delay = config.respawn_delay > 0 ? config.respawn_delay : 0
+				if ("respawn_delay_drone")
+					config.respawn_delay_drone = text2num(value)
+					config.respawn_delay_drone = config.respawn_delay_drone > 0 ? config.respawn_delay_drone : 0
+
 				else
 					log_config("Unknown setting in configuration: '[name]'")
 
