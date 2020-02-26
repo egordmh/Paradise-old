@@ -119,6 +119,7 @@
 	if(istype(I, /obj/item/gripper))
 		var/obj/item/gripper/G = I
 		G.drop_item_p(silent = 1)
+		return TRUE
 	return
 
 //Helper procs for cyborg modules on the UI.
