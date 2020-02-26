@@ -44,7 +44,6 @@
 	var/allow_Metadata = 0				// Metadata is supported.
 	var/popup_admin_pm = 0				//adminPMs to non-admins show in a pop-up 'reply' window when set to 1.
 	var/Ticklag = 0.5
-	var/clientfps = 65					// Default fps for clients with "0" in prefs. -1 for synced with server.
 	var/socket_talk	= 0					// use socket_talk to communicate with other processes
 	var/list/resource_urls = null
 	var/antag_hud_allowed = 0      // Ghosts can turn on Antagovision to see a HUD of who is the bad guys this round.
@@ -110,7 +109,6 @@
 	var/forbid_singulo_possession = 0
 
 	var/check_randomizer = 0
-	var/proxy_autoban = 0
 
 	//game_options.txt configs
 
@@ -162,7 +160,7 @@
 	var/simultaneous_pm_warning_timeout = 100
 
 	var/assistant_maint = 0 //Do assistants get maint access?
-	var/gateway_delay = 6000
+	var/gateway_delay = 6000 //How long the gateway takes before it activates. Default is half an hour.
 	var/ghost_interaction = 0
 
 	var/comms_password = ""
@@ -253,15 +251,10 @@
 	// Makes gamemodes respect player limits
 	var/enable_gamemode_player_limit = 0
 
-	/// BYOND account age limit for notifcations of new accounts (Any accounts older than this value will not send notifications on first join)
-	var/byond_account_age_threshold = 7
-
 	// Delay before respawning for players and drones (minutes)
 	var/respawn_delay = 20
 	var/respawn_delay_drone = 10
 	var/respawn_observer = FALSE
-
-	var/restrict_maint = 0
 
 /datum/configuration/New()
 	for(var/T in subtypesof(/datum/game_mode))
@@ -535,7 +528,7 @@
 					config.allow_Metadata = 1
 
 				if("traitor_scaling")
-					config.traitor_scaling = text2num(value)
+					config.traitor_scaling = 1
 
 				if("protect_roles_from_antagonist")
 					config.protect_roles_from_antagonist = 1
@@ -582,9 +575,6 @@
 				if("check_randomizer")
 					check_randomizer = 1
 
-				if("proxy_autoban")
-					config.proxy_autoban = 1
-
 				if("popup_admin_pm")
 					config.popup_admin_pm = 1
 
@@ -596,9 +586,6 @@
 
 				if("ticklag")
 					Ticklag = text2num(value)
-
-				if("clientfps")
-					clientfps = text2num(value)
 
 				if("socket_talk")
 					socket_talk = text2num(value)
@@ -776,8 +763,6 @@
 					config.disable_localhost_admin = 1
 				if("enable_gamemode_player_limit")
 					config.enable_gamemode_player_limit = 1
-				if("byond_account_age_threshold")
-					config.byond_account_age_threshold = text2num(value)
 
 				if ("disable_respawn")
 					GLOB.abandon_allowed = 0
@@ -789,9 +774,6 @@
 				if ("respawn_delay_drone")
 					config.respawn_delay_drone = text2num(value)
 					config.respawn_delay_drone = config.respawn_delay_drone > 0 ? config.respawn_delay_drone : 0
-
-				if ("restrict_maint")
-					config.restrict_maint = text2num(value)
 
 				else
 					log_config("Unknown setting in configuration: '[name]'")

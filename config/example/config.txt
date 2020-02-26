@@ -147,8 +147,8 @@ SHADOWLING_MAX_AGE 0
 ## Hash out to disable random events during the round.
 ALLOW_RANDOM_EVENTS
 
-## How much does the amount of players get divided by to determine traitors. Set to 0 for hard limit traitors to 4.
-TRAITOR_SCALING 10
+## if amount of traitors scales or not
+TRAITOR_SCALING
 
 ## If security is prohibited from being most antagonists
 PROTECT_ROLES_FROM_ANTAGONIST
@@ -242,9 +242,6 @@ PANIC_BUNKER_THRESHOLD 150
 ## Comment to disable checking for the cid randomizer dll. (disabled if database isn't enabled or connected)
 CHECK_RANDOMIZER
 
-## Uncomment for automatic ban if proxy detected
-#PROXY_AUTOBAN
-
 ## the whitelist
 #USEWHITELIST
 
@@ -297,9 +294,6 @@ ALLOW_HOLIDAYS
 
 ##Defines the ticklag for the world.  0.9 is the normal one, 0.5 is smoother.
 TICKLAG 0.5
-
-##Defines the fps for the players with 0 in preferences. -1 for synced with server fps.
-CLIENTFPS 65
 
 ## Whether the server will talk to other processes through socket_talk
 SOCKET_TALK 0
@@ -485,10 +479,6 @@ DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
 ## If uncommented, all gamemodes will respect the number of required players. Defaults to no.
 #ENABLE_GAMEMODE_PLAYER_LIMIT
 
-## BYOND accounts younger than the value below will alert admins when they connect for the first time,
-## as well as making the BYOND account age in player panel bold
-BYOND_ACCOUNT_AGE_THRESHOLD 7
-
 
 ## Uncomment to disable respawning by default.
 #DISABLE_RESPAWN
@@ -501,6 +491,3 @@ RESPAWN_DELAY 20
 
 ## Respawn delay in minutes before one may respawn as a drone.
 RESPAWN_DELAY_DRONE 10
-
-## Force restrict maint access. 0 - Disabled, 1 - Engie/Brig, 2 - Brig only.
-#RESTRICT_MAINT 0
