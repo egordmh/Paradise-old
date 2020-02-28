@@ -8072,6 +8072,7 @@
 /area/admin)
 "ut" = (
 /obj/machinery/computer/message_monitor,
+/obj/item/paper/monitorkey,
 /turf/unsimulated/floor{
 	icon_state = "floor"
 	},
