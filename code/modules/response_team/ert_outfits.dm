@@ -171,7 +171,7 @@
 	name = "RT Security (Gamma)"
 	shoes = /obj/item/clothing/shoes/magboots/advance
 	gloves = /obj/item/clothing/gloves/combat
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/security/gamma
+	suit = /obj/item/clothing/suit/space/hardsuit/shielded/ert/security
 	belt = /obj/item/storage/belt/security/response_team_gamma
 	suit_store = /obj/item/gun/energy/gun/nuclear
 	glasses = /obj/item/clothing/glasses/night

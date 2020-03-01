@@ -6226,6 +6226,7 @@
 /area/centcom/specops)
 "qk" = (
 /obj/item/gun/projectile/automatic/pistol/m1911,
+/obj/item/clothing/suit/space/hardsuit/shielded/deathsquad,
 /obj/item/ammo_box/magazine/m45,
 /obj/item/ammo_box/magazine/m45,
 /obj/item/ammo_box/magazine/m45,
