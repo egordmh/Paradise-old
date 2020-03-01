@@ -262,6 +262,23 @@ var/list/ghostteleportlocs = list()
 	name = "\improper Special Ops Shuttle"
 	icon_state = "shuttlered2"
 
+////////////////////////////////////////////
+
+/area/shuttle/ert
+    name = "\improper ERT Shuttle"
+    icon_state = "shuttlered"
+    parallax_movedir = EAST
+
+/area/shuttle/ert/centcom
+    name = "\improper ERT Shuttle"
+    icon_state = "shuttlered"
+
+/area/shuttle/ert/station
+    name = "\improper ERT Shuttle"
+    icon_state = "shuttlered2"
+
+//////////////////////////////////////////////
+
 /area/shuttle/syndicate_elite
 	name = "\improper Syndicate Elite Shuttle"
 	icon_state = "shuttlered"
@@ -2307,6 +2324,7 @@ var/list/centcom_areas = list (
 	/area/shuttle/transport1,
 	/area/shuttle/administration/centcom,
 	/area/shuttle/specops/centcom,
+	/area/shuttle/specops/centcom,
 )
 
 //SPACE STATION 13
@@ -2320,6 +2338,7 @@ var/list/the_station_areas = list (
 	/area/shuttle/prison/station,
 	/area/shuttle/administration/station,
 	/area/shuttle/specops/station,
+	/area/shuttle/ert/centcom,
 	/area/atmos,
 	/area/maintenance,
 	/area/hallway,
