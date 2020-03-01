@@ -1,12 +1,13 @@
 //Please use mob or src (not usr) in these procs. This way they can be called in the same fashion as procs.
-/client/verb/wiki()
+/client/verb/wiki(query as text)
 	set name = "wiki"
 	set desc = "Type what you want to know about.  This will open the wiki in your web browser."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'WIKI\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'WIKI\' button!</span>")
 	if(config.wikiurl)
-		if(alert("Open the wiki in your browser?", null, "Yes", "No") == "Yes")
+		if(query)
+			var/output = config.wikiurl + "/index.php?title=Special%3ASearch&profile=default&search=" + query
+			src << link(output)
+		else
 			src << link(config.wikiurl)
 	else
 		to_chat(src, "<span class='danger'>The wiki URL is not set in the server configuration.</span>")
@@ -16,10 +17,8 @@
 	set name = "forum"
 	set desc = "Visit the forum."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'FORUM\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'FORUM\' button!</span>")
 	if(config.forumurl)
-		if(alert("Open the forum in your browser?", null, "Yes", "No") == "Yes")
+		if(alert("Open the forum in your browser?",,"Yes","No")=="Yes")
 			if(config.forum_link_url && prefs && !prefs.fuid)
 				link_forum_account()
 			src << link(config.forumurl)
@@ -30,10 +29,8 @@
 	set name = "Rules"
 	set desc = "View the server rules."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'RULES\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'RULES\' button!</span>")
 	if(config.rulesurl)
-		if(alert("This will open the rules in your browser. Are you sure?", null, "Yes", "No") == "No")
+		if(alert("This will open the rules in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.rulesurl)
 	else
@@ -43,10 +40,8 @@
 	set name = "GitHub"
 	set desc = "Visit the GitHub page."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'GITHUB\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'GITHUB\' button!</span>")
 	if(config.githuburl)
-		if(alert("This will open our GitHub repository in your browser. Are you sure?", null, "Yes", "No") == "No")
+		if(alert("This will open our GitHub repository in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.githuburl)
 	else
@@ -56,8 +51,6 @@
 	set name = "Discord"
 	set desc = "Join our Discord server."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'DISCORD\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'DISCORD\' button!</span>")
 
 	var/durl = config.discordurl
 	if(config.forum_link_url && prefs && prefs.fuid && config.discordforumurl)
@@ -65,7 +58,7 @@
 	if(!durl)
 		to_chat(src, "<span class='danger'>The Discord URL is not set in the server configuration.</span>")
 		return
-	if(alert("This will invite you to our Discord server. Are you sure?", null, "Yes", "No") == "No")
+	if(alert("This will invite you to our Discord server. Are you sure?",,"Yes","No")=="No")
 		return
 	src << link(durl)
 
@@ -73,10 +66,8 @@
 	set name = "Donate"
 	set desc = "Donate to help with hosting costs."
 	set hidden = 1
-	log_admin("[key_name(src)] has pressed the \'DONATE\' button!")
-	message_admins("[key_name_admin(src)] <span class='red'>has pressed the \'DONATE\' button!</span>")
 	if(config.donationsurl)
-		if(alert("This will open the donation page in your browser. Are you sure?", null, "Yes", "No") == "No")
+		if(alert("This will open the donation page in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.donationsurl)
 	else
@@ -116,15 +107,13 @@ Hotkey-Mode: (hotkey-mode must be on)
 \tQ = drop
 \tE = equip
 \tR = throw
-\tC = stop pulling
 \tM = me
-\tT = say (+SHIFT - whisper)
+\tT = say
 \tO = OOC
-\tL = LOOC
-\tB = resist (+SHIFT - rest)
+\tB = resist
 \tH = Holster/unholster gun if you have a holster
 \tX = swap-hand
-\tZ = activate held object (or Y)
+\tZ = activate held object (or y)
 \tF = cycle-intents-left
 \tG = cycle-intents-right
 \t1 = help-intent
@@ -144,14 +133,11 @@ Any-Mode: (hotkey doesn't need to be on)
 \tCtrl+Q = drop
 \tCtrl+E = equip
 \tCtrl+R = throw
-\tCtrl+C = stop pulling
-\tCtrl+M = me
-\tCtrl+T = say (+SHIFT - whisper)
+\tCtrl+B = resist
+\tCtrl+H = stop pulling
 \tCtrl+O = OOC
-\tCtrl+L = LOOC
-\tCtrl+B = resist (+SHIFT - rest)
 \tCtrl+X = swap-hand
-\tCtrl+Z = activate held object (or Ctrl+Y)
+\tCtrl+Z = activate held object (or Ctrl+y)
 \tCtrl+F = cycle-intents-left
 \tCtrl+G = cycle-intents-right
 \tCtrl+1 = help-intent
@@ -165,9 +151,6 @@ Any-Mode: (hotkey doesn't need to be on)
 \tPGDN = activate held object
 \tEND = throw
 \tCtrl+Numpad = Body target selection (Press 8 repeatedly for Head->Eyes->Mouth)
-\tF2 = OOC
-\tF3 = Say (+SHIFT - whisper)
-\tF4 = Me
 \tF11 = Fulscreen
 \tCtrl+F11 = Fit Viewport
 </font>"}
@@ -184,13 +167,11 @@ Hotkey-Mode: (hotkey-mode must be on)
 \tD = Move Right
 \tW = Move Up
 \tQ = Unequip Active Module
-\tC = Stop pulling
 \tM = Me
-\tT = Say (+SHIFT - whisper)
+\tT = Say
 \tO = OOC
-\tL = LOOC
 \tX = Cycle Active Modules
-\tB = Resist (+SHIFT - rest)
+\tB = Resist
 \tZ or Y = Activate Held Object
 \tF = Cycle Intents Left
 \tG = Cycle Intents Right
@@ -207,13 +188,9 @@ Any-Mode: (hotkey doesn't need to be on)
 \tCtrl+D = Move Right
 \tCtrl+W = Move Up
 \tCtrl+Q = Unequip Active Module
-\tCtrl+C = Stop pulling
-\tCtrl+M = Me
-\tCtrl+T = Say (+SHIFT - whisper)
-\tCtrl+O = OOC
-\tCtrl+L = LOOC
 \tCtrl+X = Cycle Active Modules
-\tCtrl+B = Resist (+SHIFT - rest)
+\tCtrl+B = Resist
+\tCtrl+O = OOC
 \tCtrl+Z or Ctrl+Y = Activate Held Object
 \tCtrl+F = Cycle Intents Left
 \tCtrl+G = Cycle Intents Right
@@ -226,7 +203,7 @@ Any-Mode: (hotkey doesn't need to be on)
 \tPGUP = Cycle Active Modules
 \tPGDN = Activate Held Object
 \tF2 = OOC
-\tF3 = Say (+SHIFT - whisper)
+\tF3 = Say
 \tF4 = Me
 \tF11 = Fulscreen
 \tCtrl+F11 = Fit Viewport

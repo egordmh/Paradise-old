@@ -36,10 +36,7 @@
 		////////////
 		//SECURITY//
 		////////////
-
-	///Used for limiting the rate of topic sends by the client to avoid abuse
-	var/list/topiclimiter
-
+	var/next_allowed_topic_time = 10
 	// comment out the line below when debugging locally to enable the options & messages menu
 	//control_freak = 1
 
@@ -71,8 +68,6 @@
 
 	var/datum/click_intercept/click_intercept = null
 
-	var/datum/geoip_data/geoip = null
-
 	//datum that controls the displaying and hiding of tooltips
 	var/datum/tooltip/tooltips
 
@@ -93,13 +88,5 @@
 
 	var/fullscreen = FALSE
 
-	/// Messages currently seen by this client
-	var/list/seen_messages
-
 	// Last world.time that the player tried to request their resources.
 	var/last_ui_resource_send = 0
-
-	/// Date the client registered their BYOND account on
-	var/byondacc_date
-	/// Days since the client's BYOND account was created
-	var/byondacc_age = 0

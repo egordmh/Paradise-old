@@ -11,13 +11,6 @@
 #define SUGGESTED_CLIENT_VERSION	511		// only integers (e.g: 510, 511) useful here. Does not properly handle minor versions (e.g: 510.58, 511.848)
 #define SSD_WARNING_TIMER 30 // cycles, not seconds, so 30=60s
 
-#define LIMITER_SIZE	5
-#define CURRENT_SECOND	1
-#define SECOND_COUNT	2
-#define CURRENT_MINUTE	3
-#define MINUTE_COUNT	4
-#define ADMINSWARNED_AT	5
-
 	/*
 	When somebody clicks a link in game, this Topic is called first.
 	It does the stuff in this proc and  then is redirected to the Topic() proc for the src=[0xWhatever]
@@ -66,38 +59,10 @@
 	if(href_list["_src_"] == "chat")
 		return chatOutput.Topic(href, href_list)
 
-	// Rate limiting
-	var/mtl = 100 // 100 topics per minute
-	if (!holder) // Admins are allowed to spam click, deal with it.
-		var/minute = round(world.time, 600)
-		if (!topiclimiter)
-			topiclimiter = new(LIMITER_SIZE)
-		if (minute != topiclimiter[CURRENT_MINUTE])
-			topiclimiter[CURRENT_MINUTE] = minute
-			topiclimiter[MINUTE_COUNT] = 0
-		topiclimiter[MINUTE_COUNT] += 1
-		if (topiclimiter[MINUTE_COUNT] > mtl)
-			var/msg = "Your previous action was ignored because you've done too many in a minute."
-			if (minute != topiclimiter[ADMINSWARNED_AT]) //only one admin message per-minute. (if they spam the admins can just boot/ban them)
-				topiclimiter[ADMINSWARNED_AT] = minute
-				msg += " Administrators have been informed."
-				log_game("[key_name(src)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
-				message_admins("[ADMIN_LOOKUPFLW(usr)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
-			to_chat(src, "<span class='danger'>[msg]</span>")
-			return
-
-	var/stl = 10 // 10 topics a second
-	if (!holder) // Admins are allowed to spam click, deal with it.
-		var/second = round(world.time, 10)
-		if (!topiclimiter)
-			topiclimiter = new(LIMITER_SIZE)
-		if (second != topiclimiter[CURRENT_SECOND])
-			topiclimiter[CURRENT_SECOND] = second
-			topiclimiter[SECOND_COUNT] = 0
-		topiclimiter[SECOND_COUNT] += 1
-		if (topiclimiter[SECOND_COUNT] > stl)
-			to_chat(src, "<span class='danger'>Your previous action was ignored because you've done too many in a second</span>")
-			return
+	//Reduces spamming of links by dropping calls that happen during the delay period
+	if(next_allowed_topic_time > world.time)
+		return
+	next_allowed_topic_time = world.time + TOPIC_SPAM_DELAY
 
 	//search the href for script injection
 	if( findtext(href,"<script",1,0) )
@@ -108,9 +73,13 @@
 
 	//Admin PM
 	if(href_list["priv_msg"])
-		var/ckey_txt = href_list["priv_msg"]
+		var/client/C = locate(href_list["priv_msg"])
 
-		cmd_admin_pm(ckey_txt, null, href_list["type"])
+		if(!C) // Might be a stealthmin ID, so pass it in straight
+			C = href_list["priv_msg"]
+		else if(C.UID() != href_list["priv_msg"])
+			C = null // 404 client not found. Let cmd_admin_pm handle the error
+		cmd_admin_pm(C, null, href_list["type"])
 		return
 
 	if(href_list["irc_msg"])
@@ -264,7 +233,6 @@
 		to_chat(src, "<span class='notice'>SSD warning acknowledged.</span>")
 	if(href_list["link_forum_account"])
 		link_forum_account()
-		return // prevents a recursive loop where the ..() 5 lines after this makes the proc endlessly re-call itself
 	switch(href_list["action"])
 		if("openLink")
 			src << link(href_list["link"])
@@ -336,6 +304,11 @@
 	if(byond_version < SUGGESTED_CLIENT_VERSION) // Update is suggested, but not required.
 		to_chat(src,"<span class='userdanger'>Your BYOND client (v: [byond_version]) is out of date. This can cause glitches. We highly suggest you download the latest client from http://www.byond.com/ before playing. </span>")
 
+	if(IsGuestKey(key))
+		alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest","OK")
+		qdel(src)
+		return
+
 	to_chat(src, "<span class='warning'>If the title screen is black, resources are still downloading. Please be patient until the title screen appears.</span>")
 
 
@@ -362,9 +335,6 @@
 	prefs.last_id = computer_id			//these are gonna be used for banning
 	if(world.byond_version >= 511 && byond_version >= 511 && prefs.clientfps)
 		fps = prefs.clientfps
-
-	if(world.byond_version >= 511 && byond_version >= 511 && !prefs.clientfps)
-		fps = config.clientfps
 
 	spawn() // Goonchat does some non-instant checks in start()
 		chatOutput.start()
@@ -402,14 +372,14 @@
 	check_ip_intel()
 	send_resources()
 
-	if(prefs.toggles & PREFTOGGLE_UI_DARKMODE) // activates dark mode if its flagged. -AA07
+	if(prefs.toggles & UI_DARKMODE) // activates dark mode if its flagged. -AA07
 		activate_darkmode()
 	else
 		// activate_darkmode() calls the CL update button proc, so we dont want it double called
 		SSchangelog.UpdatePlayerChangelogButton(src)
 
 
-	if(prefs.toggles & PREFTOGGLE_DISABLE_KARMA) // activates if karma is disabled
+	if(prefs.toggles & DISABLE_KARMA) // activates if karma is disabled
 		if(establish_db_connection())
 			to_chat(src,"<span class='notice'>You have disabled karma gains.") // reminds those who have it disabled
 	else
@@ -429,9 +399,6 @@
 
 	if(!winexists(src, "asset_cache_browser")) // The client is using a custom skin, tell them.
 		to_chat(src, "<span class='warning'>Unable to access asset cache browser, if you are using a custom skin file, please allow DS to download the updated version, if you are not, then make a bug report. This is not a critical issue but can cause issues with resource downloading, as it is impossible to know when extra resources arrived to you.</span>")
-
-	if(!geoip)
-		geoip = new(src, address)
 
 	//This is down here because of the browse() calls in tooltip/New()
 	if(!tooltips)
@@ -589,8 +556,6 @@
 			var/err = query_update.ErrorMsg()
 			log_game("SQL ERROR during log_client_to_db (update). Error : \[[err]\]\n")
 			message_admins("SQL ERROR during log_client_to_db (update). Error : \[[err]\]\n")
-		// After the regular update
-		INVOKE_ASYNC(src, /client/.proc/get_byond_account_date, FALSE) // Async to avoid other procs in the client chain being delayed by a web request
 	else
 		//New player!! Need to insert all the stuff
 
@@ -606,9 +571,6 @@
 			var/err = query_insert.ErrorMsg()
 			log_game("SQL ERROR during log_client_to_db (insert). Error : \[[err]\]\n")
 			message_admins("SQL ERROR during log_client_to_db (insert). Error : \[[err]\]\n")
-		// This is their first connection instance, so TRUE here to nofiy admins
-		// This needs to happen here to ensure they actually have a row to update
-		INVOKE_ASYNC(src, /client/.proc/get_byond_account_date, TRUE) // Async to avoid other procs in the client chain being delayed by a web request
 
 	// Log player connections to DB
 	var/DBQuery/query_accesslog = GLOB.dbcon.NewQuery("INSERT INTO `[format_table_name("connection_log")]`(`datetime`,`ckey`,`ip`,`computerid`) VALUES(Now(),'[ckey]','[sql_ip]','[sql_computerid]');")
@@ -1026,31 +988,6 @@
 	set hidden = 1
 	fit_viewport()
 
-/client/verb/link_discord_account()
-	set name = "Привязка Discord"
-	set category = "Special Verbs"
-	set desc = "Привязать аккаунт Discord для удобного просмотра игровой статистики на нашем Discord-сервере."
-
-	if(!config.discordurl)
-		return
-	if(IsGuestKey(key))
-		to_chat(usr, "Гостевой аккаунт не может быть связан.")
-		return
-	if(prefs)
-		prefs.load_preferences(usr)
-	if(prefs && prefs.discord_id && length(prefs.discord_id) < 32)
-		to_chat(usr, "<span class='darkmblue'>Аккаунт Discord уже привязан! Чтобы отвязать используйте команду <span class='boldannounce'>!отвязать_аккаунт</span> на Discord-сервере.</span>")
-		return
-	var/token = md5("[world.time+rand(1000,1000000)]")
-	var/DBQuery/query_find_link = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET discord_id='[token]' WHERE ckey = '[ckey]'")
-	if(!query_find_link.Execute())
-		to_chat(usr, "<span class='warning'>Ошибка записи токена в БД! Обратитесь к администрации.</span>")
-		log_debug("link_discord_account: failed db update discord_id for ckey [ckey]")
-		return
-	to_chat(usr, "<span class='darkmblue'>Для завершения используйте команду <span class='boldannounce'>!привязать_аккаунт [token]</span> на Discord-сервере!</span>")
-	if(prefs)
-		prefs.load_preferences(usr)
-
 /client/verb/resend_ui_resources()
 	set name = "Reload UI Resources"
 	set desc = "Reload your UI assets if they are not working"
@@ -1076,146 +1013,9 @@
 		var/datum/asset/tgui_assets = get_asset_datum(/datum/asset/simple/tgui)
 		tgui_assets.register()
 
-		var/datum/asset/nanomaps = get_asset_datum(/datum/asset/simple/nanomaps)
-		nanomaps.register()
-
 		// Clear the user's cache so they get resent.
 		// This is not fully clearing their BYOND cache, just their assets sent from the server this round
 		cache = list()
 
 		to_chat(usr, "<span class='notice'>UI resource files resent successfully. If you are still having issues, please try manually clearing your BYOND cache. <b>This can be achieved by opening your BYOND launcher, pressing the cog in the top right, selecting preferences, going to the Games tab, and pressing 'Clear Cache'.</b></span>")
 
-/client/proc/check_say_flood(rate = 5)
-	client_keysend_amount += rate
-
-	if(keysend_tripped && next_keysend_trip_reset <= world.time)
-		keysend_tripped = FALSE
-
-	if(next_keysend_reset <= world.time)
-		client_keysend_amount = 0
-		next_keysend_reset = world.time + (1 SECONDS)
-
-	if(client_keysend_amount >= MAX_KEYPRESS_AUTOKICK)
-		if(!keysend_tripped)
-			keysend_tripped = TRUE
-			next_keysend_trip_reset = world.time + (2 SECONDS)
-		else
-			log_admin("Client [ckey] was just autokicked for flooding Say sends; likely abuse but potentially lagspike.")
-			message_admins("Client [ckey] was just autokicked for flooding Say sends; likely abuse but potentially lagspike.")
-			qdel(src)
-			return
-
-/**
-  * Retrieves the BYOND accounts data from the BYOND servers
-  *
-  * Makes a web request to byond.com to retrieve the details for the BYOND account associated with the clients ckey.
-  * Returns the data in a parsed, associative list
-  */
-/client/proc/retrieve_byondacc_data()
-	var/list/http[] = world.Export("http://www.byond.com/members/[ckey]?format=text")
-	if(http)
-		var/status = text2num(http["STATUS"])
-
-		if(status == 200)
-			// This is wrapped in try/catch because lummox could change the format on any day without informing anyone
-			try
-				var/list/lines = splittext(file2text(http["CONTENT"]), "\n")
-				var/list/initial_data = list()
-				var/current_index = ""
-				for(var/L in lines)
-					if(L == "")
-						continue
-					if(!findtext(L, "\t"))
-						current_index = L
-						initial_data[current_index] = list()
-						continue
-					initial_data[current_index] += replacetext(replacetext(L, "\t", ""), "\"", "")
-
-				var/list/parsed_data = list()
-
-				for(var/key in initial_data)
-					var/inner_list = list()
-					for(var/entry in initial_data[key])
-						var/list/split = splittext(entry, " = ")
-						var/inner_key = split[1]
-						var/inner_value = split[2]
-						inner_list[inner_key] = inner_value
-
-					parsed_data[key] = inner_list
-
-				// Main return is here
-				return parsed_data
-			catch
-				message_admins("Error parsing byond.com data for [ckey]. Please inform maintainers.")
-				return null
-		else
-			message_admins("Error retrieving data from byond.com for [ckey]. Invalid status code (Expected: 200 | Got: [status]).")
-			return null
-	else
-		message_admins("Failed to retrieve data from byond.com for [ckey]. Connection failed.")
-		return null
-
-
-/**
-  * Sets the clients BYOND date up properly
-  *
-  * If the client does not have a saved BYOND account creation date, retrieve it from the website
-  * If they do have a saved date, use that from the DB, because this value will never change
-  * Arguments:
-  * * notify - Do we notify admins of this new accounts date
-  */
-
-/client/proc/get_byond_account_date(notify = FALSE)
-	// First we see if the client has a saved date in the DB
-	var/sql_ckey = sanitizeSQL(ckey)
-	var/DBQuery/query_date = GLOB.dbcon.NewQuery("SELECT byond_date, DATEDIFF(Now(), byond_date) FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
-	if(!query_date.Execute())
-		var/err = query_date.ErrorMsg()
-		log_game("SQL ERROR during get_byond_account_date (Line 1047). Error: \[[err]\]\n")
-		message_admins("SQL ERROR during get_byond_account_date (Line 1047). Error: \[[err]\]\n")
-
-	while(query_date.NextRow())
-		byondacc_date = query_date.item[1]
-		byondacc_age = max(text2num(query_date.item[2]), 0) // Ensure account isnt negative days old
-
-	// They have a date, lets bail
-	if(byondacc_date)
-		return
-
-	// They dont have a date, lets grab one
-	var/list/byond_data = retrieve_byondacc_data()
-	if(isnull(byond_data) || !(byond_data["general"]["joined"]))
-		message_admins("Failed to retrieve an account creation date for [ckey].")
-		return
-
-	byondacc_date = byond_data["general"]["joined"]
-
-	// Now save it
-	var/sql_date = sanitizeSQL(byondacc_date) // Yes, this is top level paranoia
-	var/DBQuery/query_update = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET byond_date = '[sql_date]' WHERE ckey = '[sql_ckey]'")
-	if(!query_update.Execute())
-		var/err = query_update.ErrorMsg()
-		log_game("SQL ERROR during get_byond_account_date (Line 1071). Error: \[[err]\]\n")
-		message_admins("SQL ERROR during get_byond_account_date (Line 1071). Error: \[[err]\]\n")
-
-	// Now retrieve the age again because BYOND doesnt have native methods for this
-	var/DBQuery/query_age = GLOB.dbcon.NewQuery("SELECT DATEDIFF(Now(), byond_date) FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
-	if(!query_age.Execute())
-		var/err = query_age.ErrorMsg()
-		log_game("SQL ERROR during get_byond_account_date (Line 1078). Error: \[[err]\]\n")
-		message_admins("SQL ERROR during get_byond_account_date (Line 1078). Error: \[[err]\]\n")
-
-	while(query_age.NextRow())
-		byondacc_age = max(text2num(query_age.item[1]), 0) // Ensure account isnt negative days old
-
-	// Notify admins on new clients connecting, if the byond account age is less than a config value
-	if(notify && (byondacc_age < config.byond_account_age_threshold))
-		message_admins("[key] has just connected for the first time. BYOND account registered on [byondacc_date] ([byondacc_age] days old)")
-
-
-#undef LIMITER_SIZE
-#undef CURRENT_SECOND
-#undef SECOND_COUNT
-#undef CURRENT_MINUTE
-#undef MINUTE_COUNT
-#undef ADMINSWARNED_AT
