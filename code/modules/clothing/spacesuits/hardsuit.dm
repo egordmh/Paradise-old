@@ -587,7 +587,7 @@
 	item_color = "syndi"
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
 
-//////Deathsquad Version
+/* //////Deathsquad Version
 
 /obj/item/clothing/suit/space/hardsuit/shielded/deathsquad
 	name = "deathsquad suit"
@@ -676,3 +676,4 @@
 	see_in_dark = 8
 	HUDType = SECHUD
 
+*/
