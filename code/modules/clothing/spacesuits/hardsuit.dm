@@ -595,14 +595,14 @@
 	icon_state = "deathsquad"
 	item_state = "swat_suit"
 	allowed = list(/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/tank,/obj/item/kitchen/knife/combat)
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	shield_state = "shield-red"
 	shield_on = "shield-red"
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	current_charges = 10
-	max_charges = 10 //How many charges total the shielding has
-	recharge_delay = 20 //How long after we've been shot before we can start recharging. 2 seconds here
+	current_charges = 5
+	max_charges = 5 //How many charges total the shielding has
+	recharge_delay = 150 //How long after we've been shot before we can start recharging. 15 seconds here
 	slowdown = 0
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/deathsquad
 	jetpack = /obj/item/tank/jetpack/suit
@@ -631,7 +631,7 @@
 	desc = "That's not red paint. That's real blood."
 	icon_state = "deathsquad"
 	item_state = "deathsquad"
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	actions_types = list() //No inbuilt light
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -647,33 +647,20 @@
 	icon_state = "ert_security"
 	item_state = "syndicate-black-red"
 	allowed = list(/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/tank,/obj/item/kitchen/knife/combat)
-	armor = list(melee = 45, bullet = 25, laser = 30, energy = 10, bomb = 25, bio = 100, rad = 50, fire = 80, acid = 80)
+	armor = list(melee = 45, bullet = 25, laser = 30, energy = 100, bomb = 25, bio = 100, rad = 50, fire = 80, acid = 80)
 	shield_state = "shield-old"
 	shield_on = "shield-old"
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	current_charges = 5
-	max_charges = 5 //How many charges total the shielding has
-	recharge_delay = 100 //How long after we've been shot before we can start recharging. 10 seconds here
+	current_charges = 3
+	max_charges = 3 //How many charges total the shielding has
+	recharge_delay = 250 //How long after we've been shot before we can start recharging. 25 seconds here
 	slowdown = 0
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/security/gamma
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/security/gamma //Шлем от обычного скафандра, потому что там есть камера.
 	jetpack = /obj/item/tank/jetpack/suit
 
 /obj/item/clothing/suit/space/hardsuit/shielded/deathsquad/attackby(mob/user)
 	return
-
-/obj/item/clothing/head/helmet/space/hardsuit/shielded/ert/security
-	name = "elite emergency response team security helmet"
-	desc = "A helmet worn by security members of a Nanotrasen Emergency Response Team. Has red highlights. Armoured and space ready."
-	icon_state = "hardsuit0-ert_security"
-	item_state = "syndicate-helm-black-red"
-	armor = list(melee = 45, bullet = 25, laser = 30, energy = 10, bomb = 25, bio = 100, rad = 50, fire = 80, acid = 80)
-	actions_types = list() //No inbuilt light
-	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	vision_flags = SEE_MOBS
-	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE //don't render darkness while wearing these
-	see_in_dark = 8
-	HUDType = SECHUD
+ 
 
 */
