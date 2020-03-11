@@ -79,10 +79,6 @@
 	..()
 	H.verbs -= /mob/living/carbon/human/proc/emote_creak
 
-/datum/species/diona/on_species_loss(mob/living/carbon/human/H)
-	. = ..()
-	H.clear_alert("nolight")
-
 /datum/species/diona/handle_reagents(mob/living/carbon/human/H, datum/reagent/R)
 	if(R.id == "glyphosate" || R.id == "atrazine")
 		H.adjustToxLoss(3) //Deal aditional damage
@@ -90,8 +86,9 @@
 	return ..()
 
 /datum/species/diona/handle_life(mob/living/carbon/human/H)
+	if(H.stat == DEAD)
+		return
 	var/light_amount = 0 //how much light there is in the place, affects receiving nutrition and healing
-	var/is_vamp = H.mind?.vampire != null
 	if(isturf(H.loc)) //else, there's considered to be no light
 		var/turf/T = H.loc
 		light_amount = min(1, T.get_lumcount()) - 0.5
@@ -99,12 +96,9 @@
 			H.clear_alert("nolight")
 		else
 			H.throw_alert("nolight", /obj/screen/alert/nolight)
-
-		if(!is_vamp)
-			H.adjust_nutrition(light_amount * 10)
-			if(H.nutrition > NUTRITION_LEVEL_ALMOST_FULL)
-				H.set_nutrition(NUTRITION_LEVEL_ALMOST_FULL)
-
+		H.adjust_nutrition(light_amount * 10)
+		if(H.nutrition > NUTRITION_LEVEL_ALMOST_FULL)
+			H.set_nutrition(NUTRITION_LEVEL_ALMOST_FULL)
 		if(light_amount > 0.2 && !H.suiciding) //if there's enough light, heal
 			if(!pod && H.health <= 0)
 				return
@@ -113,7 +107,7 @@
 			H.adjustToxLoss(-1)
 			H.adjustOxyLoss(-1)
 
-	if(!is_vamp && H.nutrition < NUTRITION_LEVEL_STARVING + 50)
+	if(H.nutrition < NUTRITION_LEVEL_STARVING + 50)
 		H.adjustBruteLoss(2)
 	..()
 
