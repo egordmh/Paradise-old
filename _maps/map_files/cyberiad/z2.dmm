@@ -1,8 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron6";
-	icon_state = "iron6"
+	icon_state = "iron6";
+	tag = "icon-iron6"
 	},
 /area/space)
 "ab" = (
@@ -25,8 +25,8 @@
 "af" = (
 /obj/structure/window/reinforced,
 /turf/unsimulated/wall{
-	tag = "icon-iron12";
-	icon_state = "iron12"
+	icon_state = "iron12";
+	tag = "icon-iron12"
 	},
 /area/space)
 "ag" = (
@@ -37,14 +37,13 @@
 /area/syndicate_mothership)
 "ah" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron14";
-	icon_state = "iron14"
+	icon_state = "iron14";
+	tag = "icon-iron14"
 	},
 /area/space)
 "ai" = (
 /obj/item/radio/intercom/syndicate{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -62,20 +61,20 @@
 	dir = 4
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
+	icon_state = "iron3";
+	tag = "icon-iron3"
 	},
 /area/space)
 "al" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/obj/machinery/door/poddoor{
+	id_tag = "ERTBFG";
+	name = "ERT Armory"
 	},
-/turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
+/turf/unsimulated/floor{
+	dir = 8;
+	icon_state = "vault"
 	},
-/area/space)
+/area/centcom/specops)
 "am" = (
 /turf/simulated/floor/holofloor{
 	dir = 1;
@@ -90,8 +89,8 @@
 	dir = 8
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
+	icon_state = "iron3";
+	tag = "icon-iron3"
 	},
 /area/space)
 "ao" = (
@@ -115,9 +114,8 @@
 /area/space)
 "ar" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_desert)
 "as" = (
@@ -136,9 +134,8 @@
 /obj/effect/landmark/costume,
 /obj/structure/rack/holorack,
 /turf/simulated/floor/holofloor{
-	tag = "icon-cult";
 	icon_state = "cult";
-	dir = 2
+	tag = "icon-cult"
 	},
 /area/holodeck/source_theatre)
 "aw" = (
@@ -146,9 +143,8 @@
 /obj/item/clothing/under/dress/dress_saloon,
 /obj/item/clothing/head/hairflower,
 /turf/simulated/floor/holofloor{
-	tag = "icon-cult";
 	icon_state = "cult";
-	dir = 2
+	tag = "icon-cult"
 	},
 /area/holodeck/source_theatre)
 "ax" = (
@@ -200,8 +196,8 @@
 	dir = 8
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
+	icon_state = "iron3";
+	tag = "icon-iron3"
 	},
 /area/space)
 "aF" = (
@@ -214,23 +210,16 @@
 	},
 /area/holodeck/source_knightarena)
 "aG" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/obj/machinery/shower{
+	pixel_y = 25
 	},
-/obj/structure/window/reinforced{
-	dir = 8
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
 	},
-/turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
-	},
-/area/space)
+/area/centcom/specops)
 "aH" = (
 /obj/structure/table/holotable,
-/obj/machinery/readybutton{
-	pixel_y = 0
-	},
+/obj/machinery/readybutton,
 /turf/simulated/floor/holofloor{
 	dir = 5;
 	icon_state = "blue"
@@ -251,9 +240,8 @@
 "aL" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_desert)
 "aM" = (
@@ -268,9 +256,8 @@
 /area/space)
 "aO" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-cult";
 	icon_state = "cult";
-	dir = 2
+	tag = "icon-cult"
 	},
 /area/holodeck/source_theatre)
 "aP" = (
@@ -333,9 +320,7 @@
 /area/holodeck/source_thunderdomecourt)
 "aW" = (
 /obj/structure/table/holotable,
-/obj/machinery/readybutton{
-	pixel_y = 0
-	},
+/obj/machinery/readybutton,
 /turf/simulated/floor/holofloor{
 	dir = 5;
 	icon_state = "green"
@@ -344,17 +329,15 @@
 "aX" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_desert)
 "aY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_picnicarea)
 "aZ" = (
@@ -391,31 +374,29 @@
 /area/holodeck/source_knightarena)
 "bd" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid7";
 	icon_state = "asteroid7";
-	dir = 2
+	tag = "icon-asteroid7"
 	},
 /area/holodeck/source_desert)
 "be" = (
-/obj/machinery/computer/shuttle/ert,
+/obj/structure/curtain/open/shower/centcom,
 /turf/unsimulated/floor{
-	icon_state = "grimy"
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "bf" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet2-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet2-0";
-	dir = 4
+	tag = "icon-carpet2-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "bg" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	tag = "icon-wood_siding5";
 	icon_state = "wood_siding5";
-	dir = 2
+	tag = "icon-wood_siding5"
 	},
 /area/holodeck/source_picnicarea)
 "bh" = (
@@ -444,23 +425,22 @@
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	tag = "icon-wood_siding9";
 	icon_state = "wood_siding9";
-	dir = 2
+	tag = "icon-wood_siding9"
 	},
 /area/holodeck/source_picnicarea)
 "bn" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet6-2 (EAST)";
+	dir = 4;
 	icon_state = "carpet6-2";
-	dir = 4
+	tag = "icon-carpet6-2 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bo" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-wood (EAST)";
+	dir = 4;
 	icon_state = "wood";
-	dir = 4
+	tag = "icon-wood (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bp" = (
@@ -476,9 +456,9 @@
 /area/holodeck/source_thunderdomecourt)
 "bq" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet14-10 (EAST)";
+	dir = 4;
 	icon_state = "carpet14-10";
-	dir = 4
+	tag = "icon-carpet14-10 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "br" = (
@@ -510,18 +490,17 @@
 /area/holodeck/source_thunderdomecourt)
 "bv" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet1-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet1-0";
-	dir = 4
+	tag = "icon-carpet1-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "bw" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	tag = "icon-wood_siding6";
 	icon_state = "wood_siding6";
-	dir = 2
+	tag = "icon-wood_siding6"
 	},
 /area/holodeck/source_picnicarea)
 "bx" = (
@@ -535,17 +514,17 @@
 "bz" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet11-12 (EAST)";
+	dir = 4;
 	icon_state = "carpet11-12";
-	dir = 4
+	tag = "icon-carpet11-12 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bA" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet15-15 (EAST)";
+	dir = 4;
 	icon_state = "carpet15-15";
-	dir = 4
+	tag = "icon-carpet15-15 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bB" = (
@@ -564,9 +543,7 @@
 /area/holodeck/source_beach)
 "bE" = (
 /obj/structure/table/holotable,
-/obj/machinery/readybutton{
-	pixel_y = 0
-	},
+/obj/machinery/readybutton,
 /turf/simulated/floor/holofloor{
 	dir = 10;
 	icon_state = "red"
@@ -574,7 +551,6 @@
 /area/holodeck/source_knightarena)
 "bF" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_knightarena)
@@ -583,7 +559,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_knightarena)
@@ -593,7 +568,6 @@
 /area/holodeck/source_picnicarea)
 "bI" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "blue"
 	},
 /area/holodeck/source_knightarena)
@@ -602,7 +576,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "blue"
 	},
 /area/holodeck/source_knightarena)
@@ -631,9 +604,7 @@
 /area/holodeck/source_emptycourt)
 "bN" = (
 /obj/structure/table/holotable,
-/obj/machinery/readybutton{
-	pixel_y = 0
-	},
+/obj/machinery/readybutton,
 /turf/simulated/floor/holofloor{
 	dir = 10;
 	icon_state = "red"
@@ -641,7 +612,6 @@
 /area/holodeck/source_thunderdomecourt)
 "bO" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_thunderdomecourt)
@@ -650,13 +620,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_thunderdomecourt)
 "bQ" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_thunderdomecourt)
@@ -665,7 +633,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_thunderdomecourt)
@@ -683,24 +650,24 @@
 	},
 /obj/structure/window/reinforced,
 /turf/unsimulated/wall{
-	tag = "icon-iron12";
-	icon_state = "iron12"
+	icon_state = "iron12";
+	tag = "icon-iron12"
 	},
 /area/space)
 "bU" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet9-4 (EAST)";
+	dir = 4;
 	icon_state = "carpet9-4";
-	dir = 4
+	tag = "icon-carpet9-4 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bV" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet13-5 (EAST)";
+	dir = 4;
 	icon_state = "carpet13-5";
-	dir = 4
+	tag = "icon-carpet13-5 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "bW" = (
@@ -708,7 +675,6 @@
 /area/space)
 "bX" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_emptycourt)
@@ -729,8 +695,8 @@
 /area/holodeck/source_emptycourt)
 "cb" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron5";
-	icon_state = "iron5"
+	icon_state = "iron5";
+	tag = "icon-iron5"
 	},
 /area/space)
 "cc" = (
@@ -738,15 +704,14 @@
 	dir = 1
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron12";
-	icon_state = "iron12"
+	icon_state = "iron12";
+	tag = "icon-iron12"
 	},
 /area/space)
 "cd" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "wood_siding4";
 	tag = "icon-wood_siding6"
 	},
@@ -757,35 +722,35 @@
 	},
 /obj/structure/window/reinforced,
 /turf/unsimulated/wall{
-	tag = "icon-iron12";
-	icon_state = "iron12"
+	icon_state = "iron12";
+	tag = "icon-iron12"
 	},
 /area/space)
 "cf" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron11";
-	icon_state = "iron11"
+	icon_state = "iron11";
+	tag = "icon-iron11"
 	},
 /area/space)
 "cg" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-17 (NORTHEAST)";
+	dir = 5;
 	icon_state = "17";
-	dir = 5
+	tag = "icon-17 (NORTHEAST)"
 	},
 /area/holodeck/source_space)
 "ch" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-1 (NORTHEAST)";
+	dir = 5;
 	icon_state = "1";
-	dir = 5
+	tag = "icon-1 (NORTHEAST)"
 	},
 /area/holodeck/source_space)
 "ci" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-22 (NORTHEAST)";
+	dir = 5;
 	icon_state = "22";
-	dir = 5
+	tag = "icon-22 (NORTHEAST)"
 	},
 /area/holodeck/source_space)
 "cj" = (
@@ -796,15 +761,14 @@
 /area/space)
 "cl" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-snow";
-	icon_state = "snow"
+	icon_state = "snow";
+	tag = "icon-snow"
 	},
 /area/holodeck/source_snowfield)
 "cm" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-grimy";
 	icon_state = "grimy";
-	dir = 2
+	tag = "icon-grimy"
 	},
 /area/holodeck/source_meetinghall)
 "cn" = (
@@ -841,7 +805,6 @@
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "wood_siding10";
 	tag = "icon-wood_siding6"
 	},
@@ -850,7 +813,6 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/holofloor/grass,
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "wood_siding8";
 	tag = "icon-wood_siding6"
 	},
@@ -860,12 +822,11 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron3";
-	icon_state = "iron3"
+	icon_state = "iron3";
+	tag = "icon-iron3"
 	},
 /area/space)
 "cv" = (
@@ -908,33 +869,31 @@
 "cA" = (
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/holofloor{
-	tag = "icon-snow";
-	icon_state = "snow"
+	icon_state = "snow";
+	tag = "icon-snow"
 	},
 /area/holodeck/source_snowfield)
 "cB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_picnicarea)
 "cC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
 /turf/simulated/floor/holofloor{
-	tag = "icon-asteroid";
 	icon_state = "asteroid";
-	dir = 2
+	tag = "icon-asteroid"
 	},
 /area/holodeck/source_picnicarea)
 "cD" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpetsymbol (SOUTHEAST)";
+	dir = 6;
 	icon_state = "carpetsymbol";
-	dir = 6
+	tag = "icon-carpetsymbol (SOUTHEAST)"
 	},
 /area/holodeck/source_meetinghall)
 "cE" = (
@@ -963,7 +922,6 @@
 /area/centcom/evac)
 "cI" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
@@ -1005,16 +963,15 @@
 "cO" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/holofloor{
-	tag = "icon-snow";
-	icon_state = "snow"
+	icon_state = "snow";
+	tag = "icon-snow"
 	},
 /area/holodeck/source_snowfield)
 "cP" = (
 /obj/structure/table/wood,
 /turf/simulated/floor/holofloor{
-	tag = "icon-grimy";
 	icon_state = "grimy";
-	dir = 2
+	tag = "icon-grimy"
 	},
 /area/holodeck/source_meetinghall)
 "cQ" = (
@@ -1025,23 +982,21 @@
 /area/holodeck/source_basketball)
 "cR" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/ninja/holding)
 "cS" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/ninja/holding)
 "cT" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/ninja/holding)
 "cU" = (
@@ -1062,9 +1017,8 @@
 /area/ninja/outpost)
 "cW" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -1074,13 +1028,11 @@
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "cY" = (
@@ -1088,21 +1040,18 @@
 	req_access_txt = "25"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "cZ" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "da" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "db" = (
@@ -1124,15 +1073,13 @@
 	pixel_y = 3
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dc" = (
 /obj/machinery/vending/boozeomat,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dd" = (
@@ -1147,42 +1094,36 @@
 /obj/item/toy/sword,
 /obj/item/gun/projectile/revolver/capgun,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "df" = (
 /obj/structure/rack,
 /obj/item/camera,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "dg" = (
 /obj/machinery/computer/arcade,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "dh" = (
 /obj/machinery/prize_counter,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "di" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/beach/sand,
 /area/ninja/holding)
@@ -1192,16 +1133,16 @@
 "dk" = (
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/holofloor{
-	tag = "icon-snow";
-	icon_state = "snow"
+	icon_state = "snow";
+	tag = "icon-snow"
 	},
 /area/holodeck/source_snowfield)
 "dl" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet6-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet6-0";
-	dir = 4
+	tag = "icon-carpet6-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "dm" = (
@@ -1214,22 +1155,21 @@
 "dn" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet10-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet10-0";
-	dir = 4
+	tag = "icon-carpet10-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "do" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet14-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet14-0";
-	dir = 4
+	tag = "icon-carpet14-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "dp" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_basketball)
@@ -1247,16 +1187,16 @@
 /area/holodeck/source_basketball)
 "ds" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet4-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet4-0";
-	dir = 4
+	tag = "icon-carpet4-0 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "dt" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet8-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet8-0";
-	dir = 4
+	tag = "icon-carpet8-0 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "du" = (
@@ -1280,8 +1220,7 @@
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dx" = (
@@ -1291,52 +1230,49 @@
 	pixel_y = 6
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dy" = (
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "dz" = (
 /obj/structure/chair/stool,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "dA" = (
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/holofloor{
-	tag = "icon-snow";
-	icon_state = "snow"
+	icon_state = "snow";
+	tag = "icon-snow"
 	},
 /area/holodeck/source_snowfield)
 "dB" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet7-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet7-0";
-	dir = 4
+	tag = "icon-carpet7-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "dC" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet11-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet11-0";
-	dir = 4
+	tag = "icon-carpet11-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "dD" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet15-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet15-0";
-	dir = 4
+	tag = "icon-carpet15-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "dE" = (
@@ -1418,12 +1354,11 @@
 /area/holodeck/source_boxingcourt)
 "dM" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-wood (EAST)";
+	dir = 4;
 	icon_state = "wood";
-	dir = 4
+	tag = "icon-wood (EAST)"
 	},
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "siding8";
 	tag = "icon-siding1"
 	},
@@ -1431,9 +1366,9 @@
 "dN" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet14-10 (EAST)";
+	dir = 4;
 	icon_state = "carpet14-10";
-	dir = 4
+	tag = "icon-carpet14-10 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "dO" = (
@@ -1445,15 +1380,13 @@
 "dP" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
 	},
 /area/ninja/outpost)
 "dQ" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "grimy"
@@ -1461,51 +1394,43 @@
 /area/ninja/outpost)
 "dR" = (
 /obj/structure/table,
-/obj/machinery/recharger{
-	pixel_y = 0
-	},
+/obj/machinery/recharger,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dS" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dT" = (
 /obj/structure/table,
 /obj/item/lighter/zippo,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dU" = (
 /obj/structure/table,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dV" = (
 /obj/structure/table,
 /obj/item/dice/d20,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dW" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/ninja/holding)
 "dX" = (
@@ -1534,16 +1459,16 @@
 "ea" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet10-8 (EAST)";
+	dir = 4;
 	icon_state = "carpet10-8";
-	dir = 4
+	tag = "icon-carpet10-8 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "eb" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet15-15 (EAST)";
+	dir = 4;
 	icon_state = "carpet15-15";
-	dir = 4
+	tag = "icon-carpet15-15 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "ec" = (
@@ -1566,15 +1491,13 @@
 /obj/item/clothing/under/suit_jacket,
 /obj/item/clothing/suit/wcoat,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "ee" = (
 /obj/structure/chair/stool/bar,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "ef" = (
@@ -1609,14 +1532,13 @@
 /area/syndicate_mothership)
 "ek" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet7-3 (EAST)";
+	dir = 4;
 	icon_state = "carpet7-3";
-	dir = 4
+	tag = "icon-carpet7-3 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "el" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
@@ -1632,16 +1554,14 @@
 	name = "Syndicate-Spawn"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "eo" = (
 /obj/structure/rack,
 /obj/item/storage/fancy/crayons,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "ep" = (
@@ -1650,55 +1570,51 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eq" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "er" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet5-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet5-0";
-	dir = 4
+	tag = "icon-carpet5-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "es" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet9-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet9-0";
-	dir = 4
+	tag = "icon-carpet9-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "et" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet13-0 (EAST)";
+	dir = 4;
 	icon_state = "carpet13-0";
-	dir = 4
+	tag = "icon-carpet13-0 (EAST)"
 	},
 /area/holodeck/source_meetinghall)
 "eu" = (
 /obj/structure/chair/stool,
 /obj/machinery/computer/security/telescreen{
-	name = "Entertainment monitor";
 	desc = "Damn, they better have /tg/thechannel on these things.";
 	icon_state = "entertainment";
+	name = "Entertainment monitor";
 	pixel_y = -30
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "ev" = (
@@ -1710,20 +1626,17 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "ex" = (
 /obj/item/flag/syndi,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "ey" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -1732,7 +1645,6 @@
 	pixel_x = -28
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -1773,21 +1685,20 @@
 /area/holodeck/source_basketball)
 "eF" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet13-5 (EAST)";
+	dir = 4;
 	icon_state = "carpet13-5";
-	dir = 4
+	tag = "icon-carpet13-5 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "eG" = (
 /turf/simulated/floor/holofloor{
-	tag = "icon-carpet5-1 (EAST)";
+	dir = 4;
 	icon_state = "carpet5-1";
-	dir = 4
+	tag = "icon-carpet5-1 (EAST)"
 	},
 /area/holodeck/source_theatre)
 "eH" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_boxingcourt)
@@ -1808,7 +1719,6 @@
 /area/holodeck/source_beach)
 "eL" = (
 /turf/simulated/floor/holofloor{
-	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_boxingcourt)
@@ -1829,15 +1739,13 @@
 "eO" = (
 /obj/machinery/vending/cigarette,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eP" = (
 /obj/structure/table,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eQ" = (
@@ -1847,8 +1755,7 @@
 /obj/structure/chair/stool,
 /obj/machinery/light/spot,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eS" = (
@@ -1857,15 +1764,13 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eT" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /obj/machinery/computer/syndicate_depot/teleporter,
 /turf/unsimulated/floor{
@@ -1875,7 +1780,6 @@
 "eU" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
 	},
 /area/syndicate_mothership)
@@ -1894,21 +1798,20 @@
 /area/syndicate_mothership)
 "eW" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron13";
-	icon_state = "iron13"
+	icon_state = "iron13";
+	tag = "icon-iron13"
 	},
 /area/space)
 "eX" = (
 /turf/unsimulated/wall{
-	tag = "icon-iron9";
-	icon_state = "iron9"
+	icon_state = "iron9";
+	tag = "icon-iron9"
 	},
 /area/space)
 "eY" = (
 /obj/effect/decal/warning_stripes/yellow,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/ninja/holding)
 "eZ" = (
@@ -1925,7 +1828,6 @@
 	name = "Syndicate-Spawn"
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -1934,9 +1836,8 @@
 	name = "Holding Facility"
 	},
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "engine"
@@ -1958,7 +1859,6 @@
 "fd" = (
 /obj/item/flag/syndi,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -1982,14 +1882,12 @@
 /obj/structure/rack/skeletal_bar/left,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
 "fi" = (
 /obj/machinery/computer/shuttle/syndicate/recall,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -2045,9 +1943,8 @@
 "fq" = (
 /obj/machinery/vending/magivend,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -2133,8 +2030,7 @@
 	name = "wizard"
 	},
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/wizard_station)
 "fA" = (
@@ -2174,7 +2070,6 @@
 /area/wizard_station)
 "fE" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/wizard_station)
@@ -2214,13 +2109,11 @@
 /area/ninja/holding)
 "fL" = (
 /obj/machinery/computer/cryopod{
-	density = 0;
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "fM" = (
@@ -2234,8 +2127,8 @@
 /area/tdome/arena_source)
 "fN" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 8
+	dir = 8;
+	icon_state = "red"
 	},
 /area/tdome/arena_source)
 "fO" = (
@@ -2249,8 +2142,8 @@
 /area/tdome/arena_source)
 "fP" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "green";
-	dir = 4
+	dir = 4;
+	icon_state = "green"
 	},
 /area/tdome/arena_source)
 "fQ" = (
@@ -2284,15 +2177,13 @@
 	layer = 2.9
 	},
 /turf/unsimulated/wall{
-	tag = "icon-iron12";
-	icon_state = "iron12"
+	icon_state = "iron12";
+	tag = "icon-iron12"
 	},
 /area/space)
 "fU" = (
 /obj/structure/table/wood,
-/obj/machinery/recharger{
-	pixel_y = 0
-	},
+/obj/machinery/recharger,
 /turf/unsimulated/floor{
 	dir = 8;
 	icon_state = "wood"
@@ -2300,7 +2191,6 @@
 /area/wizard_station)
 "fV" = (
 /obj/machinery/power/apc{
-	dir = 2;
 	name = "Gamma Armory APC";
 	pixel_y = -24
 	},
@@ -2309,8 +2199,7 @@
 	icon_state = "0-4"
 	},
 /obj/structure/sign/securearea{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
@@ -2318,9 +2207,8 @@
 /area/shuttle/gamma/space)
 "fW" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -2346,15 +2234,14 @@
 "fZ" = (
 /obj/machinery/cryopod/right,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "ga" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -2362,9 +2249,8 @@
 /area/syndicate_mothership)
 "gb" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -2374,8 +2260,8 @@
 /obj/machinery/light,
 /obj/machinery/cryopod/right,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "gd" = (
@@ -2402,9 +2288,8 @@
 /area/ninja/holding)
 "gg" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -2445,31 +2330,29 @@
 	icon_state = "dark"
 	},
 /turf/simulated/shuttle/wall{
-	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
-	dir = 2
+	tag = "icon-diagonalWall3"
 	},
 /area/syndicate_mothership)
 "gn" = (
 /obj/machinery/camera{
-	pixel_x = 10;
+	c_tag = "Thunderdome Arena";
 	network = list("Thunderdome");
-	c_tag = "Thunderdome Arena"
+	pixel_x = 10
 	},
 /turf/simulated/floor/bluegrid,
 /area/tdome/arena_source)
 "go" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/wizard_station)
 "gp" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/wizard_station)
 "gq" = (
@@ -2485,9 +2368,8 @@
 /area/holodeck/source_beach)
 "gs" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (NORTHEAST)";
-	icon_state = "fakewindows";
-	dir = 5
+	dir = 5;
+	tag = "icon-fakewindows (NORTHEAST)"
 	},
 /area/wizard_station)
 "gt" = (
@@ -2563,22 +2445,20 @@
 /area/syndicate_mothership)
 "gC" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/wizard_station)
 "gD" = (
 /obj/effect/decal/remains/human,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/wizard_station)
 "gE" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (NORTH)";
+	dir = 1;
 	icon_state = "fakewindows2";
-	dir = 1
+	tag = "icon-fakewindows2 (NORTH)"
 	},
 /area/wizard_station)
 "gF" = (
@@ -2629,8 +2509,7 @@
 	name = "Experiment 35b"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/wizard_station)
 "gM" = (
@@ -2700,8 +2579,7 @@
 "gU" = (
 /obj/effect/decal/cleanable/molten_object,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/wizard_station)
 "gV" = (
@@ -2769,7 +2647,6 @@
 /area/space)
 "hd" = (
 /obj/docking_port/stationary/transit{
-	dir = 1;
 	dwidth = 1;
 	height = 4;
 	id = "pod1_transit";
@@ -2794,7 +2671,6 @@
 /area/syndicate_mothership)
 "hh" = (
 /obj/docking_port/stationary/transit{
-	dir = 1;
 	dwidth = 1;
 	height = 4;
 	id = "pod2_transit";
@@ -2806,7 +2682,6 @@
 "hi" = (
 /obj/docking_port/stationary{
 	area_type = /area/syndicate_mothership;
-	dir = 1;
 	dwidth = 11;
 	height = 18;
 	id = "emergency_syndicate";
@@ -2819,9 +2694,9 @@
 "hj" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (EAST)";
+	dir = 4;
 	icon_state = "gravsnow_corner";
-	dir = 4
+	tag = "icon-gravsnow_corner (EAST)"
 	},
 /area/syndicate_mothership)
 "hl" = (
@@ -2830,27 +2705,24 @@
 	req_access_txt = "150"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "hm" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (WEST)";
+	dir = 8;
 	icon_state = "gravsnow_corner";
-	dir = 8
+	tag = "icon-gravsnow_corner (WEST)"
 	},
 /area/syndicate_mothership)
 "hn" = (
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "ho" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 1
 	},
 /area/syndicate_mothership)
@@ -2868,24 +2740,23 @@
 "hq" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (SOUTHEAST)";
+	dir = 6;
 	icon_state = "gravsnow_corner";
-	dir = 6
+	tag = "icon-gravsnow_corner (SOUTHEAST)"
 	},
 /area/syndicate_mothership)
 "hr" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 0;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
 	},
 /area/syndicate_mothership)
 "hs" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (SOUTHWEST)";
+	dir = 10;
 	icon_state = "gravsnow_corner";
-	dir = 10
+	tag = "icon-gravsnow_corner (SOUTHWEST)"
 	},
 /area/syndicate_mothership)
 "ht" = (
@@ -2894,14 +2765,13 @@
 	},
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (SOUTHWEST)";
+	dir = 10;
 	icon_state = "gravsnow_corner";
-	dir = 10
+	tag = "icon-gravsnow_corner (SOUTHWEST)"
 	},
 /area/syndicate_mothership)
 "hu" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/syndicate_mothership)
@@ -2918,16 +2788,15 @@
 /area/syndicate_mothership)
 "hy" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/syndicate_mothership)
 "hz" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/syndicate_mothership)
 "hA" = (
@@ -2944,8 +2813,7 @@
 	on = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "hC" = (
@@ -2954,24 +2822,15 @@
 	name = "plating"
 	},
 /area/ninja/holding)
-"hD" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
-	},
-/area/syndicate_mothership)
 "hE" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (NORTH)";
+	dir = 1;
 	icon_state = "gravsnow_corner";
-	dir = 1
+	tag = "icon-gravsnow_corner (NORTH)"
 	},
 /area/syndicate_mothership)
 "hF" = (
@@ -2998,9 +2857,9 @@
 "hI" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (NORTH)";
+	dir = 1;
 	icon_state = "gravsnow_corner";
-	dir = 1
+	tag = "icon-gravsnow_corner (NORTH)"
 	},
 /area/syndicate_mothership)
 "hJ" = (
@@ -3011,9 +2870,9 @@
 "hK" = (
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (NORTHEAST)";
+	dir = 5;
 	icon_state = "gravsnow_corner";
-	dir = 5
+	tag = "icon-gravsnow_corner (NORTHEAST)"
 	},
 /area/syndicate_mothership)
 "hL" = (
@@ -3048,9 +2907,9 @@
 /obj/structure/flora/grass/brown,
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (EAST)";
+	dir = 4;
 	icon_state = "gravsnow_corner";
-	dir = 4
+	tag = "icon-gravsnow_corner (EAST)"
 	},
 /area/syndicate_mothership)
 "hQ" = (
@@ -3058,8 +2917,7 @@
 /obj/item/storage/fancy/crayons,
 /obj/item/storage/fancy/crayons,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "hR" = (
@@ -3104,8 +2962,7 @@
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "hY" = (
@@ -3132,8 +2989,7 @@
 "ie" = (
 /obj/machinery/washing_machine,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "if" = (
@@ -3153,33 +3009,28 @@
 "ii" = (
 /obj/machinery/computer/shuttle/syndicate/recall,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "ij" = (
 /obj/item/radio/intercom/syndicate{
-	pixel_x = 0;
 	pixel_y = 25
 	},
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "ik" = (
 /obj/machinery/vending/syndicigs,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "il" = (
 /obj/machinery/vending/syndisnack,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "im" = (
@@ -3187,8 +3038,7 @@
 	pixel_y = 28
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "in" = (
@@ -3198,8 +3048,7 @@
 	},
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "io" = (
@@ -3209,17 +3058,16 @@
 	dir = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "ip" = (
 /obj/structure/flora/grass/brown,
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (SOUTHWEST)";
+	dir = 10;
 	icon_state = "gravsnow_corner";
-	dir = 10
+	tag = "icon-gravsnow_corner (SOUTHWEST)"
 	},
 /area/syndicate_mothership)
 "iq" = (
@@ -3228,15 +3076,13 @@
 	},
 /obj/item/paper/syndimemo,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "is" = (
 /mob/living/simple_animal/pet/dog/fox/Syndifox,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "it" = (
@@ -3271,8 +3117,7 @@
 /area/syndicate_mothership)
 "iy" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "iz" = (
@@ -3282,8 +3127,7 @@
 	req_access_txt = "150"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iA" = (
@@ -3292,23 +3136,18 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "iB" = (
 /obj/machinery/light{
-	icon_state = "tube1";
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iC" = (
@@ -3316,8 +3155,7 @@
 /obj/item/pizzabox,
 /obj/item/paicard/syndicate,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iD" = (
@@ -3327,8 +3165,7 @@
 	pixel_y = 5
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iE" = (
@@ -3351,8 +3188,7 @@
 	req_access_txt = "150"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
 "iG" = (
@@ -3381,16 +3217,14 @@
 /area/syndicate_mothership)
 "iK" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (NORTHWEST)";
-	icon_state = "fakewindows";
-	dir = 9
+	dir = 9;
+	tag = "icon-fakewindows (NORTHWEST)"
 	},
 /area/syndicate_mothership)
 "iL" = (
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iM" = (
@@ -3404,8 +3238,7 @@
 	pixel_y = 6
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iN" = (
@@ -3415,8 +3248,7 @@
 	pixel_y = 5
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iO" = (
@@ -3448,9 +3280,9 @@
 /area/shuttle/assault_pod)
 "iR" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (NORTH)";
+	dir = 1;
 	icon_state = "fakewindows2";
-	dir = 1
+	tag = "icon-fakewindows2 (NORTH)"
 	},
 /area/syndicate_mothership)
 "iS" = (
@@ -3487,8 +3319,7 @@
 "iY" = (
 /mob/living/simple_animal/pet/cat/Syndi,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "iZ" = (
@@ -3512,9 +3343,8 @@
 /area/tdome/arena)
 "jd" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/syndicate_mothership)
 "je" = (
@@ -3528,8 +3358,7 @@
 	name = "Syndicate-Spawn"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "jg" = (
@@ -3542,8 +3371,7 @@
 	},
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "jh" = (
@@ -3575,7 +3403,6 @@
 "jk" = (
 /obj/structure/table/wood,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3595,7 +3422,6 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/item/reagent_containers/food/drinks/bottle/rum,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3603,7 +3429,6 @@
 /obj/structure/table/wood,
 /obj/item/syndicatedetonator,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3611,7 +3436,6 @@
 /obj/structure/table/wood,
 /obj/item/toy/nuke,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3620,9 +3444,8 @@
 /area/tdome/arena_source)
 "jq" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /obj/structure/closet/syndicate/sst,
 /turf/unsimulated/floor{
@@ -3649,9 +3472,8 @@
 /area/syndicate_mothership)
 "jt" = (
 /obj/machinery/light/small{
-	tag = "icon-bulb1 (EAST)";
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	tag = "icon-bulb1 (EAST)"
 	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -3670,9 +3492,8 @@
 /area/syndicate_mothership)
 "jw" = (
 /obj/machinery/light/small{
-	tag = "icon-bulb1 (WEST)";
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	tag = "icon-bulb1 (WEST)"
 	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -3792,12 +3613,10 @@
 /area/syndicate_mothership)
 "jM" = (
 /obj/machinery/door/window{
-	dir = 4;
 	name = "Uplink Management Control";
 	req_access_txt = "151"
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3808,7 +3627,6 @@
 /obj/structure/rack/skeletal_bar/right,
 /obj/item/reagent_containers/food/drinks/bottle/gin,
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
@@ -3881,8 +3699,7 @@
 	req_access_txt = "150"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "kc" = (
@@ -3890,9 +3707,8 @@
 /turf/simulated/floor/pod,
 /turf/space,
 /turf/simulated/shuttle/wall{
-	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
-	dir = 2
+	tag = "icon-diagonalWall3"
 	},
 /area/shuttle/assault_pod)
 "kd" = (
@@ -3937,7 +3753,6 @@
 /area/space)
 "kj" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "stage_stairs"
 	},
 /area/syndicate_mothership)
@@ -3953,8 +3768,8 @@
 "kl" = (
 /obj/machinery/vending/tool,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
 "km" = (
@@ -3969,7 +3784,6 @@
 /area/shuttle/assault_pod)
 "kn" = (
 /obj/machinery/sleeper/syndie{
-	icon_state = "sleeper_s-open";
 	dir = 2
 	},
 /turf/unsimulated/floor{
@@ -3980,19 +3794,17 @@
 /obj/structure/flora/bush,
 /turf/unsimulated/floor/snow,
 /turf/unsimulated/floor/snow{
-	tag = "icon-gravsnow_corner (NORTH)";
+	dir = 1;
 	icon_state = "gravsnow_corner";
-	dir = 1
+	tag = "icon-gravsnow_corner (NORTH)"
 	},
 /area/syndicate_mothership)
 "kp" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /obj/machinery/sleeper/syndie{
-	icon_state = "sleeper_s-open";
 	dir = 2
 	},
 /turf/unsimulated/floor{
@@ -4001,8 +3813,8 @@
 /area/syndicate_mothership)
 "kq" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
 "kr" = (
@@ -4012,12 +3824,11 @@
 /area/syndicate_mothership)
 "ks" = (
 /obj/machinery/light{
-	icon_state = "tube1";
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
 "kt" = (
@@ -4067,8 +3878,8 @@
 "kC" = (
 /obj/structure/chair/stool,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
 "kD" = (
@@ -4103,17 +3914,16 @@
 "kJ" = (
 /obj/structure/closet/syndicate/personal,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/syndicate_mothership)
 "kK" = (
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -4123,8 +3933,8 @@
 /obj/structure/table,
 /obj/item/gun/energy/ionrifle,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
 "kM" = (
@@ -4190,40 +4000,35 @@
 "kW" = (
 /obj/structure/table,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/control)
 "kX" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/control)
 "kY" = (
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/control)
 "kZ" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/control)
 "la" = (
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lb" = (
@@ -4233,8 +4038,7 @@
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "lc" = (
@@ -4243,8 +4047,7 @@
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "ld" = (
@@ -4252,16 +4055,15 @@
 	pixel_y = 24
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "le" = (
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /obj/structure/table,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lf" = (
@@ -4271,8 +4073,8 @@
 	},
 /obj/structure/table,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lg" = (
@@ -4285,8 +4087,7 @@
 /area/syndicate_mothership)
 "lh" = (
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "li" = (
@@ -4297,8 +4098,7 @@
 "lj" = (
 /obj/structure/chair/stool,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "lk" = (
@@ -4326,39 +4126,34 @@
 	},
 /area/abductor_ship)
 "lo" = (
-/obj/structure/reagent_dispensers/beerkeg,
-/turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
-	},
-/area/centcom/control)
-"lp" = (
 /obj/structure/closet/secure_closet/bar{
 	req_access = null;
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
+	},
+/area/centcom/control)
+"lp" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/unsimulated/floor{
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "lq" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "lr" = (
 /obj/structure/kitchenspike,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "ls" = (
@@ -4370,8 +4165,7 @@
 "lt" = (
 /obj/machinery/gibber,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "lu" = (
@@ -4381,13 +4175,11 @@
 /area/wizard_station)
 "lv" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (NORTH)";
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	tag = "icon-tube1 (NORTH)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "lw" = (
@@ -4396,16 +4188,16 @@
 	pixel_y = 6
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lx" = (
 /obj/item/reagent_containers/food/drinks/cans/beer,
 /obj/structure/table,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "ly" = (
@@ -4424,8 +4216,8 @@
 "lB" = (
 /obj/structure/piano,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lC" = (
@@ -4447,19 +4239,17 @@
 "lG" = (
 /obj/structure/chair/stool,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "lH" = (
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "lI" = (
@@ -4467,8 +4257,7 @@
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "lJ" = (
@@ -4477,14 +4266,12 @@
 	pixel_x = -5
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "lK" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "lL" = (
@@ -4557,15 +4344,13 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "lX" = (
 /obj/structure/table,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "lY" = (
@@ -4581,8 +4366,7 @@
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/control)
 "ma" = (
@@ -4599,8 +4383,7 @@
 "mc" = (
 /obj/structure/chair/stool,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "md" = (
@@ -4610,29 +4393,26 @@
 "me" = (
 /obj/structure/table,
 /obj/machinery/processor{
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "mf" = (
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Mass Drivers";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mg" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mh" = (
@@ -4640,26 +4420,25 @@
 	pixel_y = 25
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mi" = (
 /obj/machinery/recharge_station/upgraded,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mj" = (
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Assault Armor Storage";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mk" = (
@@ -4670,20 +4449,17 @@
 	},
 /obj/item/kitchen/rollingpin,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "ml" = (
 /obj/structure/table,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "mm" = (
@@ -4698,7 +4474,6 @@
 "mn" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 50;
 	id_tag = "ASSAULT3";
 	name = "gravpult"
 	},
@@ -4709,8 +4484,8 @@
 /area/centcom/specops)
 "mo" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mp" = (
@@ -4719,8 +4494,8 @@
 	name = "Assault Armor"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mq" = (
@@ -4728,8 +4503,7 @@
 	pixel_x = -32
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "mr" = (
@@ -4741,8 +4515,8 @@
 	},
 /obj/structure/table,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull";
-	icon_state = "redyellowfull"
+	icon_state = "redyellowfull";
+	tag = "icon-redyellowfull"
 	},
 /area/centcom/control)
 "mt" = (
@@ -4759,8 +4533,7 @@
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "mv" = (
@@ -4774,16 +4547,14 @@
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/food/condiment/enzyme,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "mx" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
 /turf/unsimulated/floor{
-	icon_state = "cafeteria";
-	dir = 2
+	icon_state = "cafeteria"
 	},
 /area/centcom/control)
 "my" = (
@@ -4812,7 +4583,6 @@
 "mB" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 50;
 	id_tag = "ASSAULT2";
 	name = "gravpult"
 	},
@@ -4828,15 +4598,13 @@
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "mD" = (
 /obj/machinery/vending/cigarette,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "mE" = (
@@ -4925,8 +4693,8 @@
 "mP" = (
 /obj/machinery/computer/pod/deathsquad,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "mQ" = (
@@ -4939,9 +4707,8 @@
 "mR" = (
 /obj/machinery/sleeper/upgraded,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4979,8 +4746,7 @@
 "mW" = (
 /obj/machinery/vending/cola,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/centcom/control)
 "mX" = (
@@ -5041,7 +4807,6 @@
 /area/centcom/control)
 "nf" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpet15-5"
 	},
 /area/centcom/control)
@@ -5068,7 +4833,6 @@
 /area/centcom/control)
 "ni" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
@@ -5087,7 +4851,6 @@
 "nl" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 50;
 	id_tag = "ASSAULT1";
 	name = "gravpult"
 	},
@@ -5125,7 +4888,6 @@
 	req_access_txt = "102"
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetsymbol"
 	},
 /area/centcom/control)
@@ -5137,8 +4899,7 @@
 /area/syndicate_mothership)
 "nr" = (
 /obj/item/radio/intercom/syndicate{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -5172,9 +4933,8 @@
 /obj/structure/table,
 /obj/item/card/id/centcom,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /obj/item/door_remote/centcomm,
 /turf/unsimulated/floor{
@@ -5224,16 +4984,14 @@
 /area/centcom/control)
 "nz" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/centcom/control)
 "nA" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/centcom/control)
 "nB" = (
@@ -5250,20 +5008,20 @@
 /area/syndicate_mothership)
 "nC" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "nD" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 1
+	dir = 1;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "nE" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 4
+	dir = 4;
+	icon_state = "greencorner"
 	},
 /area/centcom/control)
 "nF" = (
@@ -5274,14 +5032,14 @@
 /area/syndicate_mothership)
 "nG" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 1
+	dir = 1;
+	icon_state = "greencorner"
 	},
 /area/centcom/control)
 "nH" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 4
+	dir = 4;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "nI" = (
@@ -5372,7 +5130,6 @@
 "nN" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 50;
 	id_tag = "ASSAULT0";
 	name = "gravpult"
 	},
@@ -5386,13 +5143,12 @@
 	pixel_y = -28
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "nP" = (
 /obj/machinery/mech_bay_recharge_port/upgraded/unsimulated{
-	icon_state = "recharge_port";
 	dir = 8
 	},
 /turf/unsimulated/floor{
@@ -5405,8 +5161,8 @@
 	name = "Gravity Catapults"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "nR" = (
@@ -5415,8 +5171,8 @@
 	name = "Gravity Catapults"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "nS" = (
@@ -5437,15 +5193,14 @@
 /area/centcom/specops)
 "nU" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 8
+	dir = 8;
+	icon_state = "greencorner"
 	},
 /area/centcom/control)
 "nV" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall12";
 	icon_state = "swall12";
-	dir = 2
+	tag = "icon-swall12"
 	},
 /area/shuttle/escape)
 "nW" = (
@@ -5509,20 +5264,17 @@
 /area/space)
 "od" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s6";
-	dir = 2
+	icon_state = "swall_s6"
 	},
 /area/shuttle/escape)
 "oe" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s10";
-	dir = 2
+	icon_state = "swall_s10"
 	},
 /area/shuttle/escape)
 "of" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s6";
-	dir = 2
+	icon_state = "swall_s6"
 	},
 /area/shuttle/gamma/space)
 "og" = (
@@ -5532,42 +5284,39 @@
 /area/shuttle/escape)
 "oh" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall12";
 	icon_state = "swall12";
-	dir = 2
+	tag = "icon-swall12"
 	},
 /area/shuttle/gamma/space)
 "oi" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s10";
-	dir = 2
+	icon_state = "swall_s10"
 	},
 /area/shuttle/gamma/space)
 "oj" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 1
+	dir = 1;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "ok" = (
 /obj/machinery/porta_turret/centcom/pulse,
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 9
+	dir = 9;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "ol" = (
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Bathroom";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /obj/structure/table/reinforced,
 /obj/item/paper,
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 1
+	dir = 1;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "om" = (
@@ -5575,8 +5324,8 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 1
+	dir = 1;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "on" = (
@@ -5601,8 +5350,8 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 1
+	dir = 1;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "or" = (
@@ -5611,19 +5360,18 @@
 	ailock = 1;
 	check_synth = 1;
 	name = "Gamma Turret Control Panel";
-	pixel_x = 0;
 	req_access = list(114)
 	},
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 1
+	dir = 1;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "os" = (
 /obj/machinery/porta_turret/centcom/pulse,
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 5
+	dir = 5;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "ot" = (
@@ -5634,7 +5382,6 @@
 /obj/item/storage/box/cups,
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Ready Room North";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /turf/unsimulated/floor{
@@ -5649,8 +5396,8 @@
 	name = "Commando"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ov" = (
@@ -5662,12 +5409,11 @@
 	},
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Starting Room";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ow" = (
@@ -5679,16 +5425,14 @@
 /area/centcom/specops)
 "ox" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall3";
 	icon_state = "swall3";
-	dir = 2
+	tag = "icon-swall3"
 	},
 /area/shuttle/escape)
 "oy" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall3";
 	icon_state = "swall3";
-	dir = 2
+	tag = "icon-swall3"
 	},
 /area/shuttle/gamma/space)
 "oz" = (
@@ -5720,15 +5464,12 @@
 /obj/item/gun/projectile/shotgun/automatic/combat,
 /obj/item/gun/projectile/shotgun/automatic/combat,
 /obj/machinery/status_display{
-	density = 0;
 	layer = 4;
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
@@ -5740,9 +5481,8 @@
 /obj/item/gun/energy/sniperrifle,
 /obj/item/gun/energy/sniperrifle,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /obj/machinery/ai_status_display{
 	pixel_y = 32
@@ -5754,16 +5494,16 @@
 "oD" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 8
+	dir = 8;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "oE" = (
 /obj/effect/spawner/window/reinforced,
 /turf/unsimulated/floor{
-	tag = "icon-red (EAST)";
+	dir = 4;
 	icon_state = "red";
-	dir = 4
+	tag = "icon-red (EAST)"
 	},
 /area/centcom/gamma)
 "oF" = (
@@ -5773,27 +5513,27 @@
 	req_access_txt = "109"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "oG" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "oH" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 8
+	dir = 8;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "oI" = (
 /turf/unsimulated/floor{
-	tag = "icon-red (EAST)";
+	dir = 4;
 	icon_state = "red";
-	dir = 4
+	tag = "icon-red (EAST)"
 	},
 /area/centcom/gamma)
 "oJ" = (
@@ -5816,23 +5556,21 @@
 /area/shuttle/gamma/space)
 "oK" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/centcom/specops)
 "oL" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/centcom/specops)
 "oM" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/centcom/specops)
 "oN" = (
@@ -5862,14 +5600,14 @@
 /area/centcom/gamma)
 "oP" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 10
+	dir = 10;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "oQ" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 6
+	dir = 6;
+	icon_state = "red"
 	},
 /area/centcom/gamma)
 "oR" = (
@@ -5878,8 +5616,8 @@
 	name = "Ready Room"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "oS" = (
@@ -5958,8 +5696,7 @@
 /area/shuttle/escape)
 "pa" = (
 /obj/structure/sign/securearea{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
@@ -6003,8 +5740,8 @@
 	name = "Super Privacy Shutters"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "pe" = (
@@ -6098,8 +5835,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/machinery/mech_bay_recharge_port/upgraded,
 /turf/simulated/shuttle/floor{
@@ -6117,13 +5853,17 @@
 	},
 /area/shuttle/gamma/space)
 "pt" = (
-/obj/machinery/door/airlock/shuttle{
-	req_access_txt = "0"
+/obj/machinery/door_control{
+	id = "toilet_ert_unit_4";
+	name = "Toilet door control";
+	normaldoorcontrol = 1;
+	pixel_y = 25;
+	specialfunctions = 4
 	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor4"
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
 	},
-/area/shuttle/gamma/space)
+/area/centcom/specops)
 "pu" = (
 /obj/mecha/combat/durand/loaded{
 	operation_req_access = list(1)
@@ -6131,8 +5871,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/mech_bay_recharge_floor,
 /area/shuttle/gamma/space)
@@ -6153,20 +5892,17 @@
 	},
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
 	},
 /area/centcom/specops)
 "px" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s5";
-	dir = 2
+	icon_state = "swall_s5"
 	},
 /area/shuttle/gamma/space)
 "py" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s9";
-	dir = 2
+	icon_state = "swall_s9"
 	},
 /area/shuttle/gamma/space)
 "pz" = (
@@ -6200,9 +5936,9 @@
 	name = "Privacy Shutters"
 	},
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (NORTH)";
+	dir = 1;
 	icon_state = "fakewindows2";
-	dir = 1
+	tag = "icon-fakewindows2 (NORTH)"
 	},
 /area/centcom/specops)
 "pD" = (
@@ -6228,38 +5964,35 @@
 /area/centcom/specops)
 "pH" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 9
+	dir = 9;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "pI" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 5
+	dir = 5;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "pJ" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "toilet_ert_unit_4";
+	name = "Bathroom";
+	opacity = 1
+	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "dark"
 	},
 /area/centcom/specops)
 "pK" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Special Ops. Bathroom";
-	dir = 2;
-	network = list("ERT","CentComm")
-	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "pL" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Bathroom";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -6276,7 +6009,6 @@
 "pN" = (
 /obj/machinery/door_control{
 	desc = "A remote control switch to block view of the singularity.";
-	icon_state = "doorctrl0";
 	id = "GRAVPULTS";
 	name = "Gravity Catapults";
 	pixel_x = -6;
@@ -6285,7 +6017,6 @@
 	},
 /obj/machinery/door_control{
 	desc = "A remote control switch to block view of the singularity.";
-	icon_state = "doorctrl0";
 	id = "ASSAULT";
 	name = "Mech Storage";
 	pixel_x = 6;
@@ -6294,7 +6025,6 @@
 	},
 /obj/machinery/door_control{
 	desc = "A remote control switch to block view of the singularity.";
-	icon_state = "doorctrl0";
 	id = "CCTELE";
 	name = "Teleporter Access";
 	pixel_x = -6;
@@ -6302,6 +6032,14 @@
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
+/obj/machinery/door_control{
+	desc = "A remote control-switch for a Armory door.";
+	id = "ERTBFG";
+	name = "Armory Access";
+	pixel_x = 6;
+	pixel_y = -6;
+	req_access_txt = "114"
+	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon_state = "carpetside"
@@ -6310,6 +6048,7 @@
 "pO" = (
 /obj/item/radio/intercom/specops,
 /obj/structure/table/wood,
+/obj/item/door_remote/centcomm,
 /turf/unsimulated/floor{
 	dir = 4;
 	icon_state = "carpetside"
@@ -6317,14 +6056,13 @@
 /area/centcom/specops)
 "pP" = (
 /obj/machinery/computer/security/telescreen{
-	name = "Special Ops. Monitor";
 	desc = "Used for watching the Special Ops.";
+	name = "Special Ops. Monitor";
 	network = list("ERT")
 	},
 /obj/structure/table/wood,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/specops)
 "pQ" = (
@@ -6336,8 +6074,8 @@
 "pR" = (
 /obj/machinery/telecomms/server/presets/centcomm,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "pS" = (
@@ -6352,14 +6090,12 @@
 /area/centcom/control)
 "pT" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s5";
-	dir = 2
+	icon_state = "swall_s5"
 	},
 /area/shuttle/escape)
 "pU" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s9";
-	dir = 2
+	icon_state = "swall_s9"
 	},
 /area/shuttle/escape)
 "pV" = (
@@ -6375,7 +6111,6 @@
 "pW" = (
 /obj/machinery/newscaster{
 	layer = 3.3;
-	pixel_x = 0;
 	pixel_y = -27
 	},
 /turf/unsimulated/floor{
@@ -6385,7 +6120,6 @@
 "pX" = (
 /obj/machinery/door_control{
 	desc = "A remote control switch to connect the ready room to the rest of Centcom.";
-	icon_state = "doorctrl0";
 	id = "SPECOPS";
 	name = "Ready Room";
 	pixel_x = -6;
@@ -6394,7 +6128,6 @@
 	},
 /obj/machinery/door_control{
 	desc = "A remote control switch to block view of the singularity.";
-	icon_state = "doorctrl0";
 	id = "specopsoffice";
 	name = "Privacy Shutters";
 	pixel_x = 6;
@@ -6403,7 +6136,6 @@
 	},
 /obj/machinery/door_control{
 	desc = "A remote control switch to block view of the singularity.";
-	icon_state = "doorctrl0";
 	id = "CCGAMMA";
 	name = "Gamma Lockdown";
 	pixel_x = -6;
@@ -6411,12 +6143,21 @@
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
+/obj/machinery/door_control{
+	desc = "A remote control-switch for a best Armory door.";
+	id = "ERTBFG2";
+	name = "BFG Armory";
+	pixel_x = 6;
+	pixel_y = 6;
+	req_access_txt = "114"
+	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "pY" = (
+/obj/machinery/computer/shuttle/ert,
 /turf/unsimulated/floor{
 	dir = 4;
 	icon_state = "carpetside"
@@ -6430,32 +6171,22 @@
 	name = "ERT Director"
 	},
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/centcom/specops)
 "qa" = (
 /obj/machinery/telecomms/processor/preset_cent,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qb" = (
-/obj/structure/sink{
-	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
-	},
-/obj/structure/mirror{
-	dir = 4;
-	pixel_x = 32;
-	pixel_y = 0
+/obj/structure/urinal{
+	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "qc" = (
@@ -6471,8 +6202,8 @@
 	req_access_txt = "109"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "qe" = (
@@ -6489,28 +6220,26 @@
 /area/centcom/specops)
 "qg" = (
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "qh" = (
 /obj/machinery/telecomms/bus/preset_cent,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qi" = (
 /obj/machinery/telecomms/hub/preset_cent,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 4
+	dir = 4;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qj" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
 	},
 /area/centcom/specops)
@@ -6559,8 +6288,8 @@
 "qn" = (
 /obj/machinery/telecomms/receiver/preset_cent,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 10
+	dir = 10;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qo" = (
@@ -6571,20 +6300,20 @@
 "qp" = (
 /obj/machinery/telecomms/broadcaster/preset_cent,
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 6
+	dir = 6;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qq" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 10
+	dir = 10;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qr" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 6
+	dir = 6;
+	icon_state = "green"
 	},
 /area/centcom/control)
 "qs" = (
@@ -6596,14 +6325,15 @@
 	},
 /area/centcom/evac)
 "qu" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Bathroom";
-	opacity = 1;
-	req_access_txt = "0"
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/obj/structure/mirror{
+	pixel_x = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "qv" = (
@@ -6639,12 +6369,10 @@
 "qy" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Unit 4";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qz" = (
@@ -6652,8 +6380,7 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qA" = (
@@ -6664,8 +6391,7 @@
 	pixel_y = 15
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qB" = (
@@ -6676,40 +6402,34 @@
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qC" = (
 /obj/machinery/shower{
 	dir = 4;
-	icon_state = "shower";
 	pixel_x = 5;
 	tag = "icon-shower (EAST)"
 	},
 /obj/structure/curtain/open/shower/centcom,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qD" = (
 /obj/machinery/shower{
 	dir = 8;
-	icon_state = "shower";
 	pixel_x = -5;
 	tag = "icon-shower (WEST)"
 	},
 /obj/structure/curtain/open/shower/centcom,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qE" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "qF" = (
@@ -6721,8 +6441,8 @@
 /area/syndicate_mothership)
 "qH" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 9
+	dir = 9;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "qI" = (
@@ -6730,8 +6450,8 @@
 /area/centcom/suppy)
 "qJ" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 1
+	dir = 1;
+	icon_state = "greencorner"
 	},
 /area/centcom/evac)
 "qK" = (
@@ -6744,14 +6464,14 @@
 /area/centcom)
 "qL" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 5
+	dir = 5;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "qM" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 4
+	dir = 4;
+	icon_state = "greencorner"
 	},
 /area/centcom/evac)
 "qN" = (
@@ -6781,12 +6501,10 @@
 	},
 /area/centcom)
 "qQ" = (
-/obj/structure/toilet{
-	dir = 8
-	},
+/obj/item/soap/nanotrasen,
+/obj/item/bikehorn/rubberducky,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "qR" = (
@@ -6838,15 +6556,14 @@
 	opacity = 0
 	},
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "qY" = (
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch for port-side blast doors.";
-	icon_state = "doorctrl0";
 	id = "CentComPort";
 	name = "Security Doors";
 	pixel_y = -4;
@@ -6863,8 +6580,8 @@
 /area/centcom/evac)
 "qZ" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 4
+	dir = 4;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "ra" = (
@@ -6900,18 +6617,16 @@
 "re" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Unit 3";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "rf" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "rg" = (
@@ -6961,22 +6676,19 @@
 "rl" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/structure/mirror{
 	pixel_x = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "rm" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 10
+	dir = 10;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "rn" = (
@@ -6993,12 +6705,10 @@
 "ro" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Unit 2";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "rp" = (
@@ -7007,8 +6717,8 @@
 	name = "Security Doors"
 	},
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 8
+	dir = 8;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "rq" = (
@@ -7066,18 +6776,16 @@
 "rx" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Bathroom";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/evac)
 "ry" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 1
+	dir = 1;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "rz" = (
@@ -7108,12 +6816,10 @@
 "rD" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Unit 1";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/centcom/bathroom)
 "rE" = (
@@ -7134,9 +6840,7 @@
 	icon_state = "door_locked";
 	id_tag = "emergency_away";
 	locked = 1;
-	name = "Arrival Airlock";
-	req_access = null;
-	req_access_txt = "0"
+	name = "Arrival Airlock"
 	},
 /turf/unsimulated/floor{
 	name = "plating"
@@ -7148,16 +6852,14 @@
 /area/start)
 "rI" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_s6";
 	icon_state = "swall_s6";
-	dir = 2
+	tag = "icon-swall_s6"
 	},
 /area/centcom/evac)
 "rJ" = (
 /obj/structure/shuttle/engine/propulsion{
-	tag = "icon-propulsion (NORTH)";
-	icon_state = "propulsion";
-	dir = 1
+	dir = 1;
+	tag = "icon-propulsion (NORTH)"
 	},
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
@@ -7166,30 +6868,28 @@
 /area/start)
 "rL" = (
 /obj/structure/shuttle/engine/propulsion{
-	tag = "icon-propulsion_r (NORTH)";
+	dir = 1;
 	icon_state = "propulsion_r";
-	dir = 1
+	tag = "icon-propulsion_r (NORTH)"
 	},
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "rM" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_s10";
 	icon_state = "swall_s10";
-	dir = 2
+	tag = "icon-swall_s10"
 	},
 /area/centcom/evac)
 "rN" = (
 /obj/structure/shuttle/engine/propulsion{
-	tag = "icon-propulsion_l (NORTH)";
+	dir = 1;
 	icon_state = "propulsion_l";
-	dir = 1
+	tag = "icon-propulsion_l (NORTH)"
 	},
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "rO" = (
 /obj/docking_port/stationary{
-	dir = 1;
 	dwidth = 1;
 	height = 4;
 	id = "pod1_away";
@@ -7200,7 +6900,6 @@
 /area/space)
 "rP" = (
 /obj/docking_port/stationary{
-	dir = 1;
 	dwidth = 1;
 	height = 4;
 	id = "pod2_away";
@@ -7211,39 +6910,34 @@
 /area/space)
 "rQ" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall3";
 	icon_state = "swall3";
-	dir = 2
+	tag = "icon-swall3"
 	},
 /area/centcom/evac)
 "rR" = (
 /obj/structure/window/reinforced,
 /obj/structure/shuttle/engine/heater{
-	tag = "icon-heater (NORTH)";
-	icon_state = "heater";
-	dir = 1
+	dir = 1;
+	tag = "icon-heater (NORTH)"
 	},
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "rS" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall7";
 	icon_state = "swall7";
-	dir = 2
+	tag = "icon-swall7"
 	},
 /area/centcom/evac)
 "rT" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall12";
 	icon_state = "swall12";
-	dir = 2
+	tag = "icon-swall12"
 	},
 /area/centcom/evac)
 "rU" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall11";
 	icon_state = "swall11";
-	dir = 2
+	tag = "icon-swall11"
 	},
 /area/centcom/evac)
 "rV" = (
@@ -7251,8 +6945,7 @@
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
 	icon_state = "space";
 	layer = 4;
-	name = "EXTERNAL AIRLOCK";
-	pixel_x = 0
+	name = "EXTERNAL AIRLOCK"
 	},
 /turf/unsimulated/wall,
 /area/centcom/evac)
@@ -7270,23 +6963,21 @@
 "rX" = (
 /turf/simulated/shuttle/floor,
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
-	dir = 2
+	tag = "icon-swall_f9"
 	},
 /area/centcom/evac)
 "rY" = (
 /turf/simulated/shuttle/plating,
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
-	dir = 2
+	tag = "icon-swall_f6"
 	},
 /area/centcom/evac)
 "rZ" = (
 /turf/simulated/shuttle/floor{
-	tag = "icon-floor2";
-	icon_state = "floor2"
+	icon_state = "floor2";
+	tag = "icon-floor2"
 	},
 /area/centcom/evac)
 "sa" = (
@@ -7310,8 +7001,7 @@
 "sc" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular{
-	pixel_x = 2;
-	pixel_y = 0
+	pixel_x = 2
 	},
 /obj/item/storage/firstaid/regular{
 	pixel_x = -2;
@@ -7322,9 +7012,8 @@
 "sd" = (
 /turf/simulated/shuttle/floor,
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
-	dir = 2
+	tag = "icon-swall_f5"
 	},
 /area/centcom/evac)
 "se" = (
@@ -7332,7 +7021,6 @@
 /turf/simulated/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
-	layer = 2;
 	tag = "icon-swall_f10"
 	},
 /area/centcom/evac)
@@ -7350,46 +7038,39 @@
 "sg" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	pixel_x = -30;
-	pixel_y = 0;
-	req_access_txt = "0"
+	pixel_x = -30
 	},
 /turf/simulated/shuttle/floor,
 /area/centcom/evac)
 "sh" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall1";
 	icon_state = "swall1";
-	dir = 2
+	tag = "icon-swall1"
 	},
 /area/centcom/evac)
 "si" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	pixel_x = 30;
-	pixel_y = 0;
-	req_access_txt = "0"
+	pixel_x = 30
 	},
 /turf/simulated/shuttle/floor,
 /area/centcom/evac)
 "sj" = (
 /turf/unsimulated/floor{
-	icon_state = "greencorner";
-	dir = 8
+	dir = 8;
+	icon_state = "greencorner"
 	},
 /area/centcom/evac)
 "sk" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_s5";
 	icon_state = "swall_s5";
-	dir = 2
+	tag = "icon-swall_s5"
 	},
 /area/centcom/evac)
 "sl" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_s9";
 	icon_state = "swall_s9";
-	dir = 2
+	tag = "icon-swall_s9"
 	},
 /area/centcom/evac)
 "sm" = (
@@ -7438,8 +7119,7 @@
 /area/centcom/evac)
 "st" = (
 /obj/structure/closet/secure_closet/bar{
-	req_access = null;
-	req_access_txt = "0"
+	req_access = null
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -7467,8 +7147,7 @@
 "sx" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Rest Area";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -7478,9 +7157,8 @@
 "sy" = (
 /obj/machinery/computer/secure_data,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
@@ -7503,15 +7181,13 @@
 /area/centcom/evac)
 "sB" = (
 /turf/unsimulated/floor{
-	icon_state = "green";
-	dir = 6
+	dir = 6;
+	icon_state = "green"
 	},
 /area/centcom/evac)
 "sC" = (
 /obj/machinery/door/window/northright{
-	base_state = "right";
 	dir = 4;
-	icon_state = "right";
 	name = "Security Desk";
 	req_access_txt = "104"
 	},
@@ -7563,20 +7239,20 @@
 /area/centcom/evac)
 "sH" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 1
 	},
 /area/centcom/ferry)
 "sI" = (
-/obj/machinery/vending/boozeomat{
-	req_access_txt = "102"
+/obj/structure/table,
+/obj/machinery/chem_dispenser/beer,
+/turf/unsimulated/floor{
+	icon_state = "cafeteria"
 	},
-/turf/unsimulated/wall,
 /area/centcom/control)
 "sJ" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows2"
 	},
 /area/centcom/ferry)
 "sK" = (
@@ -7588,12 +7264,11 @@
 /area/centcom/evac)
 "sL" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Infirmary";
-	req_access_txt = "0"
+	name = "Infirmary"
 	},
 /turf/simulated/shuttle/floor{
-	tag = "icon-floor2";
-	icon_state = "floor2"
+	icon_state = "floor2";
+	tag = "icon-floor2"
 	},
 /area/centcom/evac)
 "sM" = (
@@ -7626,9 +7301,8 @@
 /area/tdome)
 "sP" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (SOUTHEAST)";
-	icon_state = "fakewindows";
-	dir = 6
+	dir = 6;
+	tag = "icon-fakewindows (SOUTHEAST)"
 	},
 /area/centcom/ferry)
 "sQ" = (
@@ -7636,19 +7310,16 @@
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
 	icon_state = "space";
 	layer = 4;
-	name = "EXTERNAL AIRLOCK";
-	pixel_x = 0
+	name = "EXTERNAL AIRLOCK"
 	},
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/centcom/ferry)
 "sR" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Medical Treatment Post";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
 	icon_state = "floor"
@@ -7657,9 +7328,7 @@
 "sS" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	pixel_x = -30;
-	pixel_y = 0;
-	req_access_txt = "0"
+	pixel_x = -30
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor3"
@@ -7668,21 +7337,20 @@
 "sT" = (
 /obj/machinery/vending/cigarette,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "sU" = (
 /obj/structure/table{
-	icon_state = "tabledir";
-	dir = 2
+	icon_state = "tabledir"
 	},
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "sV" = (
@@ -7693,17 +7361,17 @@
 /obj/item/lighter/zippo,
 /obj/item/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "sW" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "sX" = (
@@ -7711,9 +7379,9 @@
 /area/centcom/specops)
 "sY" = (
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "sZ" = (
@@ -7724,17 +7392,17 @@
 	pixel_y = 30
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "ta" = (
 /obj/machinery/vending/coffee,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "tb" = (
@@ -7750,16 +7418,15 @@
 /area/space)
 "tc" = (
 /turf/unsimulated/floor{
-	tag = "icon-warndark (EAST)";
+	dir = 4;
 	icon_state = "warndark";
-	dir = 4
+	tag = "icon-warndark (EAST)"
 	},
 /area/centcom/ferry)
 "td" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "ferry_away";
-	name = "Ferry Airlock";
-	req_access_txt = "0"
+	name = "Ferry Airlock"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -7768,24 +7435,24 @@
 "te" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (NORTHWEST)";
+	dir = 9;
 	icon_state = "whiteblue";
-	dir = 9
+	tag = "icon-whiteblue (NORTHWEST)"
 	},
 /area/centcom/evac)
 "tf" = (
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (NORTH)";
+	dir = 1;
 	icon_state = "whiteblue";
-	dir = 1
+	tag = "icon-whiteblue (NORTH)"
 	},
 /area/centcom/evac)
 "tg" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (NORTH)";
+	dir = 1;
 	icon_state = "whiteblue";
-	dir = 1
+	tag = "icon-whiteblue (NORTH)"
 	},
 /area/centcom/evac)
 "th" = (
@@ -7803,17 +7470,15 @@
 /area/centcom/specops)
 "tj" = (
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (NORTHEAST)";
+	dir = 5;
 	icon_state = "whiteblue";
-	dir = 5
+	tag = "icon-whiteblue (NORTHEAST)"
 	},
 /area/centcom/evac)
 "tk" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	pixel_x = 30;
-	pixel_y = 0;
-	req_access_txt = "0"
+	pixel_x = 30
 	},
 /obj/machinery/vending/snack,
 /turf/simulated/shuttle/floor,
@@ -7824,22 +7489,21 @@
 	name = "tdomeobserve"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "tm" = (
 /obj/machinery/vending/snack,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "tn" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 5
 	},
 /area/centcom/ferry)
@@ -7848,15 +7512,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (WEST)";
+	dir = 8;
 	icon_state = "whiteblue";
-	dir = 8
+	tag = "icon-whiteblue (WEST)"
 	},
 /area/centcom/evac)
 "tp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9;
-	icon_state = "intact"
+	dir = 9
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "white"
@@ -7864,16 +7527,15 @@
 /area/centcom/evac)
 "tq" = (
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (EAST)";
+	dir = 4;
 	icon_state = "whiteblue";
-	dir = 4
+	tag = "icon-whiteblue (EAST)"
 	},
 /area/centcom/evac)
 "tr" = (
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall14";
 	icon_state = "swall14";
-	dir = 2
+	tag = "icon-swall14"
 	},
 /area/centcom/evac)
 "ts" = (
@@ -7882,14 +7544,14 @@
 	req_access_txt = "106"
 	},
 /turf/simulated/shuttle/floor{
-	tag = "icon-floor2";
-	icon_state = "floor2"
+	icon_state = "floor2";
+	tag = "icon-floor2"
 	},
 /area/centcom/evac)
 "tt" = (
 /obj/structure/table{
-	icon_state = "tabledir";
-	dir = 9
+	dir = 9;
+	icon_state = "tabledir"
 	},
 /obj/item/storage/box/donkpockets{
 	pixel_x = 3;
@@ -7914,9 +7576,9 @@
 "tu" = (
 /obj/item/camera,
 /turf/unsimulated/floor{
-	tag = "icon-redbluefull (WEST)";
+	dir = 8;
 	icon_state = "redbluefull";
-	dir = 8
+	tag = "icon-redbluefull (WEST)"
 	},
 /area/tdome/tdomeobserve)
 "tv" = (
@@ -7925,9 +7587,9 @@
 	initialize_directions = 10
 	},
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (EAST)";
+	dir = 4;
 	icon_state = "whiteblue";
-	dir = 4
+	tag = "icon-whiteblue (EAST)"
 	},
 /area/centcom/evac)
 "tw" = (
@@ -7939,23 +7601,16 @@
 	name = "Canister: \[O2] (CRYO)"
 	},
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (SOUTHWEST)";
+	dir = 10;
 	icon_state = "whiteblue";
-	dir = 10
+	tag = "icon-whiteblue (SOUTHWEST)"
 	},
 /area/centcom/evac)
 "tx" = (
 /obj/structure/table,
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone,
+/obj/item/reagent_containers/glass/beaker/cryoxadone,
 /turf/simulated/floor/plasteel{
-	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
 	},
@@ -7969,7 +7624,6 @@
 	name = "Canister: \[O2] (CRYO)"
 	},
 /turf/simulated/floor/plasteel{
-	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
 	},
@@ -7979,9 +7633,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/plasteel{
-	tag = "icon-whiteblue (SOUTHEAST)";
+	dir = 6;
 	icon_state = "whiteblue";
-	dir = 6
+	tag = "icon-whiteblue (SOUTHEAST)"
 	},
 /area/centcom/evac)
 "tA" = (
@@ -7992,30 +7646,27 @@
 /obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/brute,
 /turf/simulated/floor/plasteel{
-	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
 	},
 /area/centcom/evac)
 "tB" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/tdome)
 "tC" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/tdome)
 "tD" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/tdome)
 "tE" = (
@@ -8077,8 +7728,8 @@
 /area/tdome/arena)
 "tK" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "red";
-	dir = 8
+	dir = 8;
+	icon_state = "red"
 	},
 /area/tdome/arena)
 "tL" = (
@@ -8092,16 +7743,16 @@
 /area/tdome/arena)
 "tM" = (
 /turf/simulated/floor/plasteel{
-	icon_state = "green";
-	dir = 4
+	dir = 4;
+	icon_state = "green"
 	},
 /area/tdome/arena)
 "tN" = (
 /obj/machinery/camera{
-	pixel_x = 11;
-	pixel_y = -9;
+	c_tag = "Thunderdome Red Team";
 	network = list("Thunderdome");
-	c_tag = "Thunderdome Red Team"
+	pixel_x = 11;
+	pixel_y = -9
 	},
 /obj/effect/landmark{
 	name = "tdome2"
@@ -8119,10 +7770,10 @@
 /area/tdome/arena)
 "tP" = (
 /obj/machinery/camera{
-	pixel_x = 12;
-	pixel_y = -10;
+	c_tag = "Thunderdome Green Team";
 	network = list("Thunderdome");
-	c_tag = "Thunderdome Green Team"
+	pixel_x = 12;
+	pixel_y = -10
 	},
 /obj/effect/landmark{
 	name = "tdome1"
@@ -8150,9 +7801,9 @@
 /area/centcom/control)
 "tS" = (
 /obj/machinery/camera{
-	pixel_x = 10;
+	c_tag = "Thunderdome Arena";
 	network = list("Thunderdome");
-	c_tag = "Thunderdome Arena"
+	pixel_x = 10
 	},
 /turf/simulated/floor/bluegrid,
 /area/tdome/arena)
@@ -8210,9 +7861,9 @@
 /area/space)
 "tX" = (
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "tY" = (
@@ -8223,35 +7874,33 @@
 	name = "tdomeadmin"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "tZ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/drinkingglass/devilskiss,
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "ua" = (
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch for port-side blast doors.";
-	icon_state = "doorctrl0";
 	id = "thunderdome";
 	name = "Main Blast Doors";
 	pixel_x = -3;
-	pixel_y = 0;
 	req_access_txt = "104"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "ub" = (
@@ -8259,9 +7908,9 @@
 	dir = 1
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "uc" = (
@@ -8282,9 +7931,9 @@
 	pixel_y = -30
 	},
 /turf/unsimulated/floor{
-	tag = "icon-redyellowfull (NORTHEAST)";
+	dir = 5;
 	icon_state = "redyellowfull";
-	dir = 5
+	tag = "icon-redyellowfull (NORTHEAST)"
 	},
 /area/tdome/tdomeadmin)
 "uf" = (
@@ -8312,10 +7961,8 @@
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch for port-side blast doors.";
-	icon_state = "doorctrl0";
 	id = "thunderdomehea";
 	name = "Ranged Gear";
-	pixel_x = 0;
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
@@ -8332,10 +7979,8 @@
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch for port-side blast doors.";
-	icon_state = "doorctrl0";
 	id = "thunderdomeaxe";
 	name = "Specialist Supply";
-	pixel_x = 0;
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
@@ -8347,10 +7992,8 @@
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch for port-side blast doors.";
-	icon_state = "doorctrl0";
 	id = "thunderdomegen";
 	name = "General Equiptment";
-	pixel_x = 0;
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
@@ -8405,7 +8048,6 @@
 "uq" = (
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Bathroom";
-	dir = 2;
 	network = list("ERT","CentComm")
 	},
 /turf/unsimulated/floor{
@@ -8436,11 +8078,10 @@
 /area/centcom/control)
 "uu" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
 	name = "window";
@@ -8481,19 +8122,18 @@
 /area/centcom/control)
 "uA" = (
 /turf/unsimulated/wall{
-	tag = "icon-wall3 (NORTH)";
+	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
-	dir = 1
+	tag = "icon-wall3 (NORTH)"
 	},
 /area/admin)
 "uB" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
 	name = "window";
@@ -8503,8 +8143,8 @@
 /area/admin)
 "uC" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 1;
@@ -8525,10 +8165,10 @@
 /area/space)
 "uE" = (
 /turf/unsimulated/wall{
-	tag = "icon-wall3 (EAST)";
+	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
-	dir = 4
+	tag = "icon-wall3 (EAST)"
 	},
 /area/admin)
 "uF" = (
@@ -8552,8 +8192,8 @@
 /obj/item/clothing/head/ushanka,
 /obj/item/clothing/head/helmet/roman/legionaire,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uI" = (
@@ -8569,8 +8209,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uJ" = (
@@ -8580,8 +8220,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uK" = (
@@ -8596,8 +8236,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uL" = (
@@ -8612,8 +8252,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uM" = (
@@ -8628,8 +8268,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uN" = (
@@ -8641,8 +8281,8 @@
 /obj/item/storage/backpack/duffel/syndie/ammo,
 /obj/item/storage/backpack/duffel/syndie/med,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uO" = (
@@ -8677,8 +8317,8 @@
 /area/centcom/specops)
 "uS" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
@@ -8692,8 +8332,8 @@
 /area/admin)
 "uT" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uU" = (
@@ -8708,8 +8348,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uV" = (
@@ -8720,18 +8360,20 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uW" = (
-/obj/structure/urinal,
-/turf/unsimulated/wall,
+/obj/structure/closet,
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
+	},
 /area/centcom/specops)
 "uX" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 4;
@@ -8754,8 +8396,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "uZ" = (
@@ -8767,8 +8409,8 @@
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "va" = (
@@ -8792,8 +8434,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vc" = (
@@ -8817,8 +8459,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vd" = (
@@ -8850,17 +8492,16 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vh" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
 	name = "window";
@@ -8886,8 +8527,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vk" = (
@@ -8902,57 +8543,57 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vl" = (
 /obj/mecha/combat/marauder/loaded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vm" = (
 /obj/mecha/combat/marauder/seraph/loaded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vn" = (
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /obj/machinery/mech_bay_recharge_port/upgraded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vo" = (
 /obj/mecha/combat/honker/loaded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vp" = (
 /obj/machinery/computer/mech_bay_power_console,
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vq" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
@@ -8976,8 +8617,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vs" = (
@@ -9024,8 +8665,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vy" = (
@@ -9040,8 +8681,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vz" = (
@@ -9065,8 +8706,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vA" = (
@@ -9081,8 +8722,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vB" = (
@@ -9093,14 +8734,13 @@
 /obj/item/mecha_parts/mecha_equipment/extinguisher,
 /obj/structure/closet/crate,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vC" = (
 /turf/space,
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
@@ -9121,8 +8761,8 @@
 	pixel_y = -6
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vE" = (
@@ -9138,29 +8778,29 @@
 	},
 /obj/item/storage/belt/champion/wrestling,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vF" = (
 /obj/mecha/combat/marauder/mauler/loaded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vG" = (
 /obj/mecha/combat/gygax/dark/loaded,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vH" = (
-/obj/structure/mecha_wreckage/phazon,
+/obj/mecha/combat/phazon,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vI" = (
@@ -9168,8 +8808,8 @@
 	pixel_y = -30
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vJ" = (
@@ -9184,8 +8824,8 @@
 	pixel_y = 6
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vK" = (
@@ -9220,8 +8860,8 @@
 	pixel_y = 3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vL" = (
@@ -9244,28 +8884,26 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot,
 /obj/structure/closet/crate,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vN" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Clothing Storage";
-	req_access_txt = "0"
+	name = "Clothing Storage"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vO" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Mecha Room";
-	req_access_txt = "0"
+	name = "Mecha Room"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "vP" = (
@@ -9278,11 +8916,9 @@
 /area/admin)
 "vQ" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
 	name = "window";
@@ -9292,11 +8928,9 @@
 /area/admin)
 "vR" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
 	name = "window";
@@ -9314,8 +8948,7 @@
 /area/centcom/specops)
 "vT" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
 	dir = 1;
@@ -9328,31 +8961,29 @@
 /area/admin)
 "vU" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/simulated/shuttle/wall{
-	tag = "icon-diagonalWall3 (EAST)";
+	dir = 4;
 	icon_state = "diagonalWall3";
-	dir = 4
+	tag = "icon-diagonalWall3 (EAST)"
 	},
 /area/admin)
 "vV" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/simulated/shuttle/wall{
-	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
-	dir = 2
+	tag = "icon-diagonalWall3"
 	},
 /area/admin)
 "vW" = (
 /obj/machinery/chem_master,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "vX" = (
@@ -9363,22 +8994,19 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "vY" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "vZ" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wa" = (
@@ -9386,8 +9014,7 @@
 /obj/item/storage/pill_bottle/random_drug_bottle,
 /obj/item/reagent_containers/glass/bottle/adminordrazine,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wb" = (
@@ -9400,18 +9027,17 @@
 	opacity = 0
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wc" = (
 /obj/machinery/door/airlock/hatch{
-	name = "External Airlock";
-	req_access_txt = "0"
+	name = "External Airlock"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wd" = (
@@ -9420,8 +9046,7 @@
 	hackedcheck = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "we" = (
@@ -9429,8 +9054,7 @@
 /area/centcom/specops)
 "wf" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
@@ -9457,15 +9081,13 @@
 "wi" = (
 /obj/structure/chair/stool,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wj" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wk" = (
@@ -9482,18 +9104,17 @@
 /area/space)
 "wl" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Armory";
-	req_access_txt = "0"
+	name = "Armory"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wm" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 1;
@@ -9504,14 +9125,12 @@
 "wn" = (
 /obj/machinery/chem_heater,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wo" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
@@ -9548,14 +9167,12 @@
 /obj/item/ammo_casing/shotgun/dart,
 /obj/item/ammo_casing/shotgun/dart,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wq" = (
 /turf/space,
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
@@ -9582,8 +9199,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wt" = (
@@ -9600,8 +9217,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wu" = (
@@ -9618,8 +9235,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wv" = (
@@ -9636,15 +9253,15 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "ww" = (
 /obj/machinery/vending/liberationstation,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wx" = (
@@ -9657,8 +9274,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wy" = (
@@ -9675,8 +9292,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wz" = (
@@ -9689,8 +9306,7 @@
 /obj/item/reagent_containers/food/snacks/grown/corn,
 /obj/item/reagent_containers/food/snacks/grown/mushroom/amanita,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wA" = (
@@ -9702,8 +9318,7 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/storage/box/autoinjectors,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wB" = (
@@ -9722,8 +9337,7 @@
 /obj/item/grenade/chem_grenade/large,
 /obj/item/grenade/chem_grenade/large,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wC" = (
@@ -9747,8 +9361,7 @@
 /obj/item/assembly/prox_sensor,
 /obj/item/assembly/prox_sensor,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wE" = (
@@ -9763,8 +9376,8 @@
 /area/space)
 "wF" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 4;
@@ -9777,11 +9390,9 @@
 /area/admin)
 "wG" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
 	name = "window";
@@ -9798,12 +9409,10 @@
 	opacity = 0
 	},
 /obj/machinery/door/airlock/hatch{
-	name = "Chem Lab";
-	req_access_txt = "0"
+	name = "Chem Lab"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wI" = (
@@ -9818,8 +9427,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wJ" = (
@@ -9840,8 +9449,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wK" = (
@@ -9855,19 +9464,18 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wM" = (
 /obj/structure/mirror{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wN" = (
@@ -9878,8 +9486,7 @@
 "wO" = (
 /obj/machinery/optable,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wP" = (
@@ -9889,8 +9496,7 @@
 /obj/item/kitchen/knife,
 /obj/item/storage/firstaid/tactical,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wQ" = (
@@ -9904,11 +9510,9 @@
 /obj/item/gun/energy/pulse/pistol,
 /obj/machinery/door_control{
 	desc = "A remote control switch to lock down the admin lab.";
-	icon_state = "doorctrl0";
 	id = "ADMINCHEMLOCKDOWN";
 	name = "Lockdown";
-	pixel_y = 24;
-	req_access_txt = "0"
+	pixel_y = 24
 	},
 /turf/unsimulated/floor{
 	dir = 9;
@@ -9931,14 +9535,14 @@
 	pixel_y = -6
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "wU" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 8;
@@ -9949,8 +9553,7 @@
 "wV" = (
 /obj/effect/decal/cleanable/blood,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wW" = (
@@ -9959,15 +9562,13 @@
 /obj/item/stack/rods,
 /obj/item/pen,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "wX" = (
 /obj/structure/chair/office/dark,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	icon_state = "carpet"
 	},
 /area/admin)
 "wY" = (
@@ -9992,8 +9593,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xb" = (
@@ -10004,8 +9605,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xc" = (
@@ -10016,8 +9617,8 @@
 	},
 /obj/item/katana,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xd" = (
@@ -10035,8 +9636,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xf" = (
@@ -10045,22 +9646,22 @@
 /obj/random/bomb_supply,
 /obj/machinery/syndicatebomb/badmin/clown,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xg" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/syndicate,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xh" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xi" = (
@@ -10070,8 +9671,8 @@
 /obj/item/rcd_ammo,
 /obj/item/storage/pill_bottle/random_drug_bottle,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xj" = (
@@ -10080,8 +9681,7 @@
 /obj/item/bonesetter,
 /obj/item/bonegel,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xk" = (
@@ -10093,18 +9693,15 @@
 /obj/item/storage/fancy/cigarettes,
 /obj/item/pen,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xl" = (
 /obj/structure/table,
 /obj/machinery/door/window/southleft{
-	name = "security checkpoint";
-	req_access_txt = "0"
+	name = "security checkpoint"
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/admin)
@@ -10138,8 +9735,8 @@
 	pixel_y = 3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xp" = (
@@ -10153,8 +9750,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xq" = (
@@ -10165,18 +9762,17 @@
 /obj/item/clothing/suit/poncho/ponchoshame,
 /obj/item/clothing/head/sombrero/shamebrero,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xr" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Tool Storage";
-	req_access_txt = "0"
+	name = "Tool Storage"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xs" = (
@@ -10185,15 +9781,13 @@
 /obj/item/retractor,
 /obj/item/cautery,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xt" = (
 /obj/structure/kitchenspike,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xu" = (
@@ -10202,7 +9796,6 @@
 	icon_state = "wood"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
 	name = "window";
@@ -10216,7 +9809,6 @@
 	icon_state = "wood"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
 	name = "window";
@@ -10246,8 +9838,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xy" = (
@@ -10258,8 +9850,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xz" = (
@@ -10280,8 +9872,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xB" = (
@@ -10295,8 +9887,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xC" = (
@@ -10305,34 +9897,31 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/pinpointer/advpinpointer,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xD" = (
 /obj/structure/table,
 /obj/item/grenade/syndieminibomb{
 	pixel_x = 4;
-	pixel_y = 2;
-	pixel_z = 0
+	pixel_y = 2
 	},
 /obj/item/grenade/syndieminibomb{
 	pixel_x = -1
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xE" = (
 /obj/structure/table,
-/obj/machinery/recharger{
-	pixel_y = 0
-	},
+/obj/machinery/recharger,
 /obj/item/toy/cards/deck/syndicate/black,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "xF" = (
@@ -10340,8 +9929,7 @@
 /obj/item/surgicaldrill,
 /obj/item/stack/medical/bruise_pack/advanced,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xG" = (
@@ -10349,8 +9937,7 @@
 /obj/item/hemostat,
 /obj/item/circular_saw,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xH" = (
@@ -10363,12 +9950,10 @@
 	},
 /obj/machinery/door/airlock/hatch{
 	desc = "Uh oh.";
-	name = "Operating Theater";
-	req_access_txt = "0"
+	name = "Operating Theater"
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/admin)
 "xI" = (
@@ -10394,7 +9979,6 @@
 	icon_state = "wood"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
@@ -10407,8 +9991,8 @@
 /area/adminconstruction)
 "xM" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
 	dir = 4;
@@ -10418,11 +10002,10 @@
 /area/admin)
 "xN" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
@@ -10430,61 +10013,56 @@
 "xO" = (
 /obj/machinery/door/airlock/hatch{
 	desc = "You've heard rumors of the horrors that go on within this lab.";
-	name = "Laboratory (DANGER!)";
-	req_access_txt = "0"
+	name = "Laboratory (DANGER!)"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xP" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/trader_station/sol)
 "xQ" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/trader_station/sol)
 "xR" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (WEST)";
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	tag = "icon-fakewindows (WEST)"
 	},
 /area/vox_station)
 "xS" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/vox_station)
 "xT" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows (EAST)";
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	tag = "icon-fakewindows (EAST)"
 	},
 /area/vox_station)
 "xU" = (
 /obj/machinery/computer/crew,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xV" = (
 /obj/machinery/computer/ordercomp,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xW" = (
@@ -10493,8 +10071,8 @@
 	name = "Master R&amp;D Server Controller"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xX" = (
@@ -10502,8 +10080,8 @@
 	network = list("SS13","Telecomms","Research Outpost","Mining Outpost","ERT","CentComm","Thunderdome")
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xY" = (
@@ -10518,8 +10096,8 @@
 	pixel_y = 3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "xZ" = (
@@ -10531,8 +10109,8 @@
 "ya" = (
 /obj/machinery/r_n_d/server/centcom,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yb" = (
@@ -10541,17 +10119,14 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/card/id{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/card/id,
 /obj/item/card/id/admin{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yc" = (
@@ -10560,7 +10135,6 @@
 	icon_state = "wood"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
 	name = "window";
@@ -10578,8 +10152,8 @@
 "ye" = (
 /obj/machinery/computer/shuttle/trade/sol,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "yf" = (
@@ -10595,22 +10169,22 @@
 "yh" = (
 /obj/machinery/vending/snack,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "yi" = (
 /obj/machinery/computer/card/centcom,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yj" = (
 /obj/machinery/computer/card,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yk" = (
@@ -10618,14 +10192,13 @@
 	dir = 1
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yl" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Computer Hub";
-	req_access_txt = "0"
+	name = "Computer Hub"
 	},
 /obj/machinery/door/poddoor{
 	density = 0;
@@ -10635,8 +10208,8 @@
 	opacity = 0
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "ym" = (
@@ -10645,15 +10218,14 @@
 	tag = ""
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yn" = (
 /obj/machinery/door/airlock/hatch{
 	desc = "For all your shady business needs";
-	name = "Gambling Den";
-	req_access_txt = "0"
+	name = "Gambling Den"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -10720,12 +10292,11 @@
 /area/centcom/evac)
 "yw" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "yx" = (
@@ -10743,8 +10314,8 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yA" = (
@@ -10787,8 +10358,8 @@
 /area/trader_station/sol)
 "yF" = (
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "yG" = (
@@ -10814,15 +10385,15 @@
 "yJ" = (
 /obj/machinery/computer/communications,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yK" = (
 /obj/structure/chair/comfy/black,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yL" = (
@@ -10859,8 +10430,8 @@
 "yP" = (
 /obj/machinery/computer/atmos_alert,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yQ" = (
@@ -10872,8 +10443,8 @@
 /obj/machinery/computer/message_monitor,
 /obj/item/paper/monitorkey,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yS" = (
@@ -10881,8 +10452,8 @@
 	name = "Admin Accounts Database"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yT" = (
@@ -10894,23 +10465,20 @@
 "yU" = (
 /obj/machinery/computer/secure_data,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yV" = (
 /obj/structure/table,
 /obj/machinery/door_control{
 	desc = "A remote control switch to lock down external access to the admin room.";
-	icon_state = "doorctrl0";
 	id = "ADMINLOCKDOWN";
-	name = "Lockdown";
-	pixel_y = 0;
-	req_access_txt = "0"
+	name = "Lockdown"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "yW" = (
@@ -10922,9 +10490,7 @@
 /area/centcom/evac)
 "yX" = (
 /obj/structure/table/reinforced,
-/obj/machinery/recharger{
-	pixel_y = 0
-	},
+/obj/machinery/recharger,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
 	},
@@ -10946,8 +10512,8 @@
 /obj/structure/table,
 /obj/item/gun/projectile/automatic/pistol,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "zb" = (
@@ -10957,8 +10523,8 @@
 /obj/item/reagent_containers/food/drinks/cans/badminbrew,
 /obj/item/reagent_containers/food/drinks/cans/madminmalt,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "zc" = (
@@ -10968,29 +10534,27 @@
 "zd" = (
 /obj/machinery/door/airlock/hatch{
 	desc = "Danger: May contain robustness";
-	name = "Dojo";
-	req_access_txt = "0"
+	name = "Dojo"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "ze" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Shuttle Bay";
-	req_access_txt = "0"
+	name = "Shuttle Bay"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "zf" = (
 /obj/structure/showcase,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zh" = (
@@ -11005,8 +10569,8 @@
 	name = "traderstart_sol"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zk" = (
@@ -11031,8 +10595,8 @@
 	},
 /obj/structure/table/wood,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zm" = (
@@ -11045,14 +10609,14 @@
 /obj/item/grenade/clusterbuster/smoke,
 /obj/structure/table/wood,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zn" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows2"
 	},
 /area/trader_station/sol)
 "zr" = (
@@ -11064,8 +10628,8 @@
 /obj/structure/table/wood,
 /obj/item/dice/d20,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zu" = (
@@ -11076,8 +10640,8 @@
 	name = "traderstart_sol"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zv" = (
@@ -11088,8 +10652,8 @@
 /obj/structure/table/wood,
 /obj/item/sleeping_carp_scroll,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zw" = (
@@ -11100,8 +10664,8 @@
 /obj/structure/table/wood,
 /obj/item/twohanded/bostaff,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zx" = (
@@ -11117,8 +10681,8 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zz" = (
@@ -11126,8 +10690,8 @@
 	pixel_x = -28
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zA" = (
@@ -11135,8 +10699,8 @@
 	pixel_x = 28
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zC" = (
@@ -11150,14 +10714,14 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zD" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /turf/unsimulated/wall{
 	dir = 1;
@@ -11167,8 +10731,8 @@
 /area/admin)
 "zE" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /turf/unsimulated/wall{
 	dir = 8;
@@ -11179,7 +10743,6 @@
 "zF" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 0;
-	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
 	},
 /area/trader_station/sol)
@@ -11193,24 +10756,24 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zJ" = (
 /obj/structure/bed,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zK" = (
 /obj/effect/decal/cleanable/fungus,
 /turf/unsimulated/wall{
-	tag = "icon-wall3 (EAST)";
+	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
-	dir = 4
+	tag = "icon-wall3 (EAST)"
 	},
 /area/admin)
 "zL" = (
@@ -11222,8 +10785,7 @@
 "zM" = (
 /obj/machinery/door/window{
 	dir = 1;
-	name = "Suit Storage";
-	req_access_txt = "0"
+	name = "Suit Storage"
 	},
 /turf/unsimulated/floor{
 	icon_state = "engine"
@@ -11231,7 +10793,6 @@
 /area/admin)
 "zN" = (
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
@@ -11249,12 +10810,11 @@
 /area/centcom/evac)
 "zP" = (
 /obj/machinery/door/airlock{
-	name = "Toilet";
-	req_access_txt = "0"
+	name = "Toilet"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zQ" = (
@@ -11273,8 +10833,8 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/trader_station/sol)
 "zT" = (
@@ -11294,8 +10854,8 @@
 	req_access_txt = "101"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zV" = (
@@ -11318,8 +10878,8 @@
 "zY" = (
 /obj/structure/window/reinforced,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "zZ" = (
@@ -11327,8 +10887,7 @@
 	pixel_y = 28
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "Aa" = (
@@ -11337,8 +10896,7 @@
 	pixel_x = 28
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "Ab" = (
@@ -11348,36 +10906,35 @@
 	},
 /obj/item/soap,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "Ac" = (
 /obj/machinery/iv_drip,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Ad" = (
 /obj/machinery/vending/medical,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Ae" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/blood,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Af" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /turf/unsimulated/wall{
 	dir = 4;
@@ -11387,11 +10944,10 @@
 /area/admin)
 "Ag" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
@@ -11400,16 +10956,16 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/straight_jacket,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Ai" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/handcuffs,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Aj" = (
@@ -11417,8 +10973,8 @@
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/clothing/mask/muzzle,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Ak" = (
@@ -11436,8 +10992,7 @@
 /area/admin)
 "Al" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "Am" = (
@@ -11446,32 +11001,28 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "An" = (
 /turf/unsimulated/wall/fakeglass{
-	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/trader_station/sol)
 "Ao" = (
 /turf/unsimulated/wall/fakeglass{
-	tag = "icon-fakewindows2 (WEST)";
+	dir = 8;
 	icon_state = "fakewindows2";
-	dir = 8
+	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/trader_station/sol)
 "Ar" = (
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /turf/unsimulated/wall{
 	dir = 4;
@@ -11488,8 +11039,8 @@
 	name = "Prisoner Treatment"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "At" = (
@@ -11498,8 +11049,8 @@
 	name = "Detainment"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Au" = (
@@ -11507,7 +11058,6 @@
 	icon_state = "engine"
 	},
 /turf/unsimulated/wall{
-	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
 	name = "window";
@@ -11525,12 +11075,10 @@
 /obj/machinery/door/window{
 	dir = 8;
 	name = "Toilet";
-	opacity = 1;
-	req_access_txt = "0"
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	icon_state = "freezerfloor"
 	},
 /area/trader_station/sol)
 "Aw" = (
@@ -11542,8 +11090,8 @@
 /obj/item/paper/Court,
 /obj/item/pen,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "Az" = (
@@ -11551,24 +11099,24 @@
 /obj/item/storage/box/mousetraps,
 /obj/item/storage/box/trackimp,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AA" = (
 /obj/structure/table/reinforced,
 /obj/item/scalpel,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AB" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/grenades,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AC" = (
@@ -11576,16 +11124,16 @@
 /obj/item/storage/box/flashbangs,
 /obj/item/storage/box/flashes,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AD" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/teargas,
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AE" = (
@@ -11595,8 +11143,8 @@
 	req_access_txt = "101"
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AF" = (
@@ -11605,8 +11153,8 @@
 	layer = 2.9
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AG" = (
@@ -11614,14 +11162,13 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	tag = "icon-dark";
-	icon_state = "dark"
+	icon_state = "dark";
+	tag = "icon-dark"
 	},
 /area/admin)
 "AI" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Teleporter Access";
-	req_access_txt = "0"
+	name = "Teleporter Access"
 	},
 /obj/machinery/door/poddoor{
 	density = 0;
@@ -11631,8 +11178,8 @@
 	opacity = 0
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AJ" = (
@@ -11640,8 +11187,8 @@
 /obj/item/tank/jetpack/oxygen,
 /obj/item/tank/jetpack/oxygen,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AK" = (
@@ -11653,8 +11200,8 @@
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/head/helmet/space,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AL" = (
@@ -11665,8 +11212,8 @@
 	pixel_y = 6
 	},
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AM" = (
@@ -11682,8 +11229,8 @@
 /obj/structure/table,
 /obj/random/powercell,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AP" = (
@@ -11691,16 +11238,16 @@
 /obj/random/tool,
 /obj/random/bomb_supply,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AQ" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AR" = (
@@ -11708,15 +11255,15 @@
 /obj/random/technology_scanner,
 /obj/random/tech_supply,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AS" = (
 /obj/machinery/computer/teleporter,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AT" = (
@@ -11724,8 +11271,8 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/random/bomb_supply,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AU" = (
@@ -11734,23 +11281,23 @@
 	},
 /obj/effect/decal/warning_stripes/yellow,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AV" = (
 /obj/machinery/teleport/station,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AW" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/electrical,
 /turf/unsimulated/floor{
-	tag = "icon-floor";
-	icon_state = "floor"
+	icon_state = "floor";
+	tag = "icon-floor"
 	},
 /area/admin)
 "AX" = (
@@ -11764,9 +11311,8 @@
 /area/syndicate_mothership)
 "AY" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /obj/machinery/pdapainter,
 /turf/unsimulated/floor{
@@ -11776,9 +11322,8 @@
 "AZ" = (
 /obj/structure/table,
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (EAST)";
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	tag = "icon-tube1 (EAST)"
 	},
 /obj/item/storage/backpack/satchel,
 /obj/item/storage/backpack/satchel,
@@ -11788,9 +11333,8 @@
 /area/syndicate_mothership)
 "Ba" = (
 /obj/machinery/light/spot{
-	tag = "icon-tube1 (WEST)";
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	tag = "icon-tube1 (WEST)"
 	},
 /obj/machinery/vending/tool,
 /turf/unsimulated/floor{
@@ -11873,8 +11417,7 @@
 "Bn" = (
 /obj/machinery/door/airlock/hatch/syndicate,
 /turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
+	icon_state = "bar"
 	},
 /area/syndicate_mothership)
 "Bo" = (
@@ -11915,14 +11458,12 @@
 /area/centcom/evac)
 "Bt" = (
 /obj/structure/chair/comfy/red{
-	icon_state = "comfychair";
 	dir = 1
 	},
 /obj/effect/landmark{
 	name = "Syndicate Officer"
 	},
 /turf/unsimulated/floor{
-	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/syndicate_mothership)
@@ -12236,17 +11777,142 @@
 	},
 /turf/unsimulated/floor/snow,
 /area/syndicate_mothership)
+"CG" = (
+/obj/machinery/vending/security,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"CZ" = (
+/obj/machinery/door/airlock/centcom{
+	name = "General Access";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/centcom/evac)
+"Dd" = (
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4,
+/obj/item/grenade/plastic/x4,
+/obj/item/grenade/plastic/x4,
+/obj/item/grenade/plastic/x4,
+/obj/item/grenade/plastic/x4,
+/obj/item/grenade/plastic/c4,
+/obj/item/grenade/plastic/c4,
+/obj/item/grenade/plastic/c4,
+/obj/item/grenade/plastic/c4,
+/obj/item/grenade/plastic/c4,
+/obj/structure/closet/crate,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Dv" = (
 /turf/space,
 /area/admin)
+"Dy" = (
+/obj/structure/rack,
+/obj/item/gun/energy/ionrifle/carbine{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/gun/energy/ionrifle/carbine{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/gun/energy/ionrifle/carbine,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Dz" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
+	},
+/area/centcom/specops)
+"DA" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "toilet_ert_unit_2";
+	name = "Bathroom";
+	opacity = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "DX" = (
 /turf/simulated/floor/mech_bay_recharge_floor,
 /area/admin)
+"En" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/soda/upgraded,
+/turf/unsimulated/floor{
+	icon_state = "cafeteria"
+	},
+/area/centcom/control)
+"EV" = (
+/obj/structure/rack,
+/obj/item/gun/projectile/automatic/m90{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/gun/projectile/automatic/m90{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Fv" = (
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/item/grenade/plastic/x4/thermite,
+/obj/structure/closet/crate,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "FL" = (
 /turf/simulated/wall/r_wall,
 /area/adminconstruction)
 "Ga" = (
 /obj/machinery/computer/shuttle/ert,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Gf" = (
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/structure/closet/crate,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Gu" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/flashbangs{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/storage/box/flashbangs,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12319,6 +11985,18 @@
 	icon_state = "white"
 	},
 /area/tdome)
+"HN" = (
+/obj/machinery/door_control{
+	id = "toilet_ert_unit_2";
+	name = "Toilet door control";
+	normaldoorcontrol = 1;
+	pixel_y = 25;
+	specialfunctions = 4
+	},
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
+	},
+/area/centcom/specops)
 "HR" = (
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access_txt = "112"
@@ -12399,11 +12077,44 @@
 "Iw" = (
 /turf/simulated/floor/bluegrid,
 /area/tdome/arena)
+"IG" = (
+/obj/machinery/door_control{
+	id = "toilet_ert_unit_1";
+	name = "Toilet door control";
+	normaldoorcontrol = 1;
+	pixel_y = 25;
+	specialfunctions = 4
+	},
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
+	},
+/area/centcom/specops)
 "IS" = (
 /turf/unsimulated/floor{
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
+"Jp" = (
+/obj/structure/rack,
+/obj/item/gun/energy/gun/nuclear{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/gun/energy/gun/nuclear,
+/obj/item/gun/energy/gun/nuclear{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Ju" = (
+/obj/machinery/vending/boozeomat{
+	req_access_txt = "102"
+	},
+/turf/unsimulated/wall,
+/area/centcom/control)
 "JC" = (
 /obj/structure/chair/stool,
 /obj/item/clothing/head/bandana{
@@ -12480,6 +12191,21 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
+"KF" = (
+/obj/structure/rack,
+/obj/item/gun/energy/gun/blueshield/pdw9{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/gun/energy/gun/blueshield/pdw9{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/gun/energy/gun/blueshield/pdw9,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "KR" = (
 /obj/machinery/light/small,
 /obj/structure/chair/comfy/shuttle{
@@ -12514,9 +12240,52 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
+"LP" = (
+/obj/item/storage/toolbox,
+/obj/item/storage/toolbox,
+/obj/item/storage/toolbox,
+/obj/structure/closet/crate,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "LZ" = (
 /obj/mecha/combat/marauder/seraph/loaded,
 /obj/effect/decal/warning_stripes/yellow,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"MD" = (
+/obj/machinery/door/poddoor{
+	id_tag = "ERTBFG2";
+	name = "BFG armory blast door"
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Nb" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/handcuffs{
+	pixel_x = 4
+	},
+/obj/item/storage/box/handcuffs,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Ne" = (
+/obj/structure/rack,
+/obj/item/gun/energy/laser{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/gun/energy/laser{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/gun/energy/laser,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12546,6 +12315,15 @@
 	name = "plating"
 	},
 /area/centcom/control)
+"NU" = (
+/obj/machinery/camera{
+	c_tag = "CentComm Special Ops. BFG armory";
+	network = list("ERT","CentComm")
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Oh" = (
 /obj/effect/decal/warning_stripes/southwest,
 /turf/unsimulated/floor{
@@ -12582,10 +12360,63 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
+"Pq" = (
+/obj/structure/rack,
+/obj/item/gun/energy/immolator,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "PJ" = (
 /obj/effect/decal/warning_stripes/west,
 /turf/unsimulated/floor{
 	name = "plating"
+	},
+/area/centcom/specops)
+"PX" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -7;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -1;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 9;
+	pixel_y = -3
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
 	},
 /area/centcom/specops)
 "Qr" = (
@@ -12608,9 +12439,30 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
+"QJ" = (
+/obj/structure/table/reinforced,
+/obj/item/radio{
+	pixel_x = -6
+	},
+/obj/item/radio,
+/obj/item/radio{
+	pixel_x = 6
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Rf" = (
 /obj/structure/chair{
 	dir = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Rs" = (
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 30
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -12622,8 +12474,34 @@
 	icon_state = "floor"
 	},
 /area/centcom/control)
+"RY" = (
+/obj/structure/table/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/restraints/legcuffs/bola/energy{
+	pixel_x = -6
+	},
+/obj/item/restraints/legcuffs/bola/energy{
+	pixel_x = -3
+	},
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy{
+	pixel_x = 3
+	},
+/obj/item/restraints/legcuffs/bola/energy{
+	pixel_x = 6
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Sa" = (
 /obj/structure/chair/office/dark,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"SE" = (
+/obj/mecha/combat/gygax,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12675,6 +12553,34 @@
 	icon_state = "floor"
 	},
 /area/centcom/control)
+"TB" = (
+/obj/structure/rack,
+/obj/item/gun/projectile/shotgun/automatic/combat{
+	pixel_y = -4
+	},
+/obj/item/gun/projectile/shotgun/automatic/combat,
+/obj/item/gun/projectile/shotgun/automatic/combat{
+	pixel_y = 4
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Ub" = (
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/structure/closet/crate,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Uf" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -12684,11 +12590,25 @@
 	},
 /area/centcom/specops)
 "UH" = (
-/obj/structure/chair{
-	dir = 1
+/obj/machinery/door/airlock/centcom{
+	id_tag = "toilet_ert_unit_3";
+	name = "Bathroom";
+	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "grimy"
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"UK" = (
+/obj/machinery/door_control{
+	id = "toilet_ert_unit_3";
+	name = "Toilet door control";
+	normaldoorcontrol = 1;
+	pixel_y = 25;
+	specialfunctions = 4
+	},
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
 	},
 /area/centcom/specops)
 "Vc" = (
@@ -12733,6 +12653,12 @@
 	icon_state = "floor"
 	},
 /area/centcom/evac)
+"VY" = (
+/obj/machinery/recharge_station/upgraded,
+/turf/unsimulated/floor{
+	icon_state = "freezerfloor"
+	},
+/area/centcom/specops)
 "Wa" = (
 /obj/structure/bed,
 /turf/unsimulated/floor{
@@ -12785,6 +12711,21 @@
 /obj/structure/chair/comfy/shuttle,
 /turf/simulated/shuttle/floor,
 /area/centcom/evac)
+"WX" = (
+/obj/structure/rack,
+/obj/item/gun/energy/taser{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/gun/energy/taser,
+/obj/item/gun/energy/taser{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Xj" = (
 /obj/structure/bed,
 /turf/unsimulated/floor{
@@ -12803,6 +12744,18 @@
 	name = "plating"
 	},
 /area/centcom)
+"XA" = (
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 30
+	},
+/obj/machinery/camera{
+	c_tag = "CentComm Special Ops. Armory";
+	network = list("ERT","CentComm")
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "XL" = (
 /obj/structure/table/abductor,
 /obj/item/bonegel/alien,
@@ -12816,6 +12769,52 @@
 /obj/structure/bed/abductor,
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
+"Yc" = (
+/obj/structure/rack,
+/obj/item/gun/energy/lasercannon,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Yu" = (
+/obj/machinery/vending/engineering,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"ZA" = (
+/obj/structure/rack,
+/obj/item/shield/riot{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/item/shield/riot{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/shield/riot,
+/obj/item/shield/riot{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/shield/riot{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"ZY" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "toilet_ert_unit_1";
+	name = "Bathroom";
+	opacity = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 
 (1,1,1) = {"
 ck
@@ -24526,14 +24525,14 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+sX
+sX
+sX
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -24783,14 +24782,14 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+Ub
+BR
+uj
+BR
+uj
+BR
+sX
 aN
 aN
 aN
@@ -25040,14 +25039,14 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+SE
+uj
+SE
+uj
+SE
+sX
 aN
 aN
 aN
@@ -25297,14 +25296,14 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+uj
+uj
+uj
+uj
+uj
+sX
 aN
 aN
 aN
@@ -25554,14 +25553,14 @@ fm
 fm
 fm
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+NU
+uj
+uj
+uj
+uj
+Dd
+sX
 aN
 aN
 aN
@@ -25811,14 +25810,14 @@ pn
 oy
 px
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+uj
+uj
+uj
+uj
+Gf
+sX
 aN
 aN
 aN
@@ -26068,14 +26067,14 @@ pf
 fV
 oh
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+uj
+uj
+uj
+uj
+uj
+sX
 aN
 aN
 aN
@@ -26325,17 +26324,17 @@ pf
 pq
 oh
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+EV
+Yc
+Pq
+TB
+Jp
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -26582,17 +26581,17 @@ pf
 pu
 oh
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+MD
+sX
+sX
+sX
+sX
+sX
+sX
+aG
+qQ
+sX
 aN
 aN
 aN
@@ -26839,17 +26838,17 @@ pa
 ps
 oh
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+uj
+Yu
+uj
+CG
+uj
+Fv
+sX
+be
+be
+sX
 aN
 aN
 aN
@@ -27091,25 +27090,25 @@ fm
 oi
 oy
 oy
-pt
+pn
 oy
 oy
 py
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+Rs
+uj
+uj
+uj
+uj
+uj
+sX
+pt
+uW
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -27353,20 +27352,20 @@ fm
 fm
 fm
 fm
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+Rs
+uj
+uj
+uj
+uj
+uj
+sX
+pJ
+sX
+sX
+UK
+VY
+sX
 aN
 aN
 aN
@@ -27610,20 +27609,20 @@ fm
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+sX
+XA
+QJ
+Nb
+RY
+PX
+Gu
+sX
+pK
+pK
+UH
+pK
+pK
+sX
 aN
 aN
 aN
@@ -27868,19 +27867,19 @@ sX
 sX
 sX
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Rs
+uj
+uj
+uj
+uj
+uj
+sX
+qb
+pK
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -28125,19 +28124,19 @@ Te
 rA
 rB
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+Rs
+uj
+uj
+uj
+uj
+uj
+sX
+qb
+pK
+DA
+pK
+pK
+sX
 aN
 aN
 aN
@@ -28382,19 +28381,19 @@ uj
 uj
 uj
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+uj
+WX
+ZA
+Ne
+KF
+Dy
+sX
+qb
+pK
+sX
+HN
+Dz
+sX
 aN
 aN
 aN
@@ -28639,19 +28638,19 @@ uj
 sX
 sX
 sX
+al
 sX
 sX
 sX
 sX
 sX
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+qb
+pK
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -28893,22 +28892,22 @@ kd
 oT
 fm
 uj
-uW
-pJ
-pJ
-pJ
-pJ
-qu
-pJ
-pJ
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+pL
+pK
+pK
+ZY
+pK
+pK
+sX
 aN
 aN
 aN
@@ -29150,22 +29149,22 @@ kd
 oT
 fm
 uj
-uW
-pJ
-pJ
-qb
-qb
 sX
-pJ
-qQ
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
 sX
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+qu
+qu
+sX
+IG
+Dz
+sX
 aN
 aN
 aN
@@ -29408,8 +29407,8 @@ oQ
 fm
 uj
 sX
-pK
-pJ
+uj
+uj
 sX
 sX
 sX
@@ -29419,10 +29418,10 @@ sX
 sX
 sX
 sX
-aN
-aN
-aN
-aN
+sX
+sX
+sX
+sX
 aN
 aN
 aN
@@ -29665,8 +29664,8 @@ nc
 fm
 pv
 sX
-pL
-sX
+uj
+uj
 sX
 aN
 aN
@@ -31457,7 +31456,7 @@ mg
 Pn
 mg
 sX
-uj
+LP
 uj
 uj
 uj
@@ -33263,8 +33262,8 @@ VC
 sX
 ve
 vd
-be
-UH
+vd
+vd
 vd
 qm
 sX
@@ -36067,8 +36066,8 @@ aN
 aN
 aN
 aN
-aN
-aN
+sq
+sq
 sq
 sq
 sq
@@ -36324,10 +36323,10 @@ aN
 aN
 aN
 aN
-aN
-aN
 sq
-lp
+lo
+lH
+lH
 lH
 lH
 lH
@@ -36581,10 +36580,10 @@ aN
 aN
 aN
 aN
-aN
-aN
 sq
-lo
+lp
+lH
+lH
 lH
 lW
 mc
@@ -36838,10 +36837,10 @@ aN
 aN
 aN
 aN
-aN
-aN
 sq
 lq
+lH
+lH
 lH
 lX
 mc
@@ -37095,11 +37094,11 @@ aN
 aN
 aN
 aN
-aN
-aN
 sq
-sI
 lH
+Ju
+sI
+En
 lX
 lH
 lH
@@ -37352,8 +37351,8 @@ aN
 aN
 aN
 aN
-aN
-aN
+sq
+sq
 sq
 sq
 sq
@@ -37640,7 +37639,7 @@ sq
 qL
 qZ
 qZ
-xz
+CZ
 qH
 qJ
 We
@@ -55811,7 +55810,7 @@ ag
 nj
 hn
 hn
-hD
+eq
 hn
 hn
 Bn
@@ -63962,23 +63961,23 @@ aN
 "}
 (200,1,1) = {"
 aa
-al
-al
-al
-al
-al
+ak
+ak
+ak
+ak
+ak
 bY
-al
-al
-al
-al
-al
+ak
+ak
+ak
+ak
+ak
 bY
-al
-al
-al
-al
-al
+ak
+ak
+ak
+ak
+ak
 cb
 aN
 aN
@@ -66789,17 +66788,17 @@ aN
 "}
 (211,1,1) = {"
 ah
-aG
-aG
-aG
-aG
-aG
+an
+an
+an
+an
+an
 bZ
-aG
-aG
-aG
-aG
-aG
+an
+an
+an
+an
+an
 bZ
 cu
 cu
@@ -69616,11 +69615,11 @@ aN
 "}
 (222,1,1) = {"
 ah
-aG
-aG
-aG
-aG
-aG
+an
+an
+an
+an
+an
 bZ
 cu
 cu
@@ -72443,11 +72442,11 @@ aN
 "}
 (233,1,1) = {"
 ah
-aG
-aG
-aG
-aG
-aG
+an
+an
+an
+an
+an
 bZ
 cu
 cu
@@ -75270,11 +75269,11 @@ aN
 "}
 (244,1,1) = {"
 ah
-aG
-aG
-aG
-aG
-aG
+an
+an
+an
+an
+an
 bZ
 cu
 cu
