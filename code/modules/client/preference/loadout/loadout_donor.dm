@@ -7,10 +7,6 @@
 	display_name = "Fur Gloves"
 	path = /obj/item/clothing/gloves/furgloves
 
-/datum/gear/ExpensiveZippo
-	display_name = "Expensive Zippo"
-	path = /obj/item/lighter/zippo/nt_rep
-
 /datum/gear/donor/furboots
 	display_name = "Fur Boots"
 	path = /obj/item/clothing/shoes/furboots
