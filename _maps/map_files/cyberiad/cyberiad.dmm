@@ -1022,6 +1022,7 @@
 	name = "Snack Bar";
 	req_access_txt = "1"
 	},
+/obj/structure/barricade/wooden,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -92184,6 +92185,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/barricade/wooden,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -92423,6 +92425,7 @@
 	name = "Snack Bar";
 	req_access_txt = "1"
 	},
+/obj/structure/barricade/wooden,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -92903,15 +92906,12 @@
 /area/security/torture_chamber)
 "utU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/item/mounted/frame/apc_frame,
+/obj/item/stock_parts/cell/high,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
