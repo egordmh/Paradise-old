@@ -19,7 +19,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Guide_to_Construction&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Руководство_по_строительству&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
 		</body>
 
 		</html>
@@ -166,7 +166,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Hacking&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Руководство_по_взлому&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
 		</body>
 
 		</html>
@@ -814,7 +814,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Space_law&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Космический_Закон&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -837,7 +837,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Guide_to_Engineering&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Guide_to_Engineering&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1233,7 +1233,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Science)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Science)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1251,7 +1251,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Medical)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Medical)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1269,7 +1269,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Engineering)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Engineering)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1287,7 +1287,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Service)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Service)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1305,7 +1305,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Supply)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Supply)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1323,7 +1323,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Security)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Security)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1341,7 +1341,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Legal_Standard_Operating_Procedure&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Legal_Standard_Operating_Procedure&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1359,7 +1359,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
@@ -1377,7 +1377,7 @@
 		</head>
 
 		<body>
-		<iframe width='100%' height='97%' src="https://www.paradisestation.org/wiki/index.php?title=Standard_Operating_Procedure_(Command)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
+		<iframe width='100%' height='97%' src="http://rv666.asuscomm.com/wiki/index.php?title=Standard_Operating_Procedure_(Command)&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>		</body>
 
 		</html>
 
