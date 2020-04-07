@@ -36,19 +36,18 @@
 #define ASTEROID CAVE
 #define SPACE UNDERWATER
 
-/proc/playsound(atom/source, soundin, vol as num, vary, extrarange as num, falloff, frequency = null, channel = 0, pressure_affected = TRUE, ignore_walls = TRUE, is_global = null)
+/proc/playsound(atom/source, soundin, vol as num, vary, extrarange as num, falloff, frequency = null, channel = 0, pressure_affected = TRUE, ignore_walls = TRUE, var/is_global)
 	if(isarea(source))
 		error("[source] is an area and is trying to make the sound: [soundin]")
 		return
 
 	var/turf/turf_source = get_turf(source)
+
 	if(!turf_source)
-		return
-	if(!SSsounds.channel_list) // Not ready yet
 		return
 
 	//allocate a channel if necessary now so its the same for everyone
-	channel = channel || SSsounds.random_available_channel()
+	channel = channel || open_sound_channel()
 
  	// Looping through the player list has the added bonus of working for mobs inside containers
 	var/sound/S = sound(get_sfx(soundin))
@@ -72,7 +71,7 @@
 		if(distance <= maxdistance)
 			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, is_global)
 
-/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, distance_multiplier = 1, is_global)
+/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, is_global)
 	if(!client || !can_hear())
 		return
 
@@ -80,7 +79,7 @@
 		S = sound(get_sfx(soundin))
 
 	S.wait = 0 //No queue
-	S.channel = channel || SSsounds.random_available_channel()
+	S.channel = channel || open_sound_channel()
 	S.volume = vol
 	S.environment = -1
 
@@ -96,7 +95,6 @@
 
 		//sound volume falloff with distance
 		var/distance = get_dist(T, turf_source)
-		distance *= distance_multiplier
 
 		S.volume -= max(distance - world.view, 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
 
@@ -122,15 +120,12 @@
 			return //No sound
 
 		var/dx = turf_source.x - T.x // Hearing from the right/left
-		S.x = dx * distance_multiplier
+		S.x = dx
 		var/dz = turf_source.y - T.y // Hearing from infront/behind
-		S.z = dz * distance_multiplier
+		S.z = dz
 		// The y value is for above your head, but there is no ceiling in 2d spessmens.
 		S.y = 1
 		S.falloff = (falloff ? falloff : FALLOFF_SOUNDS)
-
-		if(S.file == 'sound/goonstation/voice/howl.ogg' && distance > 0 && S.volume > 60 && isvulpkanin(src))
-			addtimer(CALLBACK(src, /mob/.proc/emote, "howl"), rand(10,30)) // Vulps cant resist! >)
 
 	if(!is_global)
 		if(istype(src,/mob/living/))
@@ -157,8 +152,6 @@
 		else
 			var/area/A = get_area(src)
 			S.environment = A.sound_env
-	else
-		S.environment = PADDED_CELL
 
 	SEND_SOUND(src, S)
 
@@ -170,21 +163,20 @@
 			var/mob/M = m
 			M.playsound_local(M, null, volume, vary, frequency, falloff, channel, pressure_affected, S)
 
+/proc/open_sound_channel()
+	var/static/next_channel = 1	//loop through the available 1024 - (the ones we reserve) channels and pray that its not still being used
+	. = ++next_channel
+	if(next_channel > CHANNEL_HIGHEST_AVAILABLE)
+		next_channel = 1
+
 /mob/proc/stop_sound_channel(chan)
 	SEND_SOUND(src, sound(null, repeat = 0, wait = 0, channel = chan))
-
-/mob/proc/set_sound_channel_volume(channel, volume)
-	var/sound/S = sound(null, FALSE, FALSE, channel, volume)
-	S.status = SOUND_UPDATE
-	SEND_SOUND(src, S)
 
 /client/proc/playtitlemusic()
 	if(!SSticker || !SSticker.login_music || config.disable_lobby_music)
 		return
 	if(prefs.sound & SOUND_LOBBY)
-		var/sound/S = sound(SSticker.login_music, repeat = 0, wait = 0, volume = 35, channel = CHANNEL_LOBBYMUSIC)
-		S.environment = PADDED_CELL
-		SEND_SOUND(src, S) // MAD JAMS
+		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = 85, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
