@@ -66,7 +66,7 @@
 	},
 /area/space)
 "al" = (
-/obj/machinery/door/poddoor{
+/obj/machinery/door/poddoor/impassable{
 	id_tag = "ERTBFG";
 	name = "ERT Armory"
 	},
@@ -11807,6 +11807,52 @@
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
+"Di" = (
+/obj/structure/rack,
+/obj/item/grenade/barrier{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/item/grenade/barrier{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/grenade/barrier{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/grenade/barrier{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/grenade/barrier{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Dv" = (
 /turf/space,
 /area/admin)
@@ -11932,6 +11978,13 @@
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
+"Gi" = (
+/obj/machinery/vending/medical,
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "green"
+	},
+/area/centcom/control)
 "Gu" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/flashbangs{
@@ -11939,6 +11992,9 @@
 	pixel_y = 4
 	},
 /obj/item/storage/box/flashbangs,
+/obj/item/storage/box/teargas{
+	pixel_x = -5
+	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12143,6 +12199,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
+"Jr" = (
+/obj/machinery/vending/coffee,
+/turf/unsimulated/floor{
+	icon_state = "bar"
+	},
+/area/centcom/control)
 "Ju" = (
 /obj/machinery/vending/boozeomat{
 	req_access_txt = "102"
@@ -12307,7 +12369,7 @@
 	},
 /area/centcom/specops)
 "MD" = (
-/obj/machinery/door/poddoor{
+/obj/machinery/door/poddoor/impassable{
 	id_tag = "ERTBFG2";
 	name = "BFG armory blast door"
 	},
@@ -12400,6 +12462,15 @@
 	name = "plating"
 	},
 /area/centcom/control)
+"Ow" = (
+/obj/machinery/vending/wallmed{
+	name = "Emergency NanoMed";
+	pixel_x = -30
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "OP" = (
 /obj/effect/decal/warning_stripes/yellow/partial{
 	dir = 8
@@ -12561,6 +12632,12 @@
 	icon_state = "floor"
 	},
 /area/centcom/control)
+"RN" = (
+/obj/machinery/vending/snack,
+/turf/unsimulated/floor{
+	icon_state = "bar"
+	},
+/area/centcom/control)
 "RY" = (
 /obj/structure/table/reinforced,
 /obj/structure/table/reinforced,
@@ -12618,6 +12695,38 @@
 /area/centcom/evac)
 "SE" = (
 /obj/mecha/combat/gygax,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"Tc" = (
+/obj/structure/rack,
+/obj/item/melee/baton{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/item/melee/baton{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/melee/baton{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/obj/item/melee/baton{
+	pixel_y = 2
+	},
+/obj/item/melee/baton{
+	pixel_y = 1;
+	pixel_x = 2
+	},
+/obj/item/melee/baton{
+	pixel_x = 4
+	},
+/obj/item/melee/baton{
+	pixel_x = 6;
+	pixel_y = -1
+	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12704,6 +12813,15 @@
 /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
 /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
 /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/bola,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/bola,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/bola,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/disabler,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/disabler,
 /obj/structure/closet/crate,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -12756,6 +12874,19 @@
 "Vc" = (
 /turf/unsimulated/ai_visible,
 /area/ai_multicam_room)
+"Vk" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/flask/barflask,
+/obj/item/reagent_containers/food/drinks/flask/barflask{
+	pixel_y = -4
+	},
+/turf/unsimulated/floor{
+	icon_state = "cafeteria"
+	},
+/area/centcom/control)
 "Vz" = (
 /turf/unsimulated/wall,
 /area/ai_multicam_room)
@@ -12875,6 +13006,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
+"WY" = (
+/obj/machinery/vending/chinese,
+/turf/unsimulated/floor{
+	icon_state = "bar"
+	},
+/area/centcom/control)
 "Xj" = (
 /obj/structure/bed,
 /turf/unsimulated/floor{
@@ -12887,6 +13024,20 @@
 	icon_state = "floor"
 	},
 /area/centcom)
+"Xn" = (
+/obj/machinery/camera{
+	c_tag = "CentComm Special Ops. Ready Room East";
+	dir = 8;
+	network = list("ERT","CentComm")
+	},
+/obj/machinery/vending/wallmed{
+	name = "Emergency NanoMed";
+	pixel_x = 30
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "Xr" = (
 /obj/structure/bed,
 /turf/unsimulated/floor{
@@ -12900,6 +13051,14 @@
 /obj/machinery/camera{
 	c_tag = "CentComm Special Ops. Armory";
 	network = list("ERT","CentComm")
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
+"XF" = (
+/obj/structure/sign/security{
+	pixel_x = -30
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -12933,8 +13092,19 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
+"Ye" = (
+/obj/machinery/computer/account_database,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/centcom/control)
 "Yu" = (
 /obj/machinery/vending/engineering,
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'FOURTH WALL'.";
+	name = "\improper FOURTH WALL";
+	pixel_x = -32
+	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -12957,6 +13127,13 @@
 /obj/item/shield/riot{
 	pixel_x = 6;
 	pixel_y = 6
+	},
+/obj/item/shield/riot/tele{
+	pixel_x = -7
+	},
+/obj/item/shield/riot/tele,
+/obj/item/shield/riot/tele{
+	pixel_x = 7
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -26998,9 +27175,9 @@ fm
 sX
 uj
 Yu
-uj
+Tc
 CG
-uj
+Di
 Fv
 sX
 be
@@ -29053,7 +29230,7 @@ sX
 uj
 uj
 uj
-uj
+XF
 uj
 uj
 uj
@@ -30077,7 +30254,7 @@ uj
 uj
 uj
 uj
-uj
+Ow
 uj
 pV
 sX
@@ -31874,7 +32051,7 @@ uj
 uj
 uj
 uj
-pb
+Xn
 uj
 uj
 uj
@@ -33660,7 +33837,7 @@ la
 la
 lh
 lh
-lh
+WY
 mq
 lh
 sq
@@ -35463,7 +35640,7 @@ lh
 lh
 lh
 lh
-lh
+RN
 su
 nC
 nC
@@ -35975,7 +36152,7 @@ la
 lh
 lh
 lh
-lh
+Jr
 mD
 mW
 su
@@ -37256,7 +37433,7 @@ lH
 Ju
 sI
 En
-lX
+Vk
 lH
 lH
 lH
@@ -38042,7 +38219,7 @@ su
 uz
 tR
 tR
-tR
+Ye
 vi
 sq
 sq
@@ -39063,7 +39240,7 @@ mz
 mO
 ni
 sq
-nH
+Gi
 nH
 nH
 nH
