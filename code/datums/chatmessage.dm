@@ -82,7 +82,10 @@
 	owned_by = owner.client
 	RegisterSignal(owned_by, COMSIG_PARENT_QDELETING, .proc/on_parent_qdel)
 
+<<<<<<< HEAD
 	text = strip_html_properly(text)
+=======
+>>>>>>> 2373ca292a... Перенос чата над персонажем с ТГ
 	// Clip message
 	var/maxlen = owned_by.prefs.max_chat_length
 	if (length_char(text) > maxlen)
@@ -117,7 +120,11 @@
 	// BYOND Bug #2563917
 	// Construct text
 	var/static/regex/html_metachars = new(@"&[A-Za-z]{1,7};", "g")
+<<<<<<< HEAD
 	var/complete_text = "<span class='center maptext[italics ? " italics" : ""]'[tgt_color ? " style='color: [tgt_color]'" : ""]>[text]</span>"
+=======
+	var/complete_text = "<span class='center maptext[italics ? " italics" : ""]' style='color: [tgt_color]'>[text]</span>"
+>>>>>>> 2373ca292a... Перенос чата над персонажем с ТГ
 	var/mheight = WXH_TO_HEIGHT(owned_by.MeasureText(replacetext(complete_text, html_metachars, "m"), null, CHAT_MESSAGE_WIDTH))
 	approx_lines = max(1, mheight / CHAT_MESSAGE_APPROX_LHEIGHT)
 
@@ -173,17 +180,29 @@
   * * radio_speech - Should we use radio speech icon
   */
 /mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics = FALSE)
+<<<<<<< HEAD
 	if(SStimer.can_fire) // Disable Runechat if Timer stopped
 		// Display visual above source
 		new /datum/chatmessage(raw_message, speaker, src, radio_speech, italics)
 
 /*
+=======
+
+	// Display visual above source
+	new /datum/chatmessage(raw_message, speaker, src, radio_speech, italics)
+
+
+>>>>>>> 2373ca292a... Перенос чата над персонажем с ТГ
 // Tweak these defines to change the available color ranges
 #define CM_COLOR_SAT_MIN	0.6
 #define CM_COLOR_SAT_MAX	0.7
 #define CM_COLOR_LUM_MIN	0.65
 #define CM_COLOR_LUM_MAX	0.75
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 2373ca292a... Перенос чата над персонажем с ТГ
 /**
   * Gets a color for a name, will return the same color for a given string consistently within a round.atom
   *
