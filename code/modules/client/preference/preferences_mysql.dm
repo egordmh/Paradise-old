@@ -79,7 +79,7 @@
 	windowflashing = sanitize_integer(windowflashing, 0, 1, initial(windowflashing))
 	ghost_anonsay = sanitize_integer(ghost_anonsay, 0, 1, initial(ghost_anonsay))
 	exp	= sanitize_text(exp, initial(exp))
-	clientfps = sanitize_integer(clientfps, 0, 1000, initial(clientfps))
+	clientfps = sanitize_integer(clientfps, -1, 1000, initial(clientfps))
 	atklog = sanitize_integer(atklog, 0, 100, initial(atklog))
 	fuid = sanitize_integer(fuid, 0, 10000000, initial(fuid))
 	afk_watch = sanitize_integer(afk_watch, 0, 1, initial(afk_watch))

@@ -336,6 +336,9 @@
 	if(world.byond_version >= 511 && byond_version >= 511 && prefs.clientfps)
 		fps = prefs.clientfps
 
+	if(world.byond_version >= 511 && byond_version >= 511 && !prefs.clientfps)
+		fps = config.clientfps
+
 	spawn() // Goonchat does some non-instant checks in start()
 		chatOutput.start()
 
