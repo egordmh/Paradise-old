@@ -50,10 +50,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/space/atmosalert()
 	return
 
-/area/space/firealert(obj/source)
+/area/space/fire_alert()
 	return
 
-/area/space/firereset(obj/source)
+/area/space/fire_reset()
 	return
 
 /area/space/readyalert()
@@ -456,15 +456,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/centcom/reset
 	name = "\improper reset armory"
 
-/area/centcom/reset1
-	name = "\improper reset armory"
-
-/area/centcom/reset2
-	name = "\improper reset armory"
-
-/area/centcom/reset3
-	name = "\improper reset armory"
-
 //SYNDICATES
 
 /area/syndicate_mothership
@@ -711,14 +702,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Alternate Construction Area"
 	icon_state = "yellow"
 
-/area/maintenance/engrooms
-	name = "Abadoned Engineers Rooms"
-	icon_state = "yellow"
-
-/area/maintenance/xenozoo
-	name = "Maintenance Xeno Zoo"
-	icon_state = "yellow"
-
 
 //Hallway
 
@@ -874,18 +857,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Dormitories"
 	icon_state = "Sleep"
 
-/area/crew_quarters/cabin1
-	name = "\improper First Cabin"
-
-/area/crew_quarters/cabin2
-	name = "\improper Second Cabin"
-
-/area/crew_quarters/cabin3
-	name = "\improper Third Cabin"
-
-/area/crew_quarters/cabin4
-	name = "\improper Fourth Cabin"
-
 /area/crew_quarters/toilet
 	name = "\improper Dormitory Toilets"
 	icon_state = "toilet"
@@ -966,7 +937,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/chapel
 	icon_state = "chapel"
 	ambientsounds = HOLY_SOUNDS
-	is_haunted = TRUE
 
 /area/chapel/main
 	name = "\improper Chapel"
@@ -1276,6 +1246,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/medical/psych
 	name = "\improper Psych Room"
 	icon_state = "medbaypsych"
+	ambientsounds = list('sound/ambience/aurora_caelus_short.ogg')
 
 /area/medical/medbreak
 	name = "\improper Break Room"
@@ -1337,7 +1308,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Morgue"
 	icon_state = "morgue"
 	ambientsounds = SPOOKY_SOUNDS
-	is_haunted = TRUE
 
 /area/medical/chemistry
 	name = "\improper Chemistry"
@@ -1617,9 +1587,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/hydroponics/abandoned_garden
 	name = "\improper Abandoned Garden"
 	icon_state = "hydro"
-	power_equip = 0
-	power_light = 0
-	power_environ = 0
 
 //Toxins
 
@@ -1819,12 +1786,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/derelict/medical/morgue
 	name = "\improper Derelict Morgue"
 	icon_state = "morgue"
-	is_haunted = TRUE
 
 /area/derelict/medical/chapel
 	name = "\improper Derelict Chapel"
 	icon_state = "chapel"
-	is_haunted = TRUE
 
 /area/derelict/teleporter
 	name = "\improper Derelict Teleporter"

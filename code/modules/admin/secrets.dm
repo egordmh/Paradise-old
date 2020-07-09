@@ -5,7 +5,7 @@
 
 
 	if(!check_rights(0))	return
-	var/dat = {"<html><meta charset="UTF-8"><body><center>"}
+	var/dat = "<html><body><center>"
 
 	dat += "<a href='?src=[UID()];secretsmenu=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Debug</a>"
 	dat += "<a href='?src=[UID()];secretsmenu=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>IC Events</a>"
@@ -93,9 +93,6 @@
 					<A href='?src=[UID()];secretsfun=tdomereset'>Reset Thunderdome to default state</A><BR><br>
 					<b>ERT Armory</b><br>
 					<A href='?src=[UID()];secretsfun=armotyreset'>Reset Armory to default state</A><BR><br>
-					<A href='?src=[UID()];secretsfun=armotyreset1'>Set Armory to 1 option</A><BR><br>
-					<A href='?src=[UID()];secretsfun=armotyreset2'>Set Armory to 2 option</A><BR><br>
-					<A href='?src=[UID()];secretsfun=armotyreset3'>Set Armory to 3 option</A><BR><br>
 					<b>Clothing</b><br>
 					<A href='?src=[UID()];secretsfun=sec_clothes'>Remove 'internal' clothing</A>&nbsp;&nbsp;
 					<A href='?src=[UID()];secretsfun=sec_all_clothes'>Remove ALL clothing</A><BR>

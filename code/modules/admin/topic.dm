@@ -26,16 +26,17 @@
 		message_admins("[key_name_admin(usr)] rejected [key_name_admin(C.mob)]'s admin help")
 		log_admin("[key_name(usr)] rejected [key_name(C.mob)]'s admin help")
 
-	if(href_list["openticket"])
-		var/ticketID = text2num(href_list["openticket"])
-		if(!href_list["is_mhelp"])
-			if(!check_rights(R_ADMIN))
-				return
-			SStickets.showDetailUI(usr, ticketID)
-		else
-			if(!check_rights(R_MENTOR|R_MOD|R_ADMIN))
-				return
-			SSmentor_tickets.showDetailUI(usr, ticketID)
+	if(href_list["openadminticket"])
+		if(!check_rights(R_ADMIN))
+			return
+		var/ticketID = text2num(href_list["openadminticket"])
+		SStickets.showDetailUI(usr, ticketID)
+
+	if(href_list["openmentorticket"])
+		if(!check_rights(R_MENTOR|R_MOD|R_ADMIN))
+			return
+		var/ticketID = text2num(href_list["openmentorticket"])
+		SSmentor_tickets.showDetailUI(usr, ticketID)
 
 	if(href_list["stickyban"])
 		stickyban(href_list["stickyban"],href_list)
@@ -107,7 +108,6 @@
 		var/banduration = text2num(href_list["dbbaddduration"])
 		var/banjob = href_list["dbbanaddjob"]
 		var/banreason = href_list["dbbanreason"]
-		var/bantype_str
 
 		banckey = ckey(banckey)
 
@@ -118,44 +118,37 @@
 					return
 				banduration = null
 				banjob = null
-				bantype_str = "PERMABAN"
 			if(BANTYPE_TEMP)
 				if(!banckey || !banreason || !banduration)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey, reason and duration)</span>")
 					return
 				banjob = null
-				bantype_str = "TEMPBAN"
 			if(BANTYPE_JOB_PERMA)
 				if(!banckey || !banreason || !banjob)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey, reason and job)</span>")
 					return
 				banduration = null
-				bantype_str = "JOB_PERMABAN"
 			if(BANTYPE_JOB_TEMP)
 				if(!banckey || !banreason || !banjob || !banduration)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey, reason and job)</span>")
 					return
-				bantype_str = "JOB_TEMPBAN"
 			if(BANTYPE_APPEARANCE)
 				if(!banckey || !banreason)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey and reason)</span>")
 					return
 				banduration = null
 				banjob = null
-				bantype_str = "APPEARANCE_BAN"
 			if(BANTYPE_ADMIN_PERMA)
 				if(!banckey || !banreason)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey and reason)</span>")
 					return
 				banduration = null
 				banjob = null
-				bantype_str = "ADMIN_PERMABAN"
 			if(BANTYPE_ADMIN_TEMP)
 				if(!banckey || !banreason || !banduration)
 					to_chat(usr, "<span class='warning'>Not enough parameters (Requires ckey, reason and duration)</span>")
 					return
 				banjob = null
-				bantype_str = "ADMIN_TEMPBAN"
 
 		var/mob/playermob
 
@@ -175,68 +168,7 @@
 		else
 			message_admins("Ban process: A mob matching [playermob.ckey] was found at location [playermob.x], [playermob.y], [playermob.z]. Custom IP and computer id fields replaced with the IP and computer id from the located mob")
 
-		//get jobs for department if specified, otherwise just returnt he one job in a list.
-		var/list/joblist = list()
-		switch(banjob)
-			if("commanddept")
-				for(var/jobPos in GLOB.command_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("securitydept")
-				for(var/jobPos in GLOB.security_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("engineeringdept")
-				for(var/jobPos in GLOB.engineering_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("medicaldept")
-				for(var/jobPos in GLOB.medical_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("sciencedept")
-				for(var/jobPos in GLOB.science_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("supportdept")
-				for(var/jobPos in GLOB.support_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("nonhumandept")
-				joblist += "pAI"
-				for(var/jobPos in GLOB.nonhuman_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			if("whitelistdept")
-				for(var/jobPos in GLOB.whitelisted_positions)
-					if(!jobPos)	continue
-					var/datum/job/temp = SSjobs.GetJob(jobPos)
-					if(!temp) continue
-					joblist += temp.title
-			else
-				joblist += banjob
-
-		//Add ban for unbanned jobs within joblist
-		for(var/job in joblist)
-			if(!jobban_isbanned(playermob, job))
-				DB_ban_record(bantype, playermob, banduration, banreason, job, null, banckey, banip, bancid )
-				log_admin("[key_name(usr)] added [bantype_str][banduration ? " ([banduration]m)" : ""] for [banckey][job ? " from job [job]" : ""] - [banreason]")
-			else
-				message_admins("Ban process: [playermob.ckey] already job banned from [job]!")
+		DB_ban_record(bantype, playermob, banduration, banreason, banjob, null, banckey, banip, bancid )
 
 
 	else if(href_list["editrights"])
@@ -567,7 +499,7 @@
 			return
 
 		var/dat = ""
-		var/header = {"<meta charset="UTF-8"><head><title>Job-Ban Panel: [M.name]</title></head>"}
+		var/header = "<head><title>Job-Ban Panel: [M.name]</title></head>"
 		var/body
 		var/jobs = ""
 
@@ -1061,7 +993,7 @@
 			log_game("SQL ERROR obtaining edits from notes table. Error : \[[err]\]\n")
 			return
 		if(query_noteedits.NextRow())
-			var/edit_log = {"<meta charset="UTF-8">"} + query_noteedits.item[1]
+			var/edit_log = query_noteedits.item[1]
 			usr << browse(edit_log,"window=noteedits")
 
 	else if(href_list["removejobban"])
@@ -1179,7 +1111,7 @@
 			log_game("SQL ERROR obtaining edits from watch table. Error : \[[err]\]\n")
 			return
 		if(query_watchedits.NextRow())
-			var/edit_log = {"<meta charset="UTF-8">"} + query_watchedits.item[1]
+			var/edit_log = query_watchedits.item[1]
 			usr << browse(edit_log,"window=watchedits")
 
 	else if(href_list["mute"])
@@ -1201,7 +1133,7 @@
 
 		if(SSticker && SSticker.mode)
 			return alert(usr, "The game has already started.", null, null, null, null)
-		var/dat = {"<meta charset="UTF-8"><b>What mode do you wish to play?</b><hr>"}
+		var/dat = {"<b>What mode do you wish to play?</b><hr>"}
 		dat += {"<table><tr><td>Minplayers</td><td>Gamemode</td></tr>"}
 		for(var/mode in config.modes)
 			dat += {"<tr><td>\[[config.mode_required_players[mode]]\]</td><td><A href='?src=[UID()];c_mode2=[mode]'>[config.mode_names[mode]]</A></td></tr>"}
@@ -1217,7 +1149,7 @@
 			return alert(usr, "The game has already started.", null, null, null, null)
 		if(GLOB.master_mode != "secret")
 			return alert(usr, "The game mode has to be secret!", null, null, null, null)
-		var/dat = {"<meta charset="UTF-8"><b>What game mode do you want to force secret to be? Use this if you want to change the game mode, but want the players to believe it's secret. This will only work if the current game mode is secret.</b><hr>"}
+		var/dat = {"<b>What game mode do you want to force secret to be? Use this if you want to change the game mode, but want the players to believe it's secret. This will only work if the current game mode is secret.</b><hr>"}
 		dat += {"<table><tr><td>Minplayers</td><td>Gamemode</td></tr>"}
 		for(var/mode in config.modes)
 			dat += {"<tr><td>\[[config.mode_required_players[mode]]\]</td><td><A href='?src=[UID()];f_secret2=[mode]'>[config.mode_names[mode]]</A></td></tr>"}
@@ -1827,9 +1759,6 @@
 			SStickets.resolveTicket(index)
 
 	else if(href_list["autorespond"])
-		if(href_list["is_mhelp"])
-			to_chat(usr, "<span class='warning'>Auto responses are not available for mentor helps.</span>")
-			return
 		var/index = text2num(href_list["autorespond"])
 		if(!check_rights(R_ADMIN|R_MOD))
 			return
@@ -2615,14 +2544,7 @@
 			log_admin("[key_name(src.owner)] sent a fax message to [destination]: [input]")
 			message_admins("[key_name_admin(src.owner)] sent a fax message to [destination] (<a href='?_src_=holder;AdminFaxView=\ref[P]'>VIEW</a>).", 1)
 		return
-	else if(href_list["AdminFaxNotify"])
-		if(!check_rights(R_ADMIN))
-			return
-		var/mob/sender = locate(href_list["AdminFaxNotify"])
-		var/mob/living/carbon/human/H = sender
-		if(istype(H) && H.stat == CONSCIOUS && (istype(H.l_ear, /obj/item/radio/headset) || istype(H.r_ear, /obj/item/radio/headset)))
-			to_chat(sender, "<span class = 'specialnoticebold'>Ваши наушники издают гудки, уведомляя вас о получении ответа на ваш факс.</span>")
-		return
+
 	else if(href_list["refreshfaxpanel"])
 		if(!check_rights(R_ADMIN))
 			return
@@ -2854,7 +2776,7 @@
 			log_game("SQL ERROR obtaining edits from memo table. Error : \[[err]\]\n")
 			return
 		if(query_memoedits.NextRow())
-			var/edit_log = {"<meta charset="UTF-8">"} + query_memoedits.item[1]
+			var/edit_log = query_memoedits.item[1]
 			usr << browse(edit_log,"window=memoeditlist")
 
 	else if(href_list["secretsfun"])
@@ -3091,7 +3013,6 @@
 				message_admins("[key_name_admin(usr)] fixed all lights", 1)
 				for(var/obj/machinery/light/L in GLOB.machines)
 					L.fix()
-					L.switchcount = 0
 			if("floorlava")
 				feedback_inc("admin_secrets_fun_used", 1)
 				feedback_add_details("admin_secrets_fun_used", "LF")
@@ -3209,65 +3130,7 @@
 
 				log_admin("[key_name(usr)] reset the ertarmory to default with delete_mobs==[delete_mobs].", 1)
 				message_admins("<span class='adminnotice'>[key_name_admin(usr)] reset ertarmory to default with delete_mobs==[delete_mobs].</span>")
-
-			if("armotyreset1")
-				var/delete_mobs = alert("Clear all mobs?","Confirm","Yes","No","Cancel")
-				if(delete_mobs == "Cancel")
-					return
-
-				var/area/ertarmory = locate(/area/centcom/ertarmory)
-				if(delete_mobs == "Yes")
-					for(var/mob/living/mob in ertarmory)
-						qdel(mob) //Clear mobs
-				for(var/obj/obj in ertarmory)
-					if(!istype(obj,/obj/machinery/camera) && !istype(obj,/obj/machinery/door/poddoor/impassable) && !istype(obj,/obj/machinery/door_control))
-						qdel(obj) //Clear objects
-
-				var/area/template = locate(/area/centcom/reset1)
-				template.copy_contents_to(ertarmory)
-
-				log_admin("[key_name(usr)] reset the ertarmory to default with delete_mobs==[delete_mobs].", 1)
-				message_admins("<span class='adminnotice'>[key_name_admin(usr)] reset ertarmory to default with delete_mobs==[delete_mobs].</span>")
-
-			if("armotyreset2")
-				var/delete_mobs = alert("Clear all mobs?","Confirm","Yes","No","Cancel")
-				if(delete_mobs == "Cancel")
-					return
-
-				var/area/ertarmory = locate(/area/centcom/ertarmory)
-				if(delete_mobs == "Yes")
-					for(var/mob/living/mob in ertarmory)
-						qdel(mob) //Clear mobs
-				for(var/obj/obj in ertarmory)
-					if(!istype(obj,/obj/machinery/camera) && !istype(obj,/obj/machinery/door/poddoor/impassable) && !istype(obj,/obj/machinery/door_control))
-						qdel(obj) //Clear objects
-
-				var/area/template = locate(/area/centcom/reset2)
-				template.copy_contents_to(ertarmory)
-
-				log_admin("[key_name(usr)] reset the ertarmory to default with delete_mobs==[delete_mobs].", 1)
-				message_admins("<span class='adminnotice'>[key_name_admin(usr)] reset ertarmory to default with delete_mobs==[delete_mobs].</span>")
-
-			if("armotyreset3")
-				var/delete_mobs = alert("Clear all mobs?","Confirm","Yes","No","Cancel")
-				if(delete_mobs == "Cancel")
-					return
-
-				var/area/ertarmory = locate(/area/centcom/ertarmory)
-				if(delete_mobs == "Yes")
-					for(var/mob/living/mob in ertarmory)
-						qdel(mob) //Clear mobs
-				for(var/obj/obj in ertarmory)
-					if(!istype(obj,/obj/machinery/camera) && !istype(obj,/obj/machinery/door/poddoor/impassable) && !istype(obj,/obj/machinery/door_control))
-						qdel(obj) //Clear objects
-
-				var/area/template = locate(/area/centcom/reset3)
-				template.copy_contents_to(ertarmory)
-
-				log_admin("[key_name(usr)] reset the ertarmory to default with delete_mobs==[delete_mobs].", 1)
-				message_admins("<span class='adminnotice'>[key_name_admin(usr)] reset ertarmory to default with delete_mobs==[delete_mobs].</span>")
-
-
+			
 			if("tdomereset")
 				var/delete_mobs = alert("Clear all mobs?","Confirm","Yes","No","Cancel")
 				if(delete_mobs == "Cancel")
@@ -3347,17 +3210,17 @@
 		var/ok = 0
 		switch(href_list["secretsadmin"])
 			if("list_signalers")
-				var/dat = {"<meta charset="UTF-8"><b>Showing last [length(GLOB.lastsignalers)] signalers.</b><hr>"}
+				var/dat = "<b>Showing last [length(GLOB.lastsignalers)] signalers.</b><hr>"
 				for(var/sig in GLOB.lastsignalers)
 					dat += "[sig]<BR>"
 				usr << browse(dat, "window=lastsignalers;size=800x500")
 			if("list_lawchanges")
-				var/dat = {"<meta charset="UTF-8"><b>Showing last [length(GLOB.lawchanges)] law changes.</b><hr>"}
+				var/dat = "<b>Showing last [length(GLOB.lawchanges)] law changes.</b><hr>"
 				for(var/sig in GLOB.lawchanges)
 					dat += "[sig]<BR>"
 				usr << browse(dat, "window=lawchanges;size=800x500")
 			if("list_job_debug")
-				var/dat = {"<meta charset="UTF-8"><b>Job Debug info.</b><hr>"}
+				var/dat = "<b>Job Debug info.</b><hr>"
 				if(SSjobs)
 					for(var/line in SSjobs.job_debug)
 						dat += "[line]<BR>"
@@ -3375,7 +3238,7 @@
 					alert("The game mode is [SSticker.mode.name]")
 				else alert("For some reason there's a ticker, but not a game mode")
 			if("manifest")
-				var/dat = {"<meta charset="UTF-8"><b>Showing Crew Manifest.</b><hr>"}
+				var/dat = "<b>Showing Crew Manifest.</b><hr>"
 				dat += "<table cellspacing=5><tr><th>Name</th><th>Position</th></tr>"
 				for(var/thing in GLOB.human_list)
 					var/mob/living/carbon/human/H = thing
@@ -3386,7 +3249,7 @@
 			if("check_antagonist")
 				check_antagonists()
 			if("DNA")
-				var/dat = {"<meta charset="UTF-8"><b>Showing DNA from blood.</b><hr>"}
+				var/dat = "<b>Showing DNA from blood.</b><hr>"
 				dat += "<table cellspacing=5><tr><th>Name</th><th>DNA</th><th>Blood Type</th></tr>"
 				for(var/thing in GLOB.human_list)
 					var/mob/living/carbon/human/H = thing
@@ -3395,7 +3258,7 @@
 				dat += "</table>"
 				usr << browse(dat, "window=DNA;size=440x410")
 			if("fingerprints")
-				var/dat = {"<meta charset="UTF-8"><b>Showing Fingerprints.</b><hr>"}
+				var/dat = "<b>Showing Fingerprints.</b><hr>"
 				dat += "<table cellspacing=5><tr><th>Name</th><th>Fingerprints</th></tr>"
 				for(var/thing in GLOB.human_list)
 					var/mob/living/carbon/human/H = thing
@@ -3437,7 +3300,7 @@
 
 		switch(href_list["secretscoder"])
 			if("spawn_objects")
-				var/dat = {"<meta charset="UTF-8"><b>Admin Log<hr></b>"}
+				var/dat = "<b>Admin Log<hr></b>"
 				for(var/l in GLOB.admin_log)
 					dat += "<li>[l]</li>"
 				if(!GLOB.admin_log.len)
@@ -3460,6 +3323,220 @@
 				J.total_positions = -1
 				J.spawn_positions = -1
 				message_admins("[key_name_admin(usr)] has removed the cap on security officers.")
+
+	else if(href_list["ac_view_wanted"])            //Admin newscaster Topic() stuff be here
+		src.admincaster_screen = 18                 //The ac_ prefix before the hrefs stands for AdminCaster.
+		src.access_news_network()
+
+	else if(href_list["ac_set_channel_name"])
+		src.admincaster_feed_channel.channel_name = strip_html_simple(input(usr, "Provide a Feed Channel Name", "Network Channel Handler", ""))
+		while(findtext(src.admincaster_feed_channel.channel_name," ") == 1)
+			src.admincaster_feed_channel.channel_name = copytext(src.admincaster_feed_channel.channel_name,2,length(src.admincaster_feed_channel.channel_name)+1)
+		src.access_news_network()
+
+	else if(href_list["ac_set_channel_lock"])
+		src.admincaster_feed_channel.locked = !src.admincaster_feed_channel.locked
+		src.access_news_network()
+
+	else if(href_list["ac_submit_new_channel"])
+		var/check = 0
+		for(var/datum/feed_channel/FC in GLOB.news_network.network_channels)
+			if(FC.channel_name == src.admincaster_feed_channel.channel_name)
+				check = 1
+				break
+		if(src.admincaster_feed_channel.channel_name == "" || src.admincaster_feed_channel.channel_name == "\[REDACTED\]" || check )
+			src.admincaster_screen=7
+		else
+			var/choice = alert("Please confirm Feed channel creation","Network Channel Handler","Confirm","Cancel")
+			if(choice=="Confirm")
+				var/datum/feed_channel/newChannel = new /datum/feed_channel
+				newChannel.channel_name = src.admincaster_feed_channel.channel_name
+				newChannel.author = src.admincaster_signature
+				newChannel.locked = src.admincaster_feed_channel.locked
+				newChannel.is_admin_channel = 1
+				feedback_inc("newscaster_channels",1)
+				GLOB.news_network.network_channels += newChannel                        //Adding channel to the global network
+				log_admin("[key_name_admin(usr)] created command feed channel: [src.admincaster_feed_channel.channel_name]!")
+				src.admincaster_screen=5
+		src.access_news_network()
+
+	else if(href_list["ac_set_channel_receiving"])
+		var/list/available_channels = list()
+		for(var/datum/feed_channel/F in GLOB.news_network.network_channels)
+			available_channels += F.channel_name
+		src.admincaster_feed_channel.channel_name = adminscrub(input(usr, "Choose receiving Feed Channel", "Network Channel Handler") in available_channels )
+		src.access_news_network()
+
+	else if(href_list["ac_set_new_message"])
+		src.admincaster_feed_message.body = adminscrub(input(usr, "Write your Feed story", "Network Channel Handler", ""))
+		while(findtext(src.admincaster_feed_message.body," ") == 1)
+			src.admincaster_feed_message.body = copytext(src.admincaster_feed_message.body,2,length(src.admincaster_feed_message.body)+1)
+		src.access_news_network()
+
+	else if(href_list["ac_submit_new_message"])
+		if(src.admincaster_feed_message.body =="" || src.admincaster_feed_message.body =="\[REDACTED\]" || src.admincaster_feed_channel.channel_name == "" )
+			src.admincaster_screen = 6
+		else
+			var/datum/feed_message/newMsg = new /datum/feed_message
+			newMsg.author = src.admincaster_signature
+			newMsg.body = src.admincaster_feed_message.body
+			newMsg.is_admin_message = 1
+			feedback_inc("newscaster_stories",1)
+			for(var/datum/feed_channel/FC in GLOB.news_network.network_channels)
+				if(FC.channel_name == src.admincaster_feed_channel.channel_name)
+					FC.messages += newMsg                  //Adding message to the network's appropriate feed_channel
+					break
+			src.admincaster_screen=4
+
+		for(var/obj/machinery/newscaster/NEWSCASTER in GLOB.allNewscasters)
+			NEWSCASTER.newsAlert(src.admincaster_feed_channel.channel_name)
+
+		log_admin("[key_name_admin(usr)] submitted a feed story to channel: [src.admincaster_feed_channel.channel_name]!")
+		src.access_news_network()
+
+	else if(href_list["ac_create_channel"])
+		src.admincaster_screen=2
+		src.access_news_network()
+
+	else if(href_list["ac_create_feed_story"])
+		src.admincaster_screen=3
+		src.access_news_network()
+
+	else if(href_list["ac_menu_censor_story"])
+		src.admincaster_screen=10
+		src.access_news_network()
+
+	else if(href_list["ac_menu_censor_channel"])
+		src.admincaster_screen=11
+		src.access_news_network()
+
+	else if(href_list["ac_menu_wanted"])
+		var/already_wanted = 0
+		if(GLOB.news_network.wanted_issue)
+			already_wanted = 1
+
+		if(already_wanted)
+			src.admincaster_feed_message.author = GLOB.news_network.wanted_issue.author
+			src.admincaster_feed_message.body = GLOB.news_network.wanted_issue.body
+		src.admincaster_screen = 14
+		src.access_news_network()
+
+	else if(href_list["ac_set_wanted_name"])
+		src.admincaster_feed_message.author = adminscrub(input(usr, "Provide the name of the Wanted person", "Network Security Handler", ""))
+		while(findtext(src.admincaster_feed_message.author," ") == 1)
+			src.admincaster_feed_message.author = copytext(admincaster_feed_message.author,2,length(admincaster_feed_message.author)+1)
+		src.access_news_network()
+
+	else if(href_list["ac_set_wanted_desc"])
+		src.admincaster_feed_message.body = adminscrub(input(usr, "Provide the a description of the Wanted person and any other details you deem important", "Network Security Handler", ""))
+		while(findtext(src.admincaster_feed_message.body," ") == 1)
+			src.admincaster_feed_message.body = copytext(src.admincaster_feed_message.body,2,length(src.admincaster_feed_message.body)+1)
+		src.access_news_network()
+
+	else if(href_list["ac_submit_wanted"])
+		var/input_param = text2num(href_list["ac_submit_wanted"])
+		if(src.admincaster_feed_message.author == "" || src.admincaster_feed_message.body == "")
+			src.admincaster_screen = 16
+		else
+			var/choice = alert("Please confirm Wanted Issue [(input_param==1) ? ("creation.") : ("edit.")]","Network Security Handler","Confirm","Cancel")
+			if(choice=="Confirm")
+				if(input_param==1)          //If input_param == 1 we're submitting a new wanted issue. At 2 we're just editing an existing one. See the else below
+					var/datum/feed_message/WANTED = new /datum/feed_message
+					WANTED.author = src.admincaster_feed_message.author               //Wanted name
+					WANTED.body = src.admincaster_feed_message.body                   //Wanted desc
+					WANTED.backup_author = src.admincaster_signature                  //Submitted by
+					WANTED.is_admin_message = 1
+					GLOB.news_network.wanted_issue = WANTED
+					for(var/obj/machinery/newscaster/NEWSCASTER in GLOB.allNewscasters)
+						NEWSCASTER.newsAlert()
+						NEWSCASTER.update_icon()
+					src.admincaster_screen = 15
+				else
+					GLOB.news_network.wanted_issue.author = src.admincaster_feed_message.author
+					GLOB.news_network.wanted_issue.body = src.admincaster_feed_message.body
+					GLOB.news_network.wanted_issue.backup_author = src.admincaster_feed_message.backup_author
+					src.admincaster_screen = 19
+				log_admin("[key_name_admin(usr)] issued a Station-wide Wanted Notification for [src.admincaster_feed_message.author]!")
+		src.access_news_network()
+
+	else if(href_list["ac_cancel_wanted"])
+		var/choice = alert("Please confirm Wanted Issue removal","Network Security Handler","Confirm","Cancel")
+		if(choice=="Confirm")
+			GLOB.news_network.wanted_issue = null
+			for(var/obj/machinery/newscaster/NEWSCASTER in GLOB.allNewscasters)
+				NEWSCASTER.update_icon()
+			src.admincaster_screen=17
+		src.access_news_network()
+
+	else if(href_list["ac_censor_channel_author"])
+		var/datum/feed_channel/FC = locate(href_list["ac_censor_channel_author"])
+		if(FC.author != "<b>\[REDACTED\]</b>")
+			FC.backup_author = FC.author
+			FC.author = "<b>\[REDACTED\]</b>"
+		else
+			FC.author = FC.backup_author
+		src.access_news_network()
+
+	else if(href_list["ac_censor_channel_story_author"])
+		var/datum/feed_message/MSG = locate(href_list["ac_censor_channel_story_author"])
+		if(MSG.author != "<b>\[REDACTED\]</b>")
+			MSG.backup_author = MSG.author
+			MSG.author = "<b>\[REDACTED\]</b>"
+		else
+			MSG.author = MSG.backup_author
+		src.access_news_network()
+
+	else if(href_list["ac_censor_channel_story_body"])
+		var/datum/feed_message/MSG = locate(href_list["ac_censor_channel_story_body"])
+		if(MSG.body != "<b>\[REDACTED\]</b>")
+			MSG.backup_body = MSG.body
+			MSG.body = "<b>\[REDACTED\]</b>"
+		else
+			MSG.body = MSG.backup_body
+		src.access_news_network()
+
+	else if(href_list["ac_pick_d_notice"])
+		var/datum/feed_channel/FC = locate(href_list["ac_pick_d_notice"])
+		src.admincaster_feed_channel = FC
+		src.admincaster_screen=13
+		src.access_news_network()
+
+	else if(href_list["ac_toggle_d_notice"])
+		var/datum/feed_channel/FC = locate(href_list["ac_toggle_d_notice"])
+		FC.censored = !FC.censored
+		src.access_news_network()
+
+	else if(href_list["ac_view"])
+		src.admincaster_screen=1
+		src.access_news_network()
+
+	else if(href_list["ac_setScreen"]) //Brings us to the main menu and resets all fields~
+		src.admincaster_screen = text2num(href_list["ac_setScreen"])
+		if(src.admincaster_screen == 0)
+			if(src.admincaster_feed_channel)
+				src.admincaster_feed_channel = new /datum/feed_channel
+			if(src.admincaster_feed_message)
+				src.admincaster_feed_message = new /datum/feed_message
+		src.access_news_network()
+
+	else if(href_list["ac_show_channel"])
+		var/datum/feed_channel/FC = locate(href_list["ac_show_channel"])
+		src.admincaster_feed_channel = FC
+		src.admincaster_screen = 9
+		src.access_news_network()
+
+	else if(href_list["ac_pick_censor_channel"])
+		var/datum/feed_channel/FC = locate(href_list["ac_pick_censor_channel"])
+		src.admincaster_feed_channel = FC
+		src.admincaster_screen = 12
+		src.access_news_network()
+
+	else if(href_list["ac_refresh"])
+		src.access_news_network()
+
+	else if(href_list["ac_set_signature"])
+		src.admincaster_signature = adminscrub(input(usr, "Provide your desired signature", "Network Identity Handler", ""))
+		src.access_news_network()
 
 	if(href_list["secretsmenu"])
 		switch(href_list["secretsmenu"])
@@ -3503,7 +3580,7 @@
 		if(!check_rights(R_ADMIN))
 			return
 		var/text = html_decode(href_list["showdetails"])
-		usr << browse({"<HTML><meta charset="UTF-8"><HEAD><TITLE>Details</TITLE></HEAD><BODY><TT>[replacetext(text, "\n", "<BR>")]</TT></BODY></HTML>"},
+		usr << browse("<HTML><HEAD><TITLE>Details</TITLE></HEAD><BODY><TT>[replacetext(text, "\n", "<BR>")]</TT></BODY></HTML>",
 			"window=show_details;size=500x200")
 
 	// Library stuff
@@ -3523,7 +3600,7 @@
 				content = query_view_book.item[1]
 				title = html_encode(query_view_book.item[2])
 
-			var/dat = {"<meta charset="UTF-8"><pre><code>"}
+			var/dat = "<pre><code>"
 			dat += "[html_encode(html_to_pencode(content))]"
 			dat += "</code></pre>"
 
@@ -3610,7 +3687,7 @@
 	var/datum/outfit/O = hunter_outfits[dresscode]
 	message_admins("[key_name_admin(mob)] is sending a ([dresscode]) to [killthem ? "assassinate" : "protect"] [key_name_admin(H)]...")
 	var/image/source = image('icons/obj/cardboard_cutout.dmi', "cutout_traitor")
-	var/list/candidates = SSghost_spawns.poll_candidates("Play as a [killthem ? "murderous" : "protective"] [dresscode]?", ROLE_TRAITOR, TRUE, source = source, role_cleanname = "[killthem ? "murderous" : "protective"] [dresscode]")
+	var/list/candidates = SSghost_spawns.poll_candidates("Play as a [killthem ? "murderous" : "protective"] [dresscode]?", ROLE_TRAITOR, TRUE, source = source)
 	if(!candidates.len)
 		to_chat(usr, "<span class='warning'>ERROR: Could not create eventmob. No valid candidates.</span>")
 		return
