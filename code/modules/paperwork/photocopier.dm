@@ -48,15 +48,11 @@
 
 /obj/machinery/photocopier/tgui_act(action, params)
 	if(..())
-		return
-	if(stat & (BROKEN|NOPOWER))
-		return
+		return TRUE
 
-	. = TRUE
 	switch(action)
 		if("copy")
-			if(emag_cooldown > world.time)
-				to_chat(usr, "<span class='warning'>[src] is busy, try again in a few seconds.</span>")
+			if(stat & (BROKEN|NOPOWER))
 				return
 
 			playsound(loc, 'sound/goonstation/machines/printer_dotmatrix.ogg', 50, 1)
@@ -101,6 +97,9 @@
 				GLOB.copier_items_printed++
 				use_power(active_power_usage)
 		if("print_form")
+			if(stat & (BROKEN|NOPOWER))
+				return
+
 			playsound(loc, 'sound/goonstation/machines/printer_dotmatrix.ogg', 50, 1)
 			for(var/i = 0, i < copies, i++)
 				if(toner <= 0)
@@ -146,8 +145,8 @@
 			if(copies < maxcopies)
 				copies++
 		if("aipic")
-			if(!istype(usr,/mob/living/silicon))
-				return
+			if(!istype(usr,/mob/living/silicon)) return
+			if(stat & (BROKEN|NOPOWER)) return
 
 			if(toner >= 5)
 				var/mob/living/silicon/tempAI = usr
@@ -174,9 +173,9 @@
 			mode = MODE_PRINT
 		if("mode_aipic")
 			mode = MODE_AIPIC
-		else
-			return FALSE
-	add_fingerprint(usr)
+
+	src.add_fingerprint(usr)
+	return TRUE
 
 
 /obj/machinery/photocopier/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/tgui_state/state = GLOB.tgui_default_state)
@@ -221,7 +220,7 @@
 		forms[++forms.len] = form
 
 /obj/machinery/photocopier/attackby(obj/item/O as obj, mob/user as mob, params)
-	add_fingerprint(user)
+	src.add_fingerprint(usr)
 	if(istype(O, /obj/item/paper) || istype(O, /obj/item/photo) || istype(O, /obj/item/paper_bundle))
 		if(!copyitem)
 			user.drop_item()
@@ -395,7 +394,7 @@
 	check_ass() //Just to make sure that you can re-drag somebody onto it after they moved off.
 	if(!istype(target) || target.buckled || get_dist(user, src) > 1 || get_dist(user, target) > 1 || user.stat || istype(user, /mob/living/silicon/ai) || target == ass)
 		return
-	add_fingerprint(user)
+	src.add_fingerprint(user)
 	if(target == user && !user.incapacitated())
 		visible_message("<span class='warning'>[usr] jumps onto [src]!</span>")
 	else if(target != user && !user.restrained() && !user.stat && !user.IsWeakened() && !user.stunned && !user.paralysis)
