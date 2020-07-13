@@ -133,9 +133,6 @@
 /obj/item/ammo_box/magazine/internal/shot/riot/short
 	max_ammo = 3
 
-/obj/item/ammo_box/magazine/internal/shot/riot/buckshot
-	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
-
 /obj/item/ammo_box/magazine/internal/grenadelauncher
 	name = "grenade launcher internal magazine"
 	ammo_type = /obj/item/ammo_casing/a40mm
@@ -271,15 +268,15 @@
 
 /obj/item/ammo_box/magazine/wt550m9/wtap
 	name = "wt550 magazine (Armour Piercing 4.6x30mm)"
-	ammo_type = /obj/item/ammo_casing/c46x30mm/ap
+	ammo_type = /obj/item/ammo_casing/c46x30mmap
 
 /obj/item/ammo_box/magazine/wt550m9/wttx
 	name = "wt550 magazine (Toxin Tipped 4.6x30mm)"
-	ammo_type = /obj/item/ammo_casing/c46x30mm/tox
+	ammo_type = /obj/item/ammo_casing/c46x30mmtox
 
 /obj/item/ammo_box/magazine/wt550m9/wtic
 	name = "wt550 magazine (Incendiary 4.6x30mm)"
-	ammo_type = /obj/item/ammo_casing/c46x30mm/inc
+	ammo_type = /obj/item/ammo_casing/c46x30mminc
 
 /obj/item/ammo_box/magazine/uzim9mm
 	name = "uzi magazine (9mm)"
@@ -302,17 +299,17 @@
 
 /obj/item/ammo_box/magazine/smgm9mm/ap
 	name = "SMG magazine (Armour Piercing 9mm)"
-	ammo_type = /obj/item/ammo_casing/c9mm/ap
+	ammo_type = /obj/item/ammo_casing/c9mmap
 	materials = list(MAT_METAL = 3000)
 
 /obj/item/ammo_box/magazine/smgm9mm/toxin
 	name = "SMG magazine (Toxin Tipped 9mm)"
-	ammo_type = /obj/item/ammo_casing/c9mm/tox
+	ammo_type = /obj/item/ammo_casing/c9mmtox
 	materials = list(MAT_METAL = 3000)
 
 /obj/item/ammo_box/magazine/smgm9mm/fire
 	name = "SMG Magazine (Incendiary 9mm)"
-	ammo_type = /obj/item/ammo_casing/c9mm/inc
+	ammo_type = /obj/item/ammo_casing/c9mminc
 	materials = list(MAT_METAL = 3000)
 
 /obj/item/ammo_box/magazine/smgm9mm/update_icon()
@@ -369,7 +366,7 @@
 /obj/item/ammo_box/magazine/m556
 	name = "toploader magazine (5.56mm)"
 	icon_state = "5.56m"
-	origin_tech = "combat=5"
+	origin_tech = "combat=5;syndicate=1"
 	ammo_type = /obj/item/ammo_casing/a556
 	caliber = "a556"
 	max_ammo = 30
@@ -380,10 +377,13 @@
 	desc = "A drum magazine."
 	icon_state = "m12gb"
 	ammo_type = /obj/item/ammo_casing/shotgun
-	origin_tech = "combat=3"
+	origin_tech = "combat=3;syndicate=1"
 	caliber = ".12"
 	max_ammo = 8
-	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m12g/update_icon()
+	..()
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/8, 1)*8]"
 
 /obj/item/ammo_box/magazine/m12g/buckshot
 	name = "shotgun magazine (12g buckshot slugs)"
@@ -410,24 +410,6 @@
 	name = "shotgun magazine (12g breacher slugs)"
 	icon_state = "m12gbc"
 	ammo_type = /obj/item/ammo_casing/shotgun/breaching
-
-/obj/item/ammo_box/magazine/m12g/XtrLrg
-	name = "\improper XL shotgun magazine (12g slugs)"
-	desc = "An extra large drum magazine."
-	icon_state = "m12gXlSl"
-	w_class = WEIGHT_CLASS_NORMAL
-	ammo_type = /obj/item/ammo_casing/shotgun
-	max_ammo = 16
-
-/obj/item/ammo_box/magazine/m12g/XtrLrg/buckshot
-	name = "\improper XL shotgun magazine (12g buckshot)"
-	icon_state = "m12gXlBs"
-	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
-
-/obj/item/ammo_box/magazine/m12g/XtrLrg/dragon
-	name = "\improper XL shotgun magazine (12g dragon's breath)"
-	icon_state = "m12gXlDb"
-	ammo_type = /obj/item/ammo_casing/shotgun/incendiary/dragonsbreath
 
 /obj/item/ammo_box/magazine/toy
 	name = "foam force META magazine"
