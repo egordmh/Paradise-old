@@ -7,6 +7,7 @@
 	log_ghostsay(message, src)
 
 	if(src.client)
+		src.client.check_say_flood(5)
 		if(src.client.prefs.muted & MUTE_DEADCHAT)
 			to_chat(src, "<span class='warning'>You cannot talk in deadchat (muted).</span>")
 			return
