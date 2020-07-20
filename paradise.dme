@@ -2094,6 +2094,7 @@
 #include "code\modules\modular_computers\file_system\programs\generic\tetris.dm"
 #include "code\modules\modular_computers\file_system\programs\research\airestorer.dm"
 #include "code\modules\modular_computers\file_system\programs\research\ntmonitor.dm"
+#include "code\modules\modular_computers\file_system\programs\security\sibyl_system.dm"
 #include "code\modules\modular_computers\hardware\_hardware.dm"
 #include "code\modules\modular_computers\hardware\ai_slot.dm"
 #include "code\modules\modular_computers\hardware\battery_module.dm"

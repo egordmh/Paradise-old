@@ -40,7 +40,8 @@
 	l_hand = /obj/item/storage/lockbox/sibyl_system_mod
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/melee/classic_baton/telescopic = 1
+		/obj/item/melee/classic_baton/telescopic = 1,
+		/obj/item/modular_computer/tablet/preset/security = 1
 	)
 
 	implants = list(/obj/item/implant/mindshield/ert)
@@ -85,7 +86,8 @@
 	pda = /obj/item/pda/warden
 	l_hand = /obj/item/storage/lockbox/sibyl_system_mod
 	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 1
+		/obj/item/restraints/handcuffs = 1,
+		/obj/item/modular_computer/tablet/preset/security = 1
 	)
 
 	implants = list(/obj/item/implant/mindshield)

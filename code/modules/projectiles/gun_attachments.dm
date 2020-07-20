@@ -1,6 +1,4 @@
 //Put all your tacticool gun gadgets here. So far it's pretty empty
-
-
 /obj/item/suppressor
 	name = "suppressor"
 	desc = "A universal syndicate small-arms suppressor for maximum espionage."
@@ -17,12 +15,6 @@
 	desc = "A foreign knock-off suppressor, it feels flimsy, cheap, and brittle. Still fits all weapons."
 	icon = 'icons/obj/guns/projectile.dmi'
 	icon_state = "suppressor"
-
-GLOBAL_LIST_EMPTY(guns_registry)
-GLOBAL_VAR_INIT(sibsys_automode, TRUE)
-
-#define SIBSYS_REGISTRY	0	// Guns registry table
-#define SIBSYS_DETAILS	1	// Show log for gun
 
 /obj/item/sibyl_system_mod
 	name = "модуль Sibyl System"
