@@ -174,6 +174,14 @@
 	name = "\improper Death-Ripley wreckage"
 	icon_state = "deathripley-broken"
 	parts = null
+/obj/structure/mecha_wreckage/clarke
+	name = "\improper Special Clarke"
+	icon_state = "clarke-broken"
+	parts = list(/obj/item/mecha_parts/part/clarke_torso,
+				/obj/item/mecha_parts/part/clarke_left_arm,
+				/obj/item/mecha_parts/part/clarke_right_arm,
+				/obj/item/mecha_parts/part/clarke_left_leg,
+				/obj/item/mecha_parts/part/clarke_right_leg)
 
 /obj/structure/mecha_wreckage/honker
 	name = "\improper H.O.N.K wreckage"

@@ -25,6 +25,7 @@
 								"Cyborg Repair",
 								"Ripley",
 								"Firefighter",
+								"Clarke",
 								"Odysseus",
 								"Gygax",
 								"Durand",

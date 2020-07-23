@@ -63,6 +63,49 @@
 	desc="A Ripley APLU right leg. Contains somewhat complex servodrives and balance maintaining systems."
 	icon_state = "ripley_r_leg"
 
+///////// Clarke
+
+/obj/item/mecha_parts/chassis/clarke
+	name = "Clarke Chassis"
+
+/obj/item/mecha_parts/chassis/clarke/New()
+	..()
+	construct = new /datum/construction/mecha/clarke_chassis(src)
+
+/obj/item/mecha_parts/part/clarke_torso
+	name="clarke Torso"
+	desc="A massive Clarke Torso"
+	icon_state = "clarke_torso"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
+/obj/item/mecha_parts/part/clarke_head
+	name="Clarke Head"
+	desc="Голова Кларка, полная всяких датчиков и камер"
+	icon_state = "clarke_head"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
+/obj/item/mecha_parts/part/clarke_left_arm
+	name="Clarke Left Arm"
+	desc="Левая Рука Кларка"
+	icon_state = "clarke_l_arm"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
+/obj/item/mecha_parts/part/clarke_right_arm
+	name="Clarke Right Arm"
+	desc="Правая Рука Кларка"
+	icon_state = "clarke_r_arm"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
+/obj/item/mecha_parts/part/clarke_left_leg
+	name="Левая гусеница Кларка"
+	icon_state = "clarke_l_leg"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
+/obj/item/mecha_parts/part/clarke_right_leg
+	name="Правая гусеница Кларка"
+	icon_state = "clarke_r_leg"
+	origin_tech = "programming=2;materials=3;engineering=3"
+
 ///////// Gygax
 
 /obj/item/mecha_parts/chassis/gygax
@@ -450,6 +493,17 @@
 	icon_state = "mcontroller"
 
 /obj/item/circuitboard/mecha/odysseus/main
+	name = "Circuit board (Odysseus Central Control module)"
+	icon_state = "mainboard"
+
+/obj/item/circuitboard/mecha/clarke
+	origin_tech = "programming=3"
+
+/obj/item/circuitboard/mecha/clarke/peripherals
+	name = "Circuit board (Odysseus Peripherals Control module)"
+	icon_state = "mcontroller"
+
+/obj/item/circuitboard/mecha/clarke/main
 	name = "Circuit board (Odysseus Central Control module)"
 	icon_state = "mainboard"
 
