@@ -5,6 +5,7 @@
 	icon_state = "doorctrl0"
 	power_channel = ENVIRON
 	var/id = null
+	var/no_silicons = 0
 	var/safety_z_check = 1
 	var/normaldoorcontrol = 0
 	var/desiredstate = 0 // Zero is closed, 1 is open.
@@ -57,7 +58,7 @@
 	if(stat & (NOPOWER|BROKEN))
 		return
 
-	if(!allowed(user) && (wires & 1) && !user.can_advanced_admin_interact())
+	if(!allowed(user) && (wires & 1) && !user.can_advanced_admin_interact() || (no_silicons && issilicon(user)))
 		to_chat(user, "<span class='warning'>Access Denied.</span>")
 		flick("doorctrl-denied",src)
 		return

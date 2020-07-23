@@ -6680,6 +6680,7 @@
 	id = "generalert";
 	name = "General equipment remote door-control";
 	pixel_y = 25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -11906,6 +11907,7 @@
 	id = "ertgygax2";
 	name = "ERT gygax #2 remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -11973,6 +11975,7 @@
 	id = "ertgygax1";
 	name = "ERT gygax #1 remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/camera{
@@ -12451,6 +12454,7 @@
 	id = "sniperrifle";
 	name = "Sniper rifle remote door-control";
 	pixel_y = 25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -12866,6 +12870,7 @@
 	id = "gygax2ert";
 	name = "ERT gygax's sremote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -13241,6 +13246,7 @@
 	id = "CCes";
 	name = "Special Exit control Button";
 	pixel_x = 23;
+	no_silicons = 1;
 	req_access_txt = "101"
 	},
 /turf/unsimulated/floor{
@@ -13304,6 +13310,7 @@
 	id = "advlaser";
 	name = "Advanced gun remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -13330,6 +13337,7 @@
 	id = "PDWdoor";
 	name = "Explosive remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -13385,6 +13393,7 @@
 	id = "anitborgtrl";
 	name = "Centcom remote door-control";
 	pixel_x = 24;
+	no_silicons = 1;
 	req_access_txt = "101"
 	},
 /turf/unsimulated/floor{
@@ -13987,6 +13996,7 @@
 	name = "Gravity Catapults";
 	pixel_x = -6;
 	pixel_y = 6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/door_control{
@@ -13996,6 +14006,7 @@
 	name = "Mech Storage";
 	pixel_x = 6;
 	pixel_y = 6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/door_control{
@@ -14005,6 +14016,7 @@
 	name = "Teleporter Access";
 	pixel_x = -6;
 	pixel_y = -6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
@@ -14014,6 +14026,7 @@
 	name = "Armory Access";
 	pixel_x = 6;
 	pixel_y = -6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -14725,6 +14738,7 @@
 	id = "CentComPort";
 	name = "Security Doors";
 	pixel_y = -4;
+	no_silicons = 1;
 	req_access_txt = "104"
 	},
 /obj/machinery/door/window/southleft{
@@ -14931,6 +14945,7 @@
 	id = "sballistic";
 	name = "Heavy Ballistic remote door-control";
 	pixel_y = 25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/camera{
@@ -15036,6 +15051,7 @@
 	id = "gygax1";
 	name = "Addition guns remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -15116,6 +15132,7 @@
 	name = "Ready Room";
 	pixel_x = -6;
 	pixel_y = 6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/door_control{
@@ -15125,6 +15142,7 @@
 	name = "Privacy Shutters";
 	pixel_x = 6;
 	pixel_y = -6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/machinery/door_control{
@@ -15134,6 +15152,7 @@
 	name = "Gamma Lockdown";
 	pixel_x = -6;
 	pixel_y = -6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
@@ -15143,6 +15162,7 @@
 	name = "ERT Medbay";
 	pixel_x = 6;
 	pixel_y = 6;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -15579,6 +15599,7 @@
 	id = "ionrifle";
 	name = "Ion rifle remote door-control";
 	pixel_x = 26;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -15860,6 +15881,7 @@
 	id = "shotgunbd";
 	name = "Shotgun remote door-control";
 	pixel_y = -25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
@@ -16378,6 +16400,7 @@
 	id = "ballistic";
 	name = "Ballistic remote door-control";
 	pixel_y = 25;
+	no_silicons = 1;
 	req_access_txt = "114"
 	},
 /turf/unsimulated/floor{
