@@ -87,6 +87,16 @@
 	new /obj/item/reagent_containers/hypospray/autoinjector(src)
 	new /obj/item/flashlight/flare/glowstick/emergency(src)
 
+/obj/item/storage/box/survival_machine
+	icon_state = "box_machine"
+
+/obj/item/storage/box/survival_machine/New()
+	..()
+	contents = list()
+	new /obj/item/weldingtool/mini(src)
+	new /obj/item/reagent_containers/food/drinks/oilcan/full(src)
+	new /obj/item/flashlight/flare/glowstick/emergency(src)
+
 /obj/item/storage/box/survival_plasmaman
 	icon_state = "box_plasma"
 
