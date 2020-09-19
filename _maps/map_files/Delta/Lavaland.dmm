@@ -2432,7 +2432,11 @@
 /area/mine/living_quarters)
 "fD" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/machinery/kitchen_machine/microwave{
+=======
+/obj/machinery/microwave{
+>>>>>>> 0a33df8cab... Релизная версия дельты + новый аванпост шахтёров
 	pixel_y = 6
 	},
 /obj/effect/turf_decal/tile/bar{
