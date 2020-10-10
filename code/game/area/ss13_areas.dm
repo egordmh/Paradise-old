@@ -72,6 +72,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	valid_territory = FALSE
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	parallax_movedir = NORTH
+	sound_env = SMALL_ENCLOSED
 
 /area/shuttle/arrival
 	name = "\improper Arrival Shuttle"
@@ -597,6 +598,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance
 	ambientsounds = MAINTENANCE_SOUNDS
 	valid_territory = FALSE
+	sound_env = TUNNEL_ENCLOSED
 
 /area/maintenance/atmos_control
 	name = "Atmospherics Maintenance"

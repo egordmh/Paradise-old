@@ -327,7 +327,7 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	if(delay > sound_length) // If there's time, play the round-end sound before rebooting
 		spawn(delay - sound_length)
 			if(!SSticker.delay_end)
-				world << round_end_sound
+				world << sound(round_end_sound, volume = 80)
 	sleep(delay)
 	if(GLOB.blackbox)
 		GLOB.blackbox.save_all_data_to_sql()
