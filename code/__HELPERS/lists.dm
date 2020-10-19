@@ -693,6 +693,9 @@ proc/dd_sortedObjectList(list/incoming)
 /// Returns whether a numerical index is within a given list's bounds. Faster than isnull(LAZYACCESS(L, I)).
 #define ISINDEXSAFE(L, I) (I >= 1 && I <= length(L))
 
+#define LAZYADDASSOC(L, K, V) if(!L) { L = list(); } L[K] += list(V);
+#define LAZYREMOVEASSOC(L, K, V) if(L) { if(L[K]) { L[K] -= V; if(!length(L[K])) L -= K; } if(!length(L)) L = null; }
+
 //same, but returns nothing and acts on list in place
 /proc/shuffle_inplace(list/L)
 	if(!L)

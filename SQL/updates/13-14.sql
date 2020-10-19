@@ -45,7 +45,7 @@ DROP INDEX ckey_UNIQUE ON privacy;
 
 # Add player table field that AA plans to use very soon to store byond account creation date
 
-ALTER TABLE `player` ADD COLUMN `byond_date` DATE DEFAULT NULL;
+ALTER TABLE `player` ADD COLUMN `byond_date` DATE DEFAULT NULL AFTER `parallax`;
 
 
 # **************** READ THIS CAREFULLY **********************************************************
