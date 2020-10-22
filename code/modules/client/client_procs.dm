@@ -1026,6 +1026,31 @@
 	set hidden = 1
 	fit_viewport()
 
+/client/verb/link_discord_account()
+	set name = "Привязка Discord"
+	set category = "Special Verbs"
+	set desc = "Привязать аккаунт Discord для удобного просмотра игровой статистики на нашем Discord-сервере."
+
+	if(!config.discordurl)
+		return
+	if(IsGuestKey(key))
+		to_chat(usr, "Гостевой аккаунт не может быть связан.")
+		return
+	if(prefs)
+		prefs.load_preferences(usr)
+	if(prefs && prefs.discord_id && length(prefs.discord_id) < 32)
+		to_chat(usr, "<span class='darkmblue'>Аккаунт Discord уже привязан! Чтобы отвязать используйте команду <span class='boldannounce'>!отвязать_аккаунт</span> на Discord-сервере.</span>")
+		return
+	var/token = md5("[world.time+rand(1000,1000000)]")
+	var/DBQuery/query_find_link = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET discord_id='[token]' WHERE ckey = '[ckey]'")
+	if(!query_find_link.Execute())
+		to_chat(usr, "<span class='warning'>Ошибка записи токена в БД! Обратитесь к администрации.</span>")
+		log_debug("link_discord_account: failed db update discord_id for ckey [ckey]")
+		return
+	to_chat(usr, "<span class='darkmblue'>Для завершения используйте команду <span class='boldannounce'>!привязать_аккаунт [token]</span> на Discord-сервере!</span>")
+	if(prefs)
+		prefs.load_preferences(usr)
+
 /client/verb/resend_ui_resources()
 	set name = "Reload UI Resources"
 	set desc = "Reload your UI assets if they are not working"

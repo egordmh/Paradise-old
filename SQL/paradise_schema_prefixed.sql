@@ -276,6 +276,8 @@ CREATE TABLE `SS13_player` (
   `max_chat_length` tinyint(1) DEFAULT '110',
   `chat_on_map` tinyint(1) DEFAULT '1',
   `see_chat_non_mob` tinyint(1) DEFAULT '1',
+  `discord_id` varchar(32) NULL DEFAULT NULL,
+  `discord_name` varchar(32) NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `ckey` (`ckey`),
   KEY `lastseen` (`lastseen`),

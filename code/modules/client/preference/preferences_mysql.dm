@@ -19,7 +19,9 @@
 					parallax,
 					max_chat_length,
 					chat_on_map,
-					see_chat_non_mob
+					see_chat_non_mob,
+					discord_id,
+					discord_name
 					FROM [format_table_name("player")]
 					WHERE ckey='[C.ckey]'"}
 					)
@@ -52,6 +54,8 @@
 		max_chat_length = text2num(query.item[17])
 		chat_on_map = text2num(query.item[18])
 		see_chat_non_mob = text2num(query.item[19])
+		discord_id = query.item[20]
+		discord_name = query.item[21]
 
 	//Sanitize
 	ooccolor		= sanitize_hexcolor(ooccolor, initial(ooccolor))
@@ -72,6 +76,8 @@
 	max_chat_length 	= sanitize_integer(max_chat_length, 1, CHAT_MESSAGE_MAX_LENGTH, initial(max_chat_length))
 	chat_on_map			= sanitize_integer(chat_on_map, 0, 1, initial(chat_on_map))
 	see_chat_non_mob	= sanitize_integer(see_chat_non_mob, 0, 1, initial(see_chat_non_mob))
+	discord_id			= sanitize_text(discord_id, initial(discord_id))
+	discord_name		= sanitize_text(discord_name, initial(discord_name))
 	return 1
 
 /datum/preferences/proc/save_preferences(client/C)
