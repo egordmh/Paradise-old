@@ -48,11 +48,10 @@
 #define PREFTOGGLE_2_WINDOWFLASHING	8
 #define PREFTOGGLE_2_ANONDCHAT		16
 #define PREFTOGGLE_2_AFKWATCH		32
-#define PREFTOGGLE_2_RUNECHAT		64
 
-#define TOGGLES_2_TOTAL 			127 // If you add or remove a preference toggle above, make sure you update this define with the total value of the toggles combined.
+#define TOGGLES_2_TOTAL 			63 // If you add or remove a preference toggle above, make sure you update this define with the total value of the toggles combined.
 
-#define TOGGLES_2_DEFAULT (PREFTOGGLE_2_FANCYUI|PREFTOGGLE_2_ITEMATTACK|PREFTOGGLE_2_WINDOWFLASHING|PREFTOGGLE_2_RUNECHAT)
+#define TOGGLES_2_DEFAULT (PREFTOGGLE_2_FANCYUI|PREFTOGGLE_2_ITEMATTACK|PREFTOGGLE_2_WINDOWFLASHING)
 
 // Sanity checks
 #if TOGGLES_TOTAL > 16777215
