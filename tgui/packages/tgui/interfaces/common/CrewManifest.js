@@ -82,7 +82,6 @@ export const CrewManifest = (props, context) => {
   */
   // And thats it
 
-
   const {
     manifest,
   } = finalData;
@@ -97,7 +96,12 @@ export const CrewManifest = (props, context) => {
     sup,
     misc,
   } = manifest;
-
+  let pro = [];
+  for (let i = 0; i < manifest.ser.length; i++) {
+    if ((manifest.ser[i].rank === "Magistrate") || (manifest.ser[i].rank === "Internal Affairs Agent") || (manifest.ser[i].rank === "Nanotrasen Representative") || (manifest.ser[i].rank === "Human Resources Agent")) {
+      pro.push(manifest.ser[i]);
+    }
+  }
   return (
     <Box>
       <Section
@@ -110,6 +114,18 @@ export const CrewManifest = (props, context) => {
         )}
         level={2}>
         {ManifestTable(heads)}
+      </Section>
+
+      <Section
+        title={(
+          <Box backgroundColor={deptCols.procedure} m={-1} pt={1} pb={1}>
+            <Box ml={1} textAlign="center" fontSize={1.4}>
+              Procedure
+            </Box>
+          </Box>
+        )}
+        level={2}>
+        {ManifestTable(pro)}
       </Section>
 
       <Section
