@@ -12,7 +12,8 @@ SUBSYSTEM_DEF(discord)
 	return ..()
 
 // This is designed for ease of simplicity for sending quick messages from parts of the code
-/datum/controller/subsystem/discord/proc/send2discord_simple(destination, content)
+/datum/controller/subsystem/discord/proc/send2discord_simple(destination, content_in)
+	var/content = ("**\[[config.server_name]]** "+ content_in)
 	if(!enabled)
 		return
 	var/list/webhook_urls
@@ -64,7 +65,7 @@ SUBSYSTEM_DEF(discord)
 			// We have active admins, we dont care about the rest of this proc
 			return
 
-	var/message = "[content] [alerttext] [add_ping ? handle_administrator_ping() : ""]"
+	var/message = "**\[[config.server_name]]** [content] [alerttext] [add_ping ? handle_administrator_ping() : ""]"
 
 	var/datum/discord_webhook_payload/dwp = new()
 	dwp.webhook_content = message
